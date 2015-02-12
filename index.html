@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>USALight Test Site</title>
-
+<meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="css/home.css" media="screen">
 <link rel="stylesheet" href="css/main.css" media="screen">
@@ -15,11 +15,9 @@
 <div id="wrapper">
 <div id="content">
 
-<form class="form-inline" action="/searchResults.asp" method="get" name="SearchBoxForm" role="search">
-	<div class="form-group">
-		<input type="text" name="Search" class="search-popout__input" placeholder="Search...">
-		<button type="submit" name="Submit" class="btn btn-xs btn-primary search-popout__submit">Go!</button>
-	</div>
+<form class="search" action="/searchResults.asp" method="get" name="SearchBoxForm" role="search">
+		<input type="text" name="Search">
+		<button type="submit" name="Submit" class="button">Search</button>	
 </form>
 
 <div class="col-xs-8 col-md-6">
@@ -32,7 +30,7 @@
 
 <div class="header__right header__element ghost">
                                 <div class="sitetools hidden-xs hidden-sm ghost__content">
-                                    <a href="/myaccount.asp" class="sitetools__item" title="My Account">My Account</a>                                
+                                    <a href="/myaccount.asp" class="sitetools__item" title="My Account">My Account</a>                              
                                 </div>
                                 <div class="cart-summary ghost__content">
                                     <a href="/shoppingcart.asp">
@@ -40,7 +38,6 @@
                                     </a>
                                 </div>
                             </div>
-
 
 <div class="usa">
 	<section class="products">
