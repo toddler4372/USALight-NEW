@@ -1323,24 +1323,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container-main {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  .container:before, .container:after {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .container-main:before, .container-main:after {
     content: " ";
     display: table; }
-  .container:after {
+  .container-main:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container {
+    .container-main {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container {
+    .container-main {
       width: 1066px; } }
   @media (min-width: 1240px) {
-    .container {
+    .container-main {
       width: 1350px; } }
 
 .container-fluid {
@@ -1373,10 +1373,14 @@ pre {
   float: left; }
 
 .col-xs-1 {
-  width: 8.33333%; }
+  width: 8.33333%;}
 
 .col-xs-2 {
   width: 16.66667%; }
+
+@media (max-width: 992px) {
+.col-xs-2 {display: none;}
+}
 
 .col-xs-3 {
   width: 25%; }
@@ -1401,6 +1405,10 @@ pre {
 
 .col-xs-10 {
   width: 83.33333%; }
+
+@media (max-width: 992px) {
+.col-xs-10 {width: 100%;}
+}
 
 .col-xs-11 {
   width: 91.66667%; }
@@ -3427,7 +3435,7 @@ tbody.collapse.in {
     overflow-y: auto; }
   @media (min-width: 992px) {
     .navbar-collapse {
-      width: auto;
+      width: 100%;
       border-top: 0;
       box-shadow: none; }
       .navbar-collapse.collapse {
@@ -5910,7 +5918,7 @@ body {
   margin-top: -0.58em;
 }
 .search button {
-  font-size:1.2em;
+  font-size:1em;
   border: 1px solid #444;
   border: 1px solid rgba(0,0,0,0.3);
   padding: 8px 1em;
@@ -5976,6 +5984,7 @@ body {
     -webkit-box-sizing: padding-box;
     -moz-box-sizing: padding-box;
     box-sizing: padding-box;
+    top: 21px;
   }
   .search input {
     display: block;
@@ -6066,7 +6075,7 @@ body {
 @media only screen and (min-width: 1240px) {
   .search input,
   .search input[type=search] {
-    width: 358px;
+    width: 394px;
   }
 }
 
