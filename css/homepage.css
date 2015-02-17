@@ -255,13 +255,20 @@ color: #e74f5d;
 
 	@media only screen and (min-width: 992px) {
 		.search {
-		position: absolute;
-		top: 35px;
-		left: 50%;
-		margin-left: -19%;
-		width: 38%;
-		background: #8299df;}
-	
+			position: absolute;
+			top: 35px;
+			left: 50%;
+			margin-left: -19%;
+			width: 38%;
+			background: #8299df;}
+		.footer-wrapper {
+			float: left;
+			width: 100%;
+			position: relative;
+			min-height: 1px;
+			padding-left: 15px;
+			padding-right: 15px;}
 }
 
+	
 	
