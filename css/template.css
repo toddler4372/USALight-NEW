@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /*--------------------------CUSTOM STYLES-----------------------------*/
 
-.homepage-logo {margin-top: 20px;}
+.homepage-logo {margin-top: 10px;}
 
 @media only screen and (max-width: 991px) {
   .homepage-logo {margin-bottom: 15px;}
@@ -511,8 +511,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .features {
     background: #fff;
     clear: both;
-    min-height: 15px;
-    max-height: 41px;
+    min-height: 35px;
+    max-height: 80px;
     margin: 0;
   }
   .features ul {
@@ -522,7 +522,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-align: center;
     list-style: none;
     list-style-image: none;
-    margin: 5px 0 5px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    padding: 6px 0 3px 0;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
   }
 
 @media only screen and (min-width: 1240px) {
@@ -540,7 +544,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 @media only screen and (max-width: 991px) {
-  .features ul li {
+  .features ul {
     display: none;
   }
   .homepage-logo {margin-top: 0px;}
@@ -562,9 +566,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 li#go-daddy {
-margin-left: 28px;
+  margin-left: 28px;
 }
 
 li#ups {
-margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#logo {margin: 0;padding: 0;}
+
+@media only screen and (min-width: 992px) {
+  li.icon-account{
+    background-image: url(../images/icon-account.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 .9em;
+    padding-left: 1.5em;
+  }
+
+  li.icon-cart{
+    background-image: url(../images/icon-cart.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 .9em;
+    padding-left: 1.5em;
+  }
 }

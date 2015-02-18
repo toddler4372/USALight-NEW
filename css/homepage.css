@@ -185,7 +185,7 @@ color: #e74f5d;
 	.homepage ul {list-style-type: none;}
 
 	/* All sections */
-	.usa section, .usa aside {padding: 20px 0;}
+	.usa section, .usa aside {padding: 10px 0;}
 	.usa section h1 {font-size: 1.6em; padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 1px;}
 
 	/* products */
@@ -219,8 +219,8 @@ color: #e74f5d;
 	  .usa section.products .product h2 {overflow: hidden; padding-left: 0;}
 	  .usa section.products .product img {float: left; margin-right: 20px;}
 	  img.homepage-logo {display: block;margin: 0 auto;margin-top: 10px;}
-	  #toolbar {position: absolute; top: 80px;height: 46px; width: 100%;}
-	  .search {position: absolute; top: 126px; width: 100%;}
+	  #toolbar {position: absolute; top: 96px;height: 46px; width: 100%;}
+	  .search {position: absolute; top: 142px; width: 100%;}
 	  .header {min-height: 125px;}
 	}
 
@@ -254,7 +254,7 @@ color: #e74f5d;
 	@media only screen and (min-width: 992px) {
 		.search {
 			position: absolute;
-			top: 35px;
+			top: 20px;
 			left: 50%;
 			margin-left: -19%;
 			width: 38%;
@@ -272,5 +272,8 @@ color: #e74f5d;
 
 	@media only screen and (max-width: 991px) {
 		#refinement-wrapper {display: none;}
+		#search-wrapper {height: 70px;}
 	}
+
+
 	
