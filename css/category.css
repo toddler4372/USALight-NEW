@@ -1,0 +1,266 @@
+/**************************
+*       BREADCRUMBS       *
+**************************/
+
+#divWaitModal + table > tbody > tr:first-child a, /*Targets text*/
+#divWaitModal + table > tbody > tr:first-child b /*Targets greater-than symbol*/ {
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#content_area table {
+  table-layout: fixed;
+  width:110%;
+}
+
+@media only screen and (min-width: 992px) {
+	#content_area table table {width: 100%;}
+	#content_area table {width: 85%;}
+}
+
+/*****************************
+*   WHOLE SUB CAT CONTAINER  *
+*****************************/
+
+/*Set container's background or border*/
+.colors_backgroundneutral {
+	background: none; /*Overrides default*/
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 1%;
+	margin-bottom: 15px;
+	display: block;
+}
+
+/*****************************
+*     	    HEADING          *
+*****************************/
+
+/* Heading background */
+table.colors_backgroundlight {
+	background: none;
+	width: 100%;
+}
+
+img[src$="/Bullet_SubCategory.gif"] {
+	display: none;
+}
+
+td[width="195"] + td[width="20"] {
+	display: none;
+}
+
+/* Heading text styling */
+table.colors_backgroundlight > tbody > tr > td:first-child b {
+	color: #000;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: "Playfair Display";
+	font-weight: bold;
+	padding:1% 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+/*****************************
+*        CATEGORY LINKS      *
+*****************************/
+
+/* Category links outer container (excludes heading container) */
+/* Use for background and padding */
+table.colors_backgroundlight + table {
+	padding: 3% 0;
+}
+
+/* Category link */
+a.subcategory_link {
+	font-size: 14px;
+	display: block;
+	padding:2% 0;
+	font-weight: normal;
+}
+
+/* Category */
+a.subcategory_link:before {
+	content: "\2022";
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.subcategory_name{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* Category link hover */
+a.subcategory_link:hover {
+	text-decoration: none;
+}
+
+/*****************************
+*       CATEGORY STYLES      *
+*****************************/
+
+/* Product Title */
+table.v65-productDisplay .productnamecolor {
+	font: 600 14px 'Source Sans Pro', Arial, Sans-Serif !important;
+}
+
+/* List Price */
+table.v65-productDisplay .product_listprice,
+table.v65-productDisplay .product_listprice b {
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;	
+}
+
+/* Our Price */
+table.v65-productDisplay .product_productprice,
+table.v65-productDisplay .product_productprice b {
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Sale Price */
+table.v65-productDisplay .product_saleprice,
+table.v65-productDisplay .product_saleprice b {
+	color: #aa1f1f;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Deal Price */
+table.v65-productDisplay .product_dealprice {
+	color: #aa1f1f;
+	font-size: 14px;
+	font-weight: normal;	
+}
+/* You Save */
+table.v65-productDisplay .product_yousave {
+	color: #000;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* Set Up Cost */
+table.v65-productDisplay .product_setupcost, table.v65-productDisplay .product_setupcost b {}
+
+/* Description */
+table.v65-productDisplay img + br + font.text.colors_text, /*Single rows / Select / Checkboxes / List*/
+table.v65-productDisplay td[valign="top"] > font.text.colors_text /*Grid / Lightweight Grid*/ {
+	color: #686868;
+	font-size: 14px;
+	font-weight: normal;	
+}
+table.v65-productDisplay .v65-productPhoto img,
+img[src$="nophoto.gif"],
+img[src*="/v/vspfiles/photos/"],
+td[align="center"][colspan] img[src*="/v/vspfiles/photos/categories/"]{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
+img[src*="/v/vspfiles/photos/categories/"] {
+	max-width: 100%;
+}
+/*****************************
+*  CENTER PROD NAME & PRICE  *
+*****************************/
+
+/*#content_area table.v65-productDisplay {
+	text-align: center;
+}*/
+
+/*****************************
+*    REMOVE DIVIDER LINES    *
+*****************************/
+
+/*td[background$="Grid_Single_Divider_Vert.gif"], 
+td[background$="Grid_Single_Divider_Horiz.gif"] {
+	background: none !important;
+}*/
+
+/* * * * * * FIXES * * * * * */
+
+/* Remove padding-left from breadcrumbs */
+#divWaitModal + table > tbody > tr:first-child td {padding-left: 0;}
+
+/* Remove default Arial font family */
+font[face="Arial"] {font-family: inherit;}
+
+/* Remove default padding of table containing subcat links */
+table.colors_backgroundlight + table td {padding: 0;}
+
+/* Remove excess spacing to left of product name in Checkboxes display mode*/
+a.productnamecolor.colors_productname + img {display: none;}
+
+/* Override valign="bottom" in "Sort By:" container */
+form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+/* Remove excess spacing on left and right of "Sort By" container */
+form#MainForm > input[name="Cat"] + table > tbody > tr > td,
+form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"],
+form#MainForm > input[name="Cat"] + table td[align="right"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Heading */
+table.colors_backgroundlight > tbody > tr > td > img, /*Heading images*/
+.colors_lines_light, .colors_lines_light + .colors_backgroundneutral  /*Lines below heading*/ {
+	display: none;
+}
+
+
+@media (max-width:480px){
+	.v65-productDisplay{
+		width: 100%;
+		table-layout: fixed;
+	}
+	td[background*="/v/vspfiles/templates/have_hold_r/images/Grid_Divider_Vertical.gif"]{
+		padding:0 10px;
+	}
+	form#MainForm > input[name="Cat"] + table > tbody > tr > td, form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"], form#MainForm > input[name="Cat"] + table td[align="right"]{
+		display: block;
+		margin-bottom: 15px; 
+		text-align: left;
+	}
+
+	/* Product Title */
+	table.v65-productDisplay .productnamecolor {
+	    font-size: 12px;
+	}
+
+	/* List Price */
+	table.v65-productDisplay .product_listprice,
+	table.v65-productDisplay .product_listprice b {
+		font-size: 12px;	
+	}
+
+	/* Our Price */
+	table.v65-productDisplay .product_productprice,
+	table.v65-productDisplay .product_productprice b {
+		font-size: 12px;
+	}
+
+	/* Sale Price */
+	table.v65-productDisplay .product_saleprice,
+	table.v65-productDisplay .product_saleprice b {
+		font-size: 12px;
+	}
+
+	/* Deal Price */
+	table.v65-productDisplay .product_dealprice {
+		font-size: 12px;	
+	}
+}

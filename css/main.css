@@ -970,7 +970,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Playfair Display";
+  font-family: 'Source Sans Pro', helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: inherit; }
@@ -992,7 +992,7 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
     color: #999999; }
 
-h1, .h1,
+/*h1, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: 15px;
@@ -1006,7 +1006,7 @@ h3, .h3 {
   h3 small,
   h3 .small, .h3 small,
   .h3 .small {
-    font-size: 65%; }
+    font-size: 65%; }*/
 
 h4, .h4,
 h5, .h5,
@@ -1375,6 +1375,10 @@ pre {
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
+
+@media only screen and (max-width: 991px) {
+  .col-xs-10 {display: block;float: none;}
+}
 
 .col-xs-1 {
   width: 8.33333%;}
@@ -5346,10 +5350,6 @@ button.close {
 /* --------------------CUSTOM HOMEPAGE STYLES-------------------------*/
     
     /* Common modules */
-@font-face {
-    font-family: Raavi;
-    src: url(fonts/raavi.ttf);
-}
 article,
 section {
   display: block;
@@ -5371,7 +5371,7 @@ select,
 textarea,
 p,
 a {
-  font-family: Raavi, helvetica, sans-serif;
+  font-family: 'Source Sans Pro', helvetica, sans-serif;
   color: #222;
 }
 a {
@@ -5470,7 +5470,7 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
-  font-family: Raavi, Arial, Helvetica, Sans-serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, Sans-serif;
   background: transparent;
 }
 input[type=button]::-moz-focus-inner,
@@ -5539,7 +5539,7 @@ button {
 }
 body {
   font-size: 13px;
-  font-family: Raavi, Helvetica, Arial, Sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, Sans-serif;
 }
 .center {
   text-align: center;
@@ -5550,7 +5550,7 @@ body {
 .left {
   text-align: left;
 }
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -5558,7 +5558,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-}
+}*/
 h1 {
   font-size: 2.2em;
   color: #333;
@@ -5711,7 +5711,7 @@ textarea {
   background: #fff;
   -webkit-border-radius: 0;
   border-radius: 0;
-  font: 1em Raavi, Arial, Helvetica, Sans-serif;
+  font: 1em 'Source Sans Pro', Arial, Helvetica, Sans-serif;
   -webkit-appearance: none;
   -o-appearance: none;
   -webkit-transition: background 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
@@ -5968,7 +5968,7 @@ body {
     z-index: 100;
     background: #fff;
     border-bottom: 1px solid #ccc;
-    -webkit-box-shadow: -1px 0 1em rgba(0,0,0,0.3);
+    /*-webkit-box-shadow: -1px 0 1em rgba(0,0,0,0.3);
     box-shadow: -1px 0 1em rgba(0,0,0,0.3);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -5981,7 +5981,7 @@ body {
     backface-visibility: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
   }
   .search {
     float: none;
