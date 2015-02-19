@@ -215,7 +215,7 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
-  font-family: Arial, Helvetica, Sans-serif;
+  font-family: Roboto, Arial, Sans-serif;
   background: transparent;
 }
 input[type=button]::-moz-focus-inner,
@@ -1050,7 +1050,10 @@ font-size: 1.3333333333333333em;
 }
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],a [class*=" icon-"] {
-display: inline;
+/*display: inline;*/
+margin-top: 4px;
+margin-right: 5px;
+float: left;
 }
 /* increased font size for icon-large */
 [class^="icon-"].icon-fixed-width,[class*=" icon-"].icon-fixed-width {
@@ -5001,22 +5004,45 @@ aside .respContent {
   #toolbar li {
     position: relative;
     float: left;
-    width: 20%;
+    /*width: 20%;*/
     margin: 0;
     border: 0;
   }
   #toolbar li a {
-    float: none;
+    /*float: none;
     display: block;
     border: 0;
     border-left: 1px solid #ccc;
     padding: 14px 0;
     text-align: center;
     border-color: rgba(0,0,0,0.25);
+    border-right: 1px solid rgba(255,255,255,0.08);*/
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    float: left;
+    display: block;
+    border: 0;
+    border-left: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 30px;
+    color: #eee;
+    padding: 10px 12px;
+    text-align: center;
+    border-color: rgba(0,0,0,0.25);
     border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  #toolbar > ul > li.touch > a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  #toolbar > ul > li.touch {
+    width: 56px;
   }
   #toolbar li:first-child a {
     border-left: 0;
+    height: 46px;
+    font-size: 14px;
+    width: 56px;
   }
   #toolbar li:last-child a {
     border-right: 0;
@@ -5094,6 +5120,8 @@ aside .respContent {
     padding: 0;
   }
   #toolbar li a {
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
     display: block;
     border: 0;
     border-left: 1px solid rgba(0,0,0,0.2);
@@ -5101,7 +5129,15 @@ aside .respContent {
     box-shadow: inset 1px 0 0 rgba(255,255,255,0.1);
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 44px;
+    line-height: 42px;
+    width: 104px;
+    height: 41px;
+    margin-top: 5px;
+  }
+  #toolbar > ul > li.touch > a {
+    -webkit-box-shadow: inset -1px 0 0 rgba(255,255,255,0.1);
+    box-shadow: inset -1px 0 0 rgba(255,255,255,0.1);
+    margin-top: 2px;
   }
   #toolbar li span {
     text-decoration: none;
@@ -5248,7 +5284,7 @@ aside .respContent {
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     border-top: 0;
-    background: #161b7a;
+    background: #161b7a; */
     background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%); 
     background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
     background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);

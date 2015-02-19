@@ -201,14 +201,14 @@
   line-height: 1.5;
 }
 .refinement_category_item, .find_by_category_text {
-  font-family: Raavi, Helvetica, Arial, Sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
 
 .refinement_custom_category_section {
-  font-family: Raavi, Helvetica, Arial, Sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-transform: uppercase;
   padding-top: 15px;
   font-size: 12px;
@@ -227,8 +227,14 @@
 
   #toolbar li.touch span {
   color: white;
-  font-family: Raavi, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
+
+/*-----------------PHONE-----------------------*/
+
+  #toolbar li.touch span {
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
 
 
 
