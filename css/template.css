@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-transform: none;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .search-popout__input:focus, .social a:hover, .header a:hover, .footer a:hover {
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   min-width: 0 !important;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Playfair Display";
+  font-family: 'Roboto', Arial, Sans-serif;
   text-indent: 0 !important;
 }
 
@@ -266,6 +266,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-toggle {
   margin: 0; }
 
+@media only screen and (max-width: 599px) {
+  .navbar-toggle {
+    margin: -8px 0 0 0;
+    padding: 0 3px 0 10px;
+  }
+}
+
 /******** FOOTER **********/
 .footer {
   border-top: 1px solid #e3e3e3;
@@ -284,7 +291,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       font-weight: bold;
       color: #000;
       white-space: nowrap;
-      font-family: "Playfair Display";
+      font-family: 'Roboto', Arial, Sans-serif;
       text-transform: uppercase;
       font-size: 12px; }
     @media only screen and (min-width: 768px) {
@@ -302,7 +309,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .footer .panel-heading h4 {
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "Playfair Display";
+    font-family: 'Roboto', Arial, Sans-serif;
     font-size: 12px; }
 .footer .panel-group .panel + .panel {
   margin-top: 0;
@@ -334,7 +341,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
   font-size: 12px;
   font-weight: bold;
-  font-family: "Playfair Display";
+  font-family: 'Roboto', Arial, Sans-serif;
   text-transform: uppercase;
   margin-bottom: 5px; }
   @media only screen and (min-width: 768px) {
@@ -447,7 +454,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display: block;
     font-weight: bold;
     color: #000;
-    font-family: "Playfair Display";
+    font-family: 'Roboto', Arial, Sans-serif;
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 6px; }
@@ -582,11 +589,61 @@ li#ups {
     background-position: 0 .9em;
     padding-left: 1.5em;
   }
-
   li.icon-cart{
     background-image: url(../images/icon-cart.jpg);
     background-repeat: no-repeat;
     background-position: 0 .9em;
     padding-left: 1.5em;
   }
+  li.icon-chat{
+    background-image: url(../images/icon-chat.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 1em;
+    padding-left: 1.8em;
+  }
 }
+
+  div#phone-number {
+      font-family: 'Roboto', Arial, Sans-serif;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+  @media only screen and (min-width: 992px) {
+    div#phone-number {
+      position: absolute;
+      top: 50px;
+      right: 13px;
+      font-family: 'Roboto', Arial, Sans-serif;
+      font-size: 26px;
+      font-weight: bold;
+      color: #d00005;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 991px) {
+    div#phone-number {
+      position: absolute;
+      top: 103px;
+      right: 55%;
+      color: #fff;
+      z-index: 9999;
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 600px) {
+      div#phone-number {
+        position: absolute;
+        top: 102px;
+        right: 15px;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+
+  @media only screen and (max-width: 499px) {
+      div#phone-number {
+        display:none;
+      }
+    }

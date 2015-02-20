@@ -32,6 +32,10 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
   margin: 0;
@@ -43,7 +47,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: Roboto, arial, sans-serif;
   color: #222;
 }
 a {
@@ -95,8 +99,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  font-family: Roboto, arial, sans-serif;
+  _font-family: Roboto, arial, sans-serif;
   font-size: 1em;
 }
 pre {
@@ -300,12 +304,12 @@ button {
 @font-face {
   font-weight: normal;
   font-style: normal;
-  font-family: 'Knowhow';
+  font-family: Roboto, arial, sans-serif;
   src: url("fonts/knowhow.eot") format('embedded-opentype'), url("fonts/knowhow.ttf") format('truetype'), url("fonts/knowhow.svg") format('svg');
 }
 body {
   font-size: 13px;
-  font-family: Helvetica, Arial, Sans-serif;
+  font-family: Roboto, arial, sans-serif;
 }
 .contentInfo {
   font-size: small;
@@ -321,7 +325,7 @@ body {
   text-overflow: ellipsis;
 }
 .brandLight {
-  color: #1e249e;
+  color: #11298a;
 }
 .brandDark {
   color: #011e62;
@@ -980,7 +984,7 @@ aside .row [class*="col"] {
   margin-bottom: 0;
 }
 .alertBold {
-  background: #1e249e;
+  background: #11298a;
   color: #eee !important;
 }
 .alertRequired {
@@ -1029,7 +1033,7 @@ font-style: normal;
 /* FONT AWESOME CORE
  * -------------------------- */
 [class^="icon-"],[class*=" icon-"] {
-font-family: FontAwesome;
+font-family: Roboto, arial, sans-serif;
 font-weight: normal;
 font-style: normal;
 text-decoration: inherit;
@@ -1051,9 +1055,17 @@ font-size: 1.3333333333333333em;
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],a [class*=" icon-"] {
 /*display: inline;*/
-margin-top: 4px;
+margin-top: 5px;
 margin-right: 5px;
 float: left;
+}
+@media only screen and (max-width: 599px) {
+a [class^="icon-"],a [class*=" icon-"] {
+/*display: inline;*/
+margin-top: 0px;
+margin-right: 5px;
+float: left;
+}
 }
 /* increased font size for icon-large */
 [class^="icon-"].icon-fixed-width,[class*=" icon-"].icon-fixed-width {
@@ -2762,7 +2774,7 @@ table .amount {
   margin: 0 0 5px;
   color: #fff;
   font-size: 0.92em;
-  font-family: Gotham, Arial, Sans-serif;
+  font-family: Roboto, arial, sans-serif;
 }
 .cys {
   background: #0c347b;
@@ -2900,11 +2912,11 @@ table .amount {
   height: 45px;
   position: relative;
   background: #161b7a;
-  background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+  background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
 }
 .popInContainer .popToolbar h1 {
   display: block;
@@ -2953,7 +2965,7 @@ table .amount {
   left: 0.1em;
   content: '\f00d';
   color: #eee;
-  font-family: 'FontAwesome';
+  font-family: Roboto, arial, sans-serif;
   font-size: 14px;
 }
 .popInContainer .popToolbar .close:hover,
@@ -3164,7 +3176,7 @@ a[href="#emailAddressEdit"]:after {
   padding: 0;
   overflow: hidden;
   text-align: right;
-  font-family: FontAwesome;
+  font-family: Roboto, arial, sans-serif;
   content: "\f054";
   color: #999;
 }
@@ -3178,7 +3190,7 @@ a[href="#emailAddressEdit"]:after {
 .primary li a:focus,
 .primary li a:active,
 .primary li li ul a.active {
-  background: #1e249e;
+  background: #11298a;
   color: #eee;
   text-decoration: none;
 }
@@ -3195,7 +3207,7 @@ a[href="#emailAddressEdit"]:after {
 .primary li a.nav_loading:hover,
 .primary li a.nav_loading:focus,
 .primary li a.nav_loading:active {
-  background: #1e249e;
+  background: #11298a;
   color: #eee;
 }
 .primary li a.nav_loading:hover:before,
@@ -3355,7 +3367,7 @@ a[href="#emailAddressEdit"]:after {
     font-weight: normal;
     font-size: 1.2em;
     line-height: 1;
-    font-family: FontAwesome;
+    font-family: Roboto, arial, sans-serif;
     content: "\f054";
     margin: 0;
     color: #999;
@@ -3368,7 +3380,7 @@ a[href="#emailAddressEdit"]:after {
   .primary a.nav_loading:active,
   .primary a.nav_loading:focus,
   .primary a.nav_loading:hover {
-    background: #1e249e;
+    background: #11298a;
     color: #eee;
   }
   .primary a.nav_loading:before,
@@ -3387,12 +3399,12 @@ a[href="#emailAddressEdit"]:after {
     padding: 0 15px;
     overflow: hidden;
     min-height: 46px;
-    background: #1e249e;
-    background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+    background: #11298a;
+    background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
     color: #eee;
     font-size: 14px;
     line-height: 46px;
@@ -3479,11 +3491,11 @@ a[href="#emailAddressEdit"]:after {
   #desktop-nav > ul li a:hover,
   #desktop-nav > ul li a:focus,
   #desktop-nav > ul li a:active {
-    background: #1e249e;
+    background: #11298a;
     color: #eee;
   }
   #desktop-nav > ul > li:hover > a {
-    background: #1e249e;
+    background: #11298a;
     color: #eee;
     text-decoration: none;
   }
@@ -3502,7 +3514,7 @@ a[href="#emailAddressEdit"]:after {
     margin-top: -0.5em;
     right: -1em;
     content: "\f054";
-    font-family: fontAwesome;
+    font-family: Roboto, arial, sans-serif;
   }
   #desktop-nav .features {
     background: #fff;
@@ -3690,7 +3702,7 @@ input[type=number]:focus,
 textarea:focus {
   color: #333;
   background-color: #feffd0;
-  border-color: #1e249e;
+  border-color: #11298a;
   outline: 0;
   -webkit-box-shadow: 0 0 5px rgba(22,27,122,0.5);
   box-shadow: 0 0 5px rgba(22,27,122,0.5);
@@ -3751,7 +3763,7 @@ select {
 select:focus {
   color: #333;
   background-color: #feffd0;
-  border-color: #1e249e;
+  border-color: #11298a;
   outline: 0;
   -webkit-box-shadow: 0 0 5px rgba(22,27,122,0.5);
   box-shadow: 0 0 5px rgba(22,27,122,0.5);
@@ -4135,11 +4147,11 @@ input[type="submit"] {
 .btnBold[type=button] {
   color: #eee;
   background: #161b7a;
-  background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+  background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
 }
 .btnBold:hover,
 .btnBold[type=button]:hover,
@@ -4551,8 +4563,8 @@ body {
   color: #333;
 }
 #toolbar a span {
-  vertical-align: middle;
   text-decoration: none;
+  line-height: 1px;
 }
 #toolbar a:hover span,
 #toolbar a:focus span,
@@ -4592,11 +4604,11 @@ body {
   float: left;
   padding: 5px;
   background: #161b7a;
-  background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+  background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
   border: 0;
 }
 .search input {
@@ -4627,11 +4639,11 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   background: #161b7a;
-  background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-  background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+  background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
   color: #eee;
   font-weight: bold;
   -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
@@ -4688,12 +4700,12 @@ body {
   border-top: 0;
 }
 .gsc-completion-container .gcs_completion_selected {
-  background: #1e249e;
+  background: #11298a;
   color: #eee;
 }
 .gsc-completion-container .gcs_completion_selected td,
 .gsc-completion-container .gcs_completion_selected th {
-  background: #1e249e;
+  background: #11298a;
 }
 .gsc-completion-container td {
   border: 1px solid #161b7a;
@@ -4806,7 +4818,7 @@ aside .respContent {
   }
   #header .logo {
     position: relative;
-    background: #1e249e;
+    background: #11298a;
     padding: 5px;
     height: 37px;
     text-align: center;
@@ -4864,12 +4876,12 @@ aside .respContent {
     right: 0;
     height: 46px;
     width: 100%;
-    background: #1e249e;
-    /*background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%);
+    background: #11298a;
+    /*background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);*/
   }
@@ -5133,6 +5145,7 @@ aside .respContent {
     width: 104px;
     height: 41px;
     margin-top: 5px;
+    text-align: center;
   }
   #toolbar > ul > li.touch > a {
     -webkit-box-shadow: inset -1px 0 0 rgba(255,255,255,0.1);
@@ -5250,6 +5263,9 @@ aside .respContent {
     position: absolute;
     top: 5px;
     right: 5px;
+    font-family: Roboto, Arial, Sans-serif;
+    font-size: 13px;
+    line-height: 5px;
   }
   .orderProcess .search {
     visibility: hidden;
@@ -5257,7 +5273,7 @@ aside .respContent {
   #toolbar {
     float: right;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
   }
   #toolbar li {
@@ -5265,6 +5281,7 @@ aside .respContent {
   }
   #toolbar a {
     padding: 14px 10px 8px 5px;
+    font-family: Roboto, Arial, Sans-serif;
   }
   #toolbar .cart {
     margin-right: 0;
@@ -5285,11 +5302,11 @@ aside .respContent {
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     border-top: 0;
     background: #161b7a; */
-    background: -webkit-linear-gradient(top, #1e249e 0%, #011e62 100%); 
-    background: -moz-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -o-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: -ms-linear-gradient(top, #1e249e 0%, #011e62 100%);
-    background: linear-gradient(to bottom, #1e249e 0%, #011e62 100%); */
+    background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%); 
+    background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+    background: linear-gradient(to bottom, #11298a 0%, #011e62 100%); */
   }
   #toolbar .cart .button .qty {
     margin-top: -0.33em;
@@ -5624,7 +5641,7 @@ aside .respContent {
   margin-top: -0.5rem;
   right: 1em;
   content: '\f078';
-  font-family: FontAwesome;
+  font-family: Roboto, arial, sans-serif;
 }
 .resultList .product .longDescControler.active:before {
   content: '\f077';
@@ -5733,7 +5750,7 @@ aside .respContent {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
-  font-family: 'FontAwesome';
+  font-family: Roboto, arial, sans-serif;
   content: '\f055';
   font-size: 1.5em;
   color: #161b7a;
@@ -5848,7 +5865,7 @@ aside .respContent {
   .product .desc:before {
     font-size: 1.2em;
     line-height: 1;
-    font-family: FontAwesome;
+    font-family: Roboto, arial, sans-serif;
     content: "\f054";
     color: #999;
     position: absolute;
@@ -6020,7 +6037,7 @@ aside .respContent {
     -webkit-border-radius: 0 5.8em 5.8em;
     border-radius: 0 5.8em 5.8em;
     color: #fff;
-    font-family: Gotham, Arial, sans-serif;
+    font-family: Roboto, arial, sans-serif;
     line-height: 1;
     padding: 5px;
     width: 59px;
@@ -6028,7 +6045,7 @@ aside .respContent {
     z-index: 1;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    background: #1e249e;
+    background: #11298a;
     background: -webkit-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -moz-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -o-linear-gradient(top left, #213a7b 0%, #682670 100%);
@@ -6297,7 +6314,7 @@ aside .respContent {
     -webkit-border-radius: 0 5.8em 5.8em;
     border-radius: 0 5.8em 5.8em;
     color: #fff;
-    font-family: Gotham, Arial, sans-serif;
+    font-family: Roboto, arial, sans-serif;
     font-size: 1em;
     line-height: 1;
     padding: 5px;
@@ -6306,7 +6323,7 @@ aside .respContent {
     z-index: 1;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    background: #1e249e;
+    background: #11298a;
     background: -webkit-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -moz-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -o-linear-gradient(top left, #213a7b 0%, #682670 100%);
@@ -6786,7 +6803,7 @@ aside .respContent {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   }
   .product .offerSaving {
-    background: #1e249e;
+    background: #11298a;
     background: -webkit-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -moz-linear-gradient(top left, #213a7b 0%, #682670 100%);
     background: -o-linear-gradient(top left, #213a7b 0%, #682670 100%);
@@ -6909,7 +6926,7 @@ aside .respContent {
     width: auto;
     height: auto;
     font-size: 1em;
-    font-family: Arial, Sans-serif;
+    font-family: Roboto, arial, sans-serif;
     font-weight: bold;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -6952,7 +6969,7 @@ aside .respContent {
     -webkit-border-radius: 0;
     border-radius: 0;
     color: #161b7a;
-    font-family: Arial, sans-serif;
+    font-family: Roboto, arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     padding: 0;
@@ -7242,7 +7259,7 @@ aside .respContent {
   a[href="#accountNav"].toggleControler.active:before,
   a[href="#storesListC"].toggleControler.active:before,
   a[href="#copNav"].toggleControler.active:before {
-    font-family: FontAwesome;
+    font-family: Roboto, arial, sans-serif;
     content: "\f068";
     border-left: 1px solid #ccc;
     padding: 10px;
@@ -7278,7 +7295,7 @@ aside .respContent {
     font-size: 1.2em;
     line-height: 1;
     font-weight: normal;
-    font-family: FontAwesome;
+    font-family: Roboto, arial, sans-serif;
     content: "\f054";
     color: #999;
     position: absolute;
@@ -7575,7 +7592,7 @@ input[type=search] {
   position: absolute;
   top: 50%;
   right: 10px;
-  font-family: FontAwesome;
+  font-family: Roboto, arial, sans-serif;
   content: "\f057";
   color: #ccc;
   text-align: center;
@@ -7799,7 +7816,7 @@ input[type=search] {
   }
   .productMedias .main a:hover:before,
   .productMedias .main a:focus:before {
-    font-family: 'FontAwesome';
+    font-family: Roboto, arial, sans-serif;
     content: '\f00e';
     color: #999;
     position: absolute;
@@ -8923,7 +8940,7 @@ input[type=search] {
   background: #fff;
 }
 .compareTable .filterGroup .toggle th:before {
-  font-family: FontAwesome;
+  font-family: Roboto, arial, sans-serif;
   content: '';
   display: inline-block;
   margin-right: 5px;
@@ -9297,7 +9314,7 @@ input[type=search] {
   padding: 5px 10px;
   background: #131313;
   color: #eee;
-  font-family: 'Knowhow';
+  font-family: Roboto, arial, sans-serif;
   font-weight: normal;
   font-size: 1.17em;
 }
@@ -9332,7 +9349,7 @@ input[type=search] {
   border: 1px solid #ccc;
   padding: 10px;
   height: 160px;
-  font-family: Gotham, Arial, sans-serif;
+  font-family: Roboto, arial, sans-serif;
   text-decoration: none;
   font-size: 1.8em;
   line-height: 1;
@@ -9631,7 +9648,7 @@ aside .banner {
   border: 1px solid #ccc;
   padding: 10px;
   height: 160px;
-  font-family: Gotham, Arial, sans-serif;
+  font-family: Roboto, arial, sans-serif;
   text-decoration: none;
   font-size: 1.8em;
   line-height: 1;
@@ -9679,7 +9696,7 @@ aside .banner {
   overflow: hidden;
   position: relative;
   font-size: 0;
-  font-family: 'Gotham A', 'Gotham B', 'Helvetica', 'Arial', 'Sans-serif';
+  font-family: Roboto, arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   color: #527dc8;
   text-align: center;
@@ -9910,7 +9927,7 @@ aside .banner {
     right: 0;
     height: 46px;
     width: 100%;
-    background: #1e249e;}
+    background: #11298a;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -9921,5 +9938,5 @@ aside .banner {
     right: 0;
     height: 46px;
     width: 100%;
-    background: #1e249e;}
+    background: #11298a;}
 }
