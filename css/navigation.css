@@ -233,6 +233,45 @@
 #main-body {
   margin-top: 20px;
 }
+
+#content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]) {
+  max-width: 40px;
+  padding: 5px 10px;
+  max-height: 31px;
+}
+
+input#additionalsearch {
+  min-width: 180px !important;
+}
+
+select#SortBy {
+  width: 130px;
+  max-height: 31px;
+}
+select.results_per_page_select {
+max-height: 31px;
+}
+
+.search_results_section input[type="image"] {
+margin-top: 3px;
+}
+
+#content_area table[width$="%"] input#ShipState:focus, 
+#content_area table[width] textarea[cols="45"]:focus, 
+#content_area table[width] input[value=""]:focus, 
+#content_area table[width] input[type="password"]:focus, 
+#content_area table[width] select:focus, 
+#content_area table[width$="%"] input[value=""]:focus, 
+#content_area table[width$="%"] input.v65-productdetail-cartqty:focus, 
+#content_area table[width$="%"] input[id^="Quantity"]:focus, 
+#content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):focus {
+  background-color: #feffd0;
+  border-color: #11298a;
+}
+span.PageText_L515n {
+  line-height: 37px;
+}
+
 /*----------------TABLET----------------------*/
 
 @media only screen and (max-width: 1024px) and (min-width: 600px) {

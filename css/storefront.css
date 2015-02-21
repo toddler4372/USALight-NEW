@@ -1,0 +1,1215 @@
+/********** STOREFRONT-FORMS *************/
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 3px;
+}
+
+/* Shopping Cart "Calculate Shipping" section. Appears when Country is set to UK */
+#content_area table[width$="%"] input#ShipState,
+#content_area table[width] textarea[cols="45"],
+#content_area table[width] input[value=""],
+#content_area table[width] input[type="password"],
+#content_area table[width] select,
+#content_area table[width$="%"] input[value=""],
+#content_area table[width$="%"] input.v65-productdetail-cartqty,
+#content_area table[width$="%"] input[id^="Quantity"],
+#content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]){
+  min-width: 49px;
+  height: auto;
+  padding: 5px 12px;
+  margin: 3px 0;
+  min-height: 25px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4f4f4f;
+  text-align: left;
+  background-color: white;
+  background-image: none;
+  border-radius: 0;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
+}
+
+#content_area table[width$="%"] input[id^="Quantity"] {
+  text-align: center;
+}
+
+/* Appears when editing or deleting a credit/debit card */
+input#CVV2 {
+  width: 80px !important;
+  text-align: left;
+}
+
+/* Fix zip on edit orders */
+#content_area input[name="ShipPostalCode"] {
+  width: auto !important;
+}
+
+/*Zip for new customers' billing address*/
+tr#BillingState_Row + tr input[name="BillingPostalCode"] {
+  width: 150px !important
+}
+
+@media only screen and (max-width: 767px) {
+  #content_area table[width="100%"] input[value=""],
+  #content_area table[width="100%"] select,
+  #content_area table[width="100%"] input[value=""],
+  #content_area table[width="100%"] input[value=""] {
+    display: block; 
+  } 
+}
+
+
+/********* STOREFRONT-BUTTONS **********/
+#content_area td[width$="%"] > input[type="submit"],
+#content_area td[width$="%"] > input[type="button"],
+#content_area input[style$=";"]:not([type='checkbox']) {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 0;
+  color: #333333;
+  background-color: white;
+  border-color: #e1e1e1;
+}
+
+/* FIX FOR SOME INPUT FIELDS */
+#content_area #BillingState,
+#content_area input[style$=";"] {
+  text-align: left;
+}
+
+#content_area input[type="radio"] {
+  width: auto !important;
+}
+
+/* "GO" Button - orders.asp */
+input[src$="/btn_go.gif"] {
+  margin-left: 10px;
+}
+
+/********* STOREFRONT-HEADINGS **********/
+#content_area img[src*="/headings/heading_"],
+#content_area img[src*="images/headings/one-page-checkout_"],
+#content_area img[src*="images/cart/cart_tr.gif"],
+#content_area img[src*="images/cart/cart_tl.gif"] {
+  display: none; }
+
+#content_area img[src*="/headings/heading_"] + br + form:before,
+#content_area img[src*="/headings/heading_"] + br + table:before,
+#content_area img[src*="/headings/heading_"] + br + div:before,
+#content_area img[src*="/headings/heading_"] + br + br + table:before,
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table > tbody:before {
+  padding-bottom: 6px;
+  font-size: 28px;
+  margin-bottom: 13px;
+  display: block;
+  border-bottom: 1px solid #eeeeee; }
+
+#content_area img[src*="/headings/heading_"] + br + form:after,
+#content_area img[src*="/headings/heading_"] + br + table:after,
+#content_area img[src*="/headings/heading_"] + br + div:after,
+#content_area img[src*="/headings/heading_"] + br + br + table:after,
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table > tbody:after {
+  content: '';
+  height: 100px; }
+
+#content_area img[src*="/headings/heading_login.gif"] + br + form:before {
+  /* Login Heading */
+  content: 'Login'; }
+
+#content_area img[src*="/headings/heading_MyAccount.gif"] + br + form:before {
+  /* My Account Heading */
+  content: 'My Account'; }
+
+#content_area img[src*="/headings/heading_Aaffiliate.gif"] + br + table:before {
+  content: 'Affiliate'; }
+
+#content_area img[src*="/headings/heading_help.gif"] + br + table:before,
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table > tbody:before {
+  content: 'Help'; }
+
+#content_area img[src*="/headings/heading_EmailAFriend.gif"] + br + table:before {
+  content: 'Email A Friend'; }
+
+#content_area img[src*="/headings/heading_aboutus.gif"] + br + table:before {
+  content: 'About Us'; }
+
+#content_area img[src*="/headings/heading_giftcertificates.gif"] + br + table:before {
+  content: 'Gift Certificates'; }
+
+#content_area img[src*="/headings/heading_GiftOptions.gif"] + br + table:before {
+  content: 'Gift Options'; }
+
+#content_area img[src*="/headings/heading_history.gif"] + br + table:before {
+  content: 'My Recent History'; }
+
+#content_area img[src*="/headings/heading_MailingList.gif"] + br + form:before {
+  content: 'Mailing List'; }
+
+#content_area img[src*="/headings/heading_wishlist.gif"] + br + br + table:before {
+  content: 'Wishlist'; }
+
+#content_area img[src*="/headings/heading_WriteReview.gif"] + br + div:before {
+  content: 'Write Review'; }
+
+#content_area #v65-onepage-ContentTable .v65-onepage-headerShort {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px; }
+
+#content_area #billing-header .v65-onepage-headerShort:before {
+  content: 'Billing Information'; }
+
+#content_area #v65-onepage-RegistrationHeader .v65-onepage-headerShort:before {
+  content: 'Registration'; }
+
+#content_area #shipping-header .v65-onepage-headerShort:before {
+  content: 'Shipping Information'; }
+
+#content_area #shipping-header .v65-onepage-headerShort:before {
+  content: 'Shipping Information'; }
+
+#content_area #v65-checkout-payment-header .v65-onepage-headerShort:before {
+  content: 'Payment'; }
+
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table {
+  position: relative; }
+
+/* PAGE HEADINGS */
+#content_area img[src*="/headings/heading_"] + br + form:before, #content_area img[src*="/headings/heading_"] + br + table:before, #content_area img[src*="/headings/heading_"] + br + div:before, #content_area img[src*="/headings/heading_"] + br + br + table:before, #content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table > tbody:before {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
+}
+
+
+
+/********* STOREFRONT-GIFTCERTIFICATE **********/
+/************* /GiftCert_sendvia.asp **************/
+
+/* /GiftCert_sendvia.asp table width fix */
+#content_area img[src$="/heading_giftcertificates.gif"] + br + table table[width="500"] {
+  width: 100% !important;
+}
+
+/* stack td's */
+#content_area img[src$="/heading_giftcertificates.gif"] + br + table table[width="500"] td {
+  display: block;
+  width: 100%;
+}
+
+/* adjusting spacing */
+#content_area img[src$="/heading_giftcertificates.gif"] + br + table table[width="500"] td ul + a {
+  display: block;
+  background: #eee;
+  width: 95px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+/********* /GiftCert_default.asp sendvial Email Form *********/
+#content_area form[action="GiftCert_default.asp"] table[width="530"] {
+  width: 100% !important;
+}
+
+#content_area form[action="GiftCert_default.asp"] table[width="530"] td.colors_backgroundneutral {
+  display: block;
+  width: 100%;
+}
+
+/* Form fixes for this page */
+/* Some inputs have sizes set as an attribute */
+#content_area form[action="GiftCert_default.asp"] textarea[cols="55"] {
+  border-color: #cccccc;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  #content_area form[action="GiftCert_default.asp"] textarea[cols="55"],
+  #content_area form[action="GiftCert_default.asp"] input[size="35"] {
+    width: 100% !important;
+  }
+}
+
+
+/********* STOREFRONT-MAILINGLIST **********/
+@media only screen and (max-width: 767px) {
+
+  #content_area img[src$="/heading_MailingList.gif"] + br + form table[width] {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  #content_area img[src$="/heading_MailingList.gif"] + br + form td[width="95"] {
+    width: 15% !important;
+    white-space: normal;
+  }
+
+  #content_area img[src$="/heading_MailingList.gif"] + br + form td[width="282"] {
+    width: 85% !important;
+    display: block;
+    position: relative;
+  }
+
+  #content_area img[src$="/heading_MailingList.gif"] + br + form td[width="282"] input {
+    width: 100% !important;
+  }
+
+  #content_area img[src$="/heading_MailingList.gif"] + br + form td[width="282"] input[type="submit"] {
+    white-space: normal;
+  }
+}
+
+
+/********* STOREFRONT-HELP **********/
+a[href*="help_answer.asp"] {
+  padding: 0 10px;
+  text-indent: 0; }
+
+#content_area img[src*="/heading_help.gif"] + br + table + table td {
+  text-align: left; }
+
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table td {
+  display: block; }
+
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table td[width="15"] {
+  height: 5px; }
+
+#content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table td .productnamecolorLARGE {
+  display: block;
+  margin-top: 25px; }
+
+@media only screen and (max-width: 767px) {
+  a[href*="help_answer.asp"]:after {
+    content: '';
+    clear: both;
+    display: block; }
+
+  #content_area img[src*="/heading_help.gif"] + br + table + table td {
+    padding: 0 5px;
+    width: 100%;
+    display: block; }
+
+  #content_area img[src*="/heading_help.gif"] + br + table + table td .productnamecolorLARGE {
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px; } }
+#content_area form[name*="form2"] table[width="500"] {
+  margin: 10px 0;
+  table-layout: fixed;
+  width: 100%; }
+
+#content_area form[name*="form2"] {
+  padding-bottom: 20px; }
+
+@media only screen and (max-width: 767px) {
+  #content_area form[name*="form2"] table[width="500"] td {
+    width: 100%;
+    display: block; } }
+
+
+
+/********* STOREFRONT-WISHLIST **********/
+@media only screen and (max-width: 767px) {
+  #content_area img[src$="/heading_wishlist.gif"] + br + br + table + form .v65-productDisplay td[align="center"] {
+    display: block !important;
+  }
+}
+
+
+
+/********* STOREFRONT-DONATE **********/
+@media only screen and (max-width: 767px) {
+
+  /* Changed inline width */
+  #content_area form[action="/donate.asp"] div[style] {
+    width: 100% !important;
+  }
+
+  /* Takes split table cell and stacks */
+  #content_area form[action="/donate.asp"] td[align="left"],
+  #content_area form[action="/donate.asp"] td[align="right"] {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Change alignment */
+  #content_area form[action="/donate.asp"] td[align="right"] div {
+    text-align: left !important;
+    padding: 10px 0;
+  }
+
+  #content_area form[action="/donate.asp"] input[type="radio"] {
+    margin: 0 5px 0 0;
+  }
+
+  /* Fix */
+  #content_area form[action="/donate.asp"] br {
+    line-height: 23px;
+  }
+
+}
+
+/********* STOREFRONT-MYACCOUNT **********/
+@media only screen and (max-width: 767px) {
+
+  /* Breaks tables to stack on smaller viewports - DOUBLED UP FROM HELP.CSS */
+  #content_area form[name*="form2"] table[width="500"] td {
+    width: 100%;
+    display: block;
+  }
+
+  /* MailingList_unsubscribe.asp */
+  #content_area a[href="myaccount.asp"] + form table[width] {
+    width: 100% !important;
+  }
+  #content_area a[href="myaccount.asp"] + form table[width] td[width="91"] {
+    width: 15%;
+    white-space: nowrap;
+  }
+  #content_area a[href="myaccount.asp"] + form table[width] td[width="311"] {
+    width: 85%;
+  }
+  #content_area a[href="myaccount.asp"] + form table[width] td[width="311"] input[name="emailaddress"] {
+    width: 85%;
+  }
+  #content_area a[href="myaccount.asp"] + form table[width] td[width="311"] input[name="emailaddress"] {
+    width: 85%;
+  }
+
+  /* AccountSettings.asp - Edit payment */
+  #AccountSettingsForm table[width] {
+    width: 100% !important;
+  }
+  #AccountSettingsForm table[width] td[width="86%"],
+  #AccountSettingsForm table[width] td {
+    display: block !important;
+    width: 100% !important;
+    text-align: left;
+  }
+
+  #AccountSettingsForm img[src="/clear1x1.gif"] {
+    display: none;
+  }
+
+  /* AccountSettings.asp - Edit payment */
+  #content_area form[action="MyAccount_ApplyGift.asp"] table[width] {
+  width: 100% !important;
+  }
+
+  /* MyReviews */
+  #content_area form[name*="form2"] table[width="443"] {
+    width: 100% !important;
+  }
+  /* Move to seperate lines */
+  #content_area form[name*="form2"] table[width="443"] td {
+    display: block !important;
+    width: 100% !important;
+  }
+  #content_area form[name*="form2"] table[width="443"] td.colors_backgroundneutral {
+    text-align: right;
+    background: #eee;
+  }
+  /* Responsive inputs */
+  #content_area form[name*="form2"] table[width="443"] td input[size="25"] {
+    width: 100%;
+  }
+
+  /* REVIEWS PAGE */
+  #content_area img[src$="/heading_WriteReview.gif"] + br + div + form td {
+    display: block !important;
+    width: 100% !important;
+  }
+  #content_area img[src$="/heading_WriteReview.gif"] + br + div + form table[width] {
+    width: 100% !important;
+  }
+  #content_area img[src$="/heading_WriteReview.gif"] + br + div + form td input[size] {
+    width: 85% !important;
+  }
+
+  #content_area img[src$="/heading_WriteReview.gif"] + br + div + form td textarea {
+    width: 100% !important;
+  }
+
+  /* MODIFY REVIEWS /RevewMod.asp */
+  #content_area img[src$="/heading_WriteReview.gif"] + br + form td {
+    display: block !important;
+    width: 100% !important;
+  }
+  #content_area img[src$="/heading_WriteReview.gif"] + br + form table[width="500"],
+  #content_area img[src$="/heading_WriteReview.gif"] + br + form td input[size] {
+    width: 100% !important;
+  }
+  #content_area img[src$="/heading_WriteReview.gif"] + br + form textarea[name="ReviewDescription"] {
+    width: 100% !important;
+  }
+
+/* REVIEW CONFIRMATION */
+  #content_area img[src$="/heading_WriteReview.gif"] + br + #ListofErrorsDiv + br + table[width="500"] {
+    width: 100% !important;
+  }
+}
+
+
+
+/********* STOREFRONT-ORDERS **********/
+#content_area form[action^="OrderDetails.asp?"] td[bgcolor="#999999"] {
+  background: none !important;
+  border-top: 1px solid #ccc !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Stack section */
+  #content_area form[name*="form2"] td[width$="%"] {
+    /*display: block !important;*/
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+  /* Specific for orders.asp */
+  #content_area form[name*="form2"] table.colors_lines_light .colors_backgroundneutral td[width$="%"] {
+    display: block !important;
+  }
+
+  /* Full table */
+  #content_area form[name*="form2"] table[width="520"] {
+    width: 100%;
+  }
+
+  /* Clean up inputs and buttons */
+  #content_area form[name*="form2"] table[width="520"] td[width="236"] {
+    width: 100% !important;
+    display: table-row;
+  }
+  #content_area form[name*="form2"] table[width="520"] td[width="235"] {
+    width: 65% !important;
+    display: block;
+  }
+  #content_area form[name*="form2"] table[width="520"] td[width="235"] select {
+    white-space: normal;
+  }
+  #content_area form[name*="form2"] table[width="520"] td[width="43"] {
+    width: 10% !important;
+    display: block;
+  }
+  #content_area form[name*="form2"] table[width="520"] td[width="43"] input[src$="/btn_go.gif"] {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  /* center button and make easy to touch */
+  #content_area form[name*="form2"] a[href^="orderdetails.asp"] {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  /* OrderDetails.asp */
+  #content_area form[action^="OrderDetails.asp"] td {
+    width: 100% !important;
+    display: block !important;
+  }
+  #content_area form[action^="OrderDetails.asp"] td br {
+
+  }
+  /* Space for the buttons and overall layout */
+  #content_area form[action^="OrderDetails.asp"] a > img {
+    display: block;
+    margin: 20px auto;
+  }
+  /* Center Address */
+  #content_area form[action^="OrderDetails.asp"] td[width="32%"] {
+    text-align: center;
+  }
+  /* Title */
+  #content_area form[action^="OrderDetails.asp"] font[size="3"] {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+  /* Fix border */
+  #content_area form[action^="OrderDetails.asp"] td[bgcolor="#999999"] {
+    background: none !important;
+    border-top: 1px solid #ccc !important;
+  }
+  /* Table layout */
+  #content_area form[action^="OrderDetails.asp"] br + br + table td[align="right"] {
+    color: #df3c49;
+    text-align: center;
+  }
+}
+
+
+/********* STOREFRONT-LOGIN-REGISTER **********/
+#content_area img[src$="btn_Continue.gif"] {
+  display: block;
+  margin: 0 auto; }
+  @media only screen and (min-width: 992px) {
+    #content_area img[src$="btn_Continue.gif"] {
+      display: inline-block;
+      margin: 0; } }
+
+#content_area input[src*="btn_login.gif"] {
+  margin-top: 20px;
+  display: block; }
+
+#content_area form[name="loginform"] tr[valign="top"] {
+  display: block !important; }
+  @media only screen and (min-width: 768px) {
+    #content_area form[name="loginform"] tr[valign="top"] {
+      display: table-row !important; } }
+
+#content_area form[name="loginform"] td {
+  padding: 5px; }
+
+#content_area form[name="loginform"] td[width="50%"] {
+  width: 100% !important;
+  display: block !important; }
+  @media only screen and (min-width: 768px) {
+    #content_area form[name="loginform"] td[width="50%"] {
+      width: 50% !important;
+      display: table-cell !important; } }
+
+#content_area form[name="loginform"] td[align="right"] {
+  text-align: left !important; }
+
+#content_area form[name="loginform"] input[type="password"] + br {
+  display: none; }
+
+#content_area form[name="loginform"] input[type="text"],
+#content_area form[name="loginform"] input[type="password"] {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px; }
+  @media only screen and (min-width: 768px) {
+    #content_area form[name="loginform"] input[type="text"],
+    #content_area form[name="loginform"] input[type="password"] {
+      width: auto; } }
+
+#content_area form[name="loginform"] .colors_lines_light {
+  border-color: transparent; }
+
+@media only screen and (min-width: 768px) {
+  #content_area form[name="loginform"] tr[align="center"] {
+    text-align: left; }
+
+  #content_area form[name="loginform"] .colors_lines_light {
+    border-color: #eeeeee; } }
+
+
+#content_area #div_articleid_61 form[action*="/Login.asp"] .colors_backgroundneutral,
+#content_area #div_articleid_61 td.colors_lines_light[width="52%"],
+#content_area #div_articleid_61 form[action*="/Login.asp"] .colors_lines_light {
+  background: none; }
+
+#content_area #div_articleid_61 td[align="right"] {
+  font-weight: bold;
+  padding-right: 10px; }
+
+#content_area #div_articleid_61 form[action*="/Login.asp"] td[align="right"] {
+  padding-right: 10px;
+  font-weight: bold; }
+
+#content_area #div_articleid_61 form[action*="/Login.asp"],
+#content_area #div_articleContainer_61 + table form {
+  padding: 10px 0;
+  background-color: #eeeeee;
+  margin: 15px 0; }
+
+@media only screen and (max-width: 767px) {
+  #content_area #div_articleid_61 td[width="1%"],
+  #content_area #div_articleContainer_61 + table td[width="1%"] {
+    display: none; }
+
+  #content_area #div_articleid_61 td,
+  #content_area #div_articleContainer_61 + table td,
+  #content_area #RegisterForm td {
+    width: 100% !important;
+    display: block;
+    clear: both;
+    text-align: left;
+    white-space: normal; }
+
+  #content_area #div_articleid_61 form[action*="/Login.asp"] td[align="right"],
+  #content_area #div_articleContainer_61 + table form[action*="/Login.asp"] td[align="right"] {
+    text-align: left;
+    margin-left: 16px; }
+
+  #content_area #div_articleid_61 form[action*="/Login.asp"] input,
+  #content_area #div_articleContainer_61 + table input,
+  #content_area #RegisterForm input {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #content_area #div_articleContainer_61 + table input,
+  #content_area #div_articleid_61 form[action*="/Login.asp"] input {
+    width: 90%;
+    display: block; }
+
+  #content_area #div_articleid_61 td[align="right"],
+  #content_area #div_articleid_61 div[align="right"],
+  #content_area #RegisterForm td[align="right"],
+  #content_area #RegisterForm div[align="right"] {
+    text-align: left; } }
+
+
+
+
+
+/********* STOREFRONT-FIXES **********/
+/***************** STOREFRONT **************/
+#sb-wrapper-inner,
+#vp-top-bar *,
+#sb-wrapper *,
+#qtg,
+#qtg *,
+#qet-box-container *,
+*[class^="redactor_"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* LEFT ALIGN FORMS */
+#content_area form[name*="form2"] table[width="500"] {
+margin: 10px 0;
+text-align: left;
+table-layout: fixed;
+width: 100%; }
+
+/* fix for admin bar breaking to two lines */
+#vp-top-bar {
+  white-space: nowrap;
+}
+
+#sb-wrapper {
+  margin: 0 !important;
+}
+
+/* FIX TABLES NOT BEING RESPONSIVE DUE TO nowrap ON td's */
+#content_area table td[nowrap] {
+  white-space: normal;
+}
+
+table[width="96%"] {
+  width: 100%;
+}
+
+.product-card__card {
+  height: 405px;
+}
+
+.product-card__image-link {
+  text-align: center;
+}
+
+#content_area font[color="#FF0000"] {
+  color: #da4545;
+}
+
+/* --- Fixes centering of some table cells --- */
+#content_area #v65-cart-table .v65-product-price-table div {
+  text-align: center !important; }
+
+/* --- Fixes cell spacing in IE9 --- */
+#content_area #v65-cart-table {
+  border-spacing: 2px;
+  border-collapse: separate; }
+
+/* --- Gift Cert Layout --- */
+#content_area .v65-cart-giftcert-total div {
+  text-align: center; }
+
+/* Excess spacing above "Proceed to checkout" button */
+#content_area tr.v65-cart-total-estimate-row + tr,
+#content_area br.beforeArticleBR {
+  display: none; }
+
+#content_area #v65-cart-checkout-table .v65-cart-login-input {
+  padding: 3px; }
+
+/* Removes borders from radio buttons on calculate shipping box */
+#content_area #v65-cart-shipping-details input[type=radio] {
+  border: none; }
+
+/* Cart shipping details - remove floats */
+#content_area #v65-cart-shipping-details-container #v65-cart-shipping-details-label,
+#content_area #v65-cart-shipping-details-container #v65-cart-shipping-details-wrapper {
+  float: none; }
+
+#content_area #v65-cart-shipping-details-wrapper td {
+  padding: 0; }
+
+/* Shopping cart details buttons */
+#content_area td#v65-cart-shippingoptionsbuttoncell input {
+  border: none; }
+
+/* Full width tables */
+#content_area #v65-cart-table-container {
+  border-collapse: collapse; }
+
+#content_area #v65-cart-table-container > tbody > tr > td,
+#content_area #v65-cart-table-container > tr > td {
+  padding: 0 !important; }
+
+/* Back back backitup */
+#content_area form #v65-cart-checkout-table {
+  width: 420px !important; }
+
+/* Item description header */
+#content_area #v65-cart-header-itemdescription {
+  padding-left: 21px !important; }
+
+/* Centers table values */
+#content_area .v65-cart-giftcert-total div, .v65-cart-details-row td[width="70"], .v65-cart-details-row td[width="70"] div, .v65-cart-details-row td[width="135"], .v65-cart-details-row td[width="135"] div {
+  text-align: center !important;
+  width: 100% !important; }
+
+/*td[width="5"] {display: none;}*/
+#content_area td center input[type="text"] {
+  text-align: center; }
+
+/* Centers buttons */
+#content_area #v65-cart-update-total-cell {
+  text-align: center; }
+
+#content_area #v65-cart-coupon-entry-details-div * {
+  vertical-align: middle; }
+
+#content_area #btnRecalculate {
+  margin-top: 0 !important; }
+
+/* Remove extra spacing */
+#content_area table#v65-cart-moreItems,
+#content_area table#v65-cart-table {
+  width: 100%; }
+
+#content_area table#v65-cart-moreItems td {
+  padding-left: 0;
+  padding-right: 0; }
+
+
+
+
+
+
+
+
+/**************** SOFT ADD FIXES *************/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*   FIXES, OVERRIDES, & DEFAULT FUNCTIONALITY    *
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* Removes extra spacing when soft add initiates */
+.soft_add_wrapper .cartDiv, .soft_add_wrapper .cartDiv2 {
+  display: inline; }
+
+.soft_add_wrapper .soft_add_span {
+  padding-left: 0; }
+
+.soft_add_wrapper .soft_add_content_area {
+  border-bottom: none; }
+
+.soft_add_wrapper .product-remove,
+.soft_add_wrapper .soft_add_header,
+.soft_add_wrapper .continue_shopping,
+.soft_add_wrapper .aremove,
+.soft_add_wrapper .soft_add_span,
+.soft_add_wrapper .soft_add_header .close_btn,
+.soft_add_wrapper .number_of_items {
+  display: none; }
+
+.soft_add_wrapper .soft_add_header,
+.soft_add_wrapper .soft_add_header .close_btn {
+  display: block !important;
+  padding: 0;
+}
+
+.soft_add_wrapper .soft_add_header .close_btn {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+}
+
+.soft_add_wrapper .soft_add_header {
+  width: auto;
+  height: 0;
+  background: white;
+  border: 0;
+}
+
+.soft_add_wrapper .soft_add_header_shadow {
+  background: none;
+  padding: 0;
+  width: auto; }
+
+.soft_add_wrapper .soft_add_content_shadow {
+  padding: 0;
+  width: auto; }
+
+/* Remove superfluous border radii */
+.soft_add_wrapper .soft_add_header,
+.soft_add_wrapper .soft_add_action_area,
+.soft_add_wrapper .soft_add_content_wrapper {
+  border-radius: 0; }
+
+.soft_add_wrapper .soft_add_action_area {
+  clear: both; }
+
+/* Soft content wrapper */
+.soft_add_wrapper .soft_add_content_wrapper {
+  background: none;
+  border: none;
+  padding: 0;
+  width: auto; }
+
+/* Product row rayout */
+.soft_add_wrapper .soft_add_wrapper ul.anchored-cart {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: 100%; }
+
+.soft_add_wrapper ul.anchored-cart li img {
+  max-width: 55px; }
+
+.soft_add_wrapper ul.anchored-cart li {
+  text-align: left;
+  vertical-align: middle;
+  display: table-row;
+  width: auto;
+  margin: 0; }
+
+.soft_add_wrapper ul.anchored-cart li div {
+  font-size: 12px;
+  width: 100%;
+  /* Makes divs span entire length */ }
+
+.soft_add_wrapper ul.anchored-cart li .product-image {
+  display: table-cell;
+  padding: 10px 4px 10px 10px; }
+
+.soft_add_wrapper ul.anchored-cart li .product-detail {
+  display: table-cell;
+  padding: 10px 5px;
+  vertical-align: top;
+  line-height: 14px; }
+
+/* Product name */
+.soft_add_wrapper ul.anchored-cart li .product-name {
+  display: block; }
+
+.soft_add_wrapper ul.anchored-cart li .product-qty .quantity_text {
+  display: inline; }
+
+.soft_add_wrapper ul.anchored-cart li .product-price {
+  display: table-cell;
+  padding: 8px 8px 10px 0;
+  vertical-align: top;
+  text-align: right; }
+
+.soft_add_wrapper ul.anchored-cart {
+  border-collapse: collapse; }
+
+.soft_add_wrapper ul.anchored-cart li .product-image {
+  width: 55px;
+  overflow: hidden;
+  float: left; }
+
+
+
+
+
+
+
+/***************** ONE PAGE CHECK OUT *************/
+/* Override width and margin for left side container */
+#content_area #v65-onepage-ContentTable {
+  margin: 0;
+  border-spacing: 0; }
+
+/* --- Fixes Alignment of all fields on checkout --- */
+/* Container for Subtotal, Shipping, Tax */
+#content_area #TotalsDivContainer {
+  float: none; }
+
+/* Cart Summary redundant bkg colors */
+#content_area #table_checkout_cart0 #v65-onepage-CartSummary,
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items {
+  background: none; }
+
+#content_area .v65-onepage-SavedLocations .v65-space {
+  padding: 0 5px; }
+
+#content_area .v65-onepage-SavedLocations .v65-space br {
+  display: none; }
+
+/* Shipping Information label alignment */
+#content_area td#v65-onepage-ShippingParent {
+  padding-left: 0 !important; }
+
+#content_area #v65-onepage-Shipping td.v65-onepage-shipping-label-cell div {
+  text-align: right !important; }
+
+#content_area #v65-onepage-Shipping td.v65-onepage-shipping-label-cell {
+  width: 105px; }
+
+#content_area #ship-to-options-table div[align="right"] {
+  text-align: right; }
+
+/* "My Saved Billing Addresses" */
+#content_area #v65-onepage-saved-billing-table font[style*="font-weight: bold;"] {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal !important;
+  line-height: 14px !important;
+  padding-right: 2px;
+  text-align: right;
+  vertical-align: top;
+  width: 91px; }
+
+/* "My Saved Billing Addresses" select */
+#content_area select[onchange*="Choose_My_Saved_Billing"] {
+  width: 175px; }
+
+/* Credit Cart label and input alignment */
+#content_area td.v65-payment-details-label-cell[width="39%"] {
+  width: 105px; }
+
+#content_area #savedPayment,
+#content_area td.v65-payment-details-label-cell[width="39%"] + td[width="61%"] {
+  width: auto; }
+
+table#v65-onepage-registration td {
+  white-space: nowrap; }
+
+/* Heading image */
+.v65-onepage-headerShort img {
+  display: block; }
+
+/* Cart Summary redundant bkg colors */
+#content_area #table_checkout_cart0 #v65-onepage-CartSummary,
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items {
+  background: none; }
+
+/* --- Gives Shipping Drop-Down Static Width and Aligns with Rest of Inputs --- */
+#content_area #v65-onepage-ShippingCostHeader + tr,
+#content_area #v65-onepage-ShippingCostHeader + tr > td:first-child {
+  display: block; }
+
+#content_area #v65-onepage-ShippingCostHeader + tr > td:first-child div[align="center"] {
+  text-align: left; }
+
+#content_area #DisplayShippingSpeedChoicesTD select {
+  padding: 6px 4px;
+  width: 172px;
+  margin-left: 107px; }
+
+/* * * * * * One Page Checkout Responsive * * * * * */
+/*-normalize fixes */
+#content_area table#v65-onepage-ContentTable input[type="radio"] {
+  margin: 5px; }
+
+#content_area table#v65-onepage-Detail td select {
+  margin: 10px 0; }
+
+#content_area #v65-onepage-ordersummary-items td,
+#content_area #v65-onepage-ShippingCostDetails td {
+  padding: 5px 15px 5px 5px; }
+
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items td.v65-onepage-ordersummary-itemname {
+  padding: 5px 5px 5px 15px; }
+
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items td.v65-onepage-ordersummary-itemtotal,
+#content_area #table_checkout_cart0 td[align="right"].v65-onepage-shippingcost-detail {
+  padding: 5px 15px 5px 5px; }
+
+/*make headers to same width*/
+#billing-header, #shipping-header, #v65-checkout-payment-header{
+  width: 100%;
+}
+
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items td.v65-onepage-ordersummary-itemtotal {
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  #content_area form#v65-onepage-CheckoutForm {
+    width: auto; }
+
+  #content_area #table_checkout_cart0 {
+    margin: 10px 0;
+    width: 100% !important;
+    clear: both; }
+
+  #content_area table#v65-onepage-ContentTable td {
+    display: block; }
+
+  #content_area table#v65-onepage-ContentTable,
+  #content_area #v65-onepage-BillingParent,
+  #content_area #v65-onepage-Billing,
+  #content_area table#v65-onepage-Detail td input[type="text"],
+  table#v65-onepage-Detail td input[type="password"],
+  table#v65-onepage-Detail td input[type="text"],
+  table#v65-onepage-Detail td select,
+  #content_area table#v65-onepage-Detail td select,
+  #content_area table#v65-onepage-CartSummary,
+  #v65-onepage-shippingParent-row td {
+    width: 100% !important; }
+
+  #content_area #v65-onepage-Billing div,
+  #content_area #ship-to-options-table div[align="right"] {
+    text-align: left; }
+
+  #content_area table#v65-onepage-ContentTable input[type="radio"] {
+    margin: 5px; }
+
+  #content_area #ship-to-options-table td {
+    width: auto !important; }
+
+  #content_area h2#v65-onepage-header .loginHeaderWrapper {
+    display: block;
+    margin-left: 0; }
+
+  #content_area #v65-onepage-Shipping td.v65-onepage-shipping-label-cell div {
+    text-align: left !important; }
+
+  #content_area #v65-onepage-ContentTable .v65-onepage-headerShort {
+    min-width: 0; }
+
+  #content_area #CalcShippingDivContainer {
+    width: 100%; } }
+
+  #span_GiftCertificates_Editable td {
+    padding: 10px 15px;
+  }
+
+
+
+/************** SHOPPING CART PAGE *******************/
+
+#content_area #v65-cart-table .v65-item-zebra {
+  background-color: #f7f7f8;
+}
+
+/*-hides random break */
+#content_area #v65-cart-table > tbody > tr.v65-cart-details-row td[width="5"] {
+  display: none; }
+
+#content_area #v65-cart-empty-details-cell span + span a {
+  white-space: nowrap; }
+
+#content_area img[src*="v/vspfiles/templates/248/images/cart/cart_tr_cap.gif"],
+#content_area img[src*="v/vspfiles/templates/248/images/cart/cart_tl_cap.gif"] {
+  display: none; }
+
+#content_area #v65-cart-shipping-details input[type=radio] {
+  margin: 5px; }
+
+
+
+
+
+/**************** PRODUCT DETAILS ****************/
+/* Fix image float */
+#content_area td.v65-cart-detail-productimage img {
+  float: none; }
+
+/* fix ":" to be centered vertically */
+#content_area td#v65-productdetail-action-wrapper td[valign="top"] {
+  vertical-align: middle !important;
+}
+
+/* center qty input text */
+#content_area table[width$="%"] input.v65-productdetail-cartqty {
+  text-align: center;
+}
+
+.fb_iframe_widget {width: auto !important;}
+
+#vZoomMagnifierImage {min-width:230px;}
+
+/* SOCIAL ICONS */
+@media only screen and (max-width: 767px) {
+  .fb_iframe_widget_fluid,
+  #btn_vsharethis {
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+  }
+
+  #_atssh {
+    display: none !important;
+  }
+}
+
+
+/*********** Remove unwanted images *************/
+#content_area img[src*="youarehere"]{
+  display: none;
+}
+
+/************* ERROR MESSAGES - MOBILE *************/
+@media only screen and (max-width: 767px) {
+  .v65-error-list-text {
+    margin-left: 0;
+    height: 100%;
+    padding-top: 0;
+  }
+
+  .v65-error-list-image {
+    left: 0;
+    height: 47px;
+    width: 100%;
+    position: static;
+    display: block;
+  }
+}
+
+/********* STOREFRONT-ORDER DETAILS **********/
+/************* /ChangeOrderCancelItem.asp?OrderPlaced=1 **************/
+font[color="#FFFFFF"] {
+    color: inherit;
+}
+
+form[action="OrderDetails.asp"] td[colspan="3"] > span:first-child:after {
+    content: "\A ";
+    display: block;
+}
+
+/********* COMPARE MODAL **************/
+@media only screen and (max-width: 768px) {
+  div[id^="VCompare"],
+  div[id^="VCompareOverlay"] {
+    display: none !important;
+  }
+}
+#VCompareOverlayBox .VCompareOverlayTable {
+  border: 0;
+}
+
+#VCompareOverlayXDiv {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}

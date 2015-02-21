@@ -4933,7 +4933,7 @@ aside .respContent {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
   }
-  .search {
+  /*.search {
     float: none;
     padding: 5px;
     position: relative;
@@ -4941,7 +4941,8 @@ aside .respContent {
     -moz-box-sizing: padding-box;
     box-sizing: padding-box;
     height: 45px;
-  }
+  }*/
+  .search {position: absolute; top: 136px; width: 100%;}
   .search input {
     display: block;
     float: none;
@@ -4957,6 +4958,7 @@ aside .respContent {
     right: 5px;
     height: 36px !important;
   }
+  .header {min-height: 125px;}
   .js #searchForm {
     top: -10px;
     position: absolute;
