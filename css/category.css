@@ -204,7 +204,7 @@ a.productnamecolor.colors_productname + img {display: none;}
 /* Override valign="bottom" in "Sort By:" container */
 form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {
 	vertical-align: top;
-	padding-top: 5px;
+	padding-bottom: 0;
 }
 
 /* Remove excess spacing on left and right of "Sort By" container */
@@ -214,6 +214,7 @@ form#MainForm > input[name="Cat"] + table td[align="right"] {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0px;
+	padding-bottom: 0;
 }
 
 /* Heading */

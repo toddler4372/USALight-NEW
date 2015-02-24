@@ -264,7 +264,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border-bottom: 1px solid #e0e0e0; }
 
 .navbar-toggle {
-  margin: 0; }
+  margin: 0;
+  margin-top: 1px;}
 
 @media only screen and (max-width: 599px) {
   .navbar-toggle {
@@ -295,8 +296,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       text-transform: uppercase;
       font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      .footer .column {
-        margin: 30px 15px 30px 0; } }
+      .footer .column {margin: 30px 15px 30px 0;}
+    }
+    @media only screen and (min-width: 992px) {
+      .footer {margin-left: 10px;} 
+    }
+    @media only screen and (max-width: 991px) {
+      .footer {margin-left: 0px;} 
+    }
 
 .footer .panel {
   border-left: 0;
@@ -367,6 +374,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border: 1px solid #e8e8e8;
   font-size: 12px;
   width: 100%;
+  margin-bottom: 10px;
   /* Firefox 18- */
   /* Firefox 19+ */
   /* Firefox 18- */
@@ -419,17 +427,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   position: absolute;
   top: 0;
   right: 0; }
+  .elist .elist__submit {
+    background-color: #c1c1c1;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font: 11px 'Roboto', Arial,sans-serif;
+    margin: 0;
+    padding: 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    height: 29px;
+    margin-top: 1px;}
   .elist .elist__submit .icon:hover {
     color: #e74f5d;
   }
 
 .copyright {
   padding: 20px;
-  border-top: 1px solid #e3e3e3;
   text-align: center; }
   @media only screen and (min-width: 768px) {
     .copyright {
-      text-align: left; } }
+      text-align: center; } }
   .copyright__item {
     margin: 5px 7px; }
     @media only screen and (min-width: 768px) {
@@ -534,6 +555,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 6px 0 3px 0;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
+    margin-bottom: 10px;
   }
 
 @media only screen and (min-width: 1240px) {
@@ -554,7 +576,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .features ul {
     display: none;
   }
-  .homepage-logo {margin-top: 0px;}
+  .homepage-logo {margin-top: 0px;display: block;margin: 0 auto;margin-top: 10px;}
+  #search-wrapper {height: 70px;}
 }
 
 .awards {
@@ -647,3 +670,11 @@ li#ups {
         display:none;
       }
     }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .elist {margin-left: -30%;}
+    .elist form {width: 116%;}
+  }
+  @media only screen and (max-width: 768px) {
+  #credit-cards {margin: 0 auto;display: block;}
+}
+

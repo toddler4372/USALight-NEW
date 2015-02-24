@@ -13,9 +13,9 @@ input[type="radio"], input[type="checkbox"] {
 #content_area table[width$="%"] input.v65-productdetail-cartqty,
 #content_area table[width$="%"] input[id^="Quantity"],
 #content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]){
-  min-width: 49px;
+  min-width: 200px;
   height: auto;
-  padding: 5px 12px;
+  padding: 5px 3px;
   margin: 3px 0;
   min-height: 25px;
   font-size: 14px;
@@ -32,6 +32,21 @@ input[type="radio"], input[type="checkbox"] {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
 }
+
+@media only screen and (max-width: 768px) {
+  #content_area table[width] select {
+  width: 80px;}
+  #additionalsearch {display: none;}
+  .search_results_section input[type="image"] {display: none;}
+}
+@media only screen and (max-width: 480px) {
+  #MainForm > table:nth-child(3) > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(2) > select {margin-left: 2px;margin-top: -12px;padding-top: 0;}
+}
+/*----------------VOLUSION NO SELECTORS--------------------*/
+#MainForm > table:nth-child(3) > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(2) > nobr > font > b > span > font > b > input {min-width:46px;}
+main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td table tbody tr td nobr div#jmenuhide select#SortBy.sortby_select {min-width: 128px;width: 128px;}
+main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td select.results_per_page_select {min-width: 128px;}
+select#SortBy option {width:200px;}
 
 #content_area table[width$="%"] input[id^="Quantity"] {
   text-align: center;
