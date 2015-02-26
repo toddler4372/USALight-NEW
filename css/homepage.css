@@ -234,6 +234,7 @@ color: #e74f5d;
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .usa section.products .product img  {width: 405px; max-height: 280px;}
     .container {padding-left: 0px;}
+    .usa section.products .product {border: 1px solid #e3e3e3;padding: 10px;width: 94%;margin-bottom: 15px;}
   }
 
   /* < 768 */
@@ -244,7 +245,12 @@ color: #e74f5d;
     .usa section.products .product img {max-width: 405px; float: none; display: block; margin: 0 auto; }
     .usa section.products .product ul {overflow: visible; list-style-type: none; padding: 0;}
     .usa section.products .product ul li a {font-size: 18px;}
-    .usa section.products .product {display: inline-block; vertical-align: top;}/*additional style for 6 blocks*/
+    .usa section.products .product {
+    	display: inline-block; 
+    	vertical-align: top;
+    	border: 1px solid #e3e3e3;
+    	padding: 20px;
+		width: 94%;}/*additional style for 6 blocks*/
     .homepage-logo img{display: block; margin: auto;}
   }
 
@@ -270,7 +276,7 @@ color: #e74f5d;
     #search-wrapper {height: 70px;}
   }
 
-#hide-homepage {display:none;}
+	#hide-homepage {display:none;}
   
 
 

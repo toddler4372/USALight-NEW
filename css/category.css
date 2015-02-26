@@ -112,9 +112,9 @@ table.v65-productDisplay .productnamecolor {
 /* List Price */
 table.v65-productDisplay .product_listprice,
 table.v65-productDisplay .product_listprice b {
-	color: #000;
-	font-size: 14px;
-	font-weight: normal;	
+	color: #203392 !important;
+	font-size: 15px !important;
+	font-weight: bold !important;	
 }
 
 /* Our Price */

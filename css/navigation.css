@@ -106,7 +106,9 @@
 #push-menu {
   text-align: left;
   overflow: hidden;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
+  -webkit-box-shadow: inset -4px 1px 9px -6px;
+  box-shadow: inset -4px 1px 9px -6px;}
 }
 
 #push-menu .vnav {
@@ -131,7 +133,7 @@
 }
 #push-menu .vnav__link {
   font:600 14px 'Roboto', Arial, Sans-Serif;
-  color:#fff;
+  color:#5a5858;
   text-transform: uppercase;
   display: block;
   text-align: left;
@@ -236,7 +238,7 @@
 #content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]) {
   max-width: 40px;
   padding: 5px 10px;
-  max-height: 31px;
+  max-height: 35px;
 }
 
 input#additionalsearch {

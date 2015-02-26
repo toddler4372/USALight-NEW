@@ -17,7 +17,7 @@ input[type="radio"], input[type="checkbox"] {
   height: auto;
   padding: 5px 3px;
   margin: 3px 0;
-  min-height: 25px;
+  min-height: 35px;
   font-size: 14px;
   line-height: 1.42857;
   color: #4f4f4f;
@@ -47,6 +47,18 @@ input[type="radio"], input[type="checkbox"] {
 main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td table tbody tr td nobr div#jmenuhide select#SortBy.sortby_select {min-width: 128px;width: 128px;}
 main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td select.results_per_page_select {min-width: 128px;}
 select#SortBy option {width:200px;}
+html.no-js body.cbp-spmenu-push div.container-main div.navbar.navbar-default header.header div#main-body.col-xs-12 div.col-xs-10 main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td nobr font b font b input {min-width: 40px;}
+html.no-js body.cbp-spmenu-push div.container-main div.navbar.navbar-default header.header div#main-body.col-xs-12 div.col-xs-10 main#content_area.container div form#vCSS_mainform table#v65-product-parent tbody tr td table.colors_pricebox tbody tr td table tbody tr td table tbody tr td#v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input.v65-productdetail-cartqty {min-width: 40px;}
+#v65-productdetail-action-wrapper.v65-productdetail-options {float: right;margin-top: -90px;width: 212px;}
+#v65-productdetail-action-wrapper > table:nth-child(1) > tbody > tr > td:nth-child(1) {float: left;padding-right: 10px;}
+#v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input.vCSS_input_addtocart {float: right !important;}
+#v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input#v65-product-wishlist-button {float: right !important;}
+input.vCSS_input_addtocart {margin: 3px auto !important;}
+.pricecolor.colors_productprice div.product_productprice b span {font-weight: bold !important;color: #2b3491;}
+.pricecolor.colors_productprice div.product_productprice b font span {font-weight: bold !important;color: Black;}
+
+@media only screen and (min-width: 992px) {#v65-productdetail-action-wrapper.v65-productdetail-options {float: right;margin-top: -88px;width: 212px;}}
+
 
 #content_area table[width$="%"] input[id^="Quantity"] {
   text-align: center;
@@ -143,7 +155,7 @@ input[src$="/btn_go.gif"] {
 
 #content_area img[src*="/headings/heading_login.gif"] + br + form:before {
   /* Login Heading */
-  content: 'Login'; }
+  content: 'Account Login'; }
 
 #content_area img[src*="/headings/heading_MyAccount.gif"] + br + form:before {
   /* My Account Heading */
@@ -205,9 +217,8 @@ input[src$="/btn_go.gif"] {
 
 /* PAGE HEADINGS */
 #content_area img[src*="/headings/heading_"] + br + form:before, #content_area img[src*="/headings/heading_"] + br + table:before, #content_area img[src*="/headings/heading_"] + br + div:before, #content_area img[src*="/headings/heading_"] + br + br + table:before, #content_area img[src*="/headings/heading_help.gif"] + br + img + a + br + table > tbody:before {
-  text-transform: uppercase;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 
@@ -574,7 +585,7 @@ a[href*="help_answer.asp"] {
 #content_area img[src$="btn_Continue.gif"] {
   display: block;
   margin: 0 auto; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     #content_area img[src$="btn_Continue.gif"] {
       display: inline-block;
       margin: 0; } }
@@ -1227,4 +1238,60 @@ form[action="OrderDetails.asp"] td[colspan="3"] > span:first-child:after {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+}
+
+/************BREADCRUMBS*************/
+td.vCSS_breadcrumb_td a, /*Targets text*/
+td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
+  color: #2b3491 !important;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/*************GRID STYLES**************/
+.vnav__link--active {background: none !important;}
+form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vertical-align: top;padding-top: 0px;}
+@media only screen and (min-width: 1240px) {
+  #content_area > table:nth-child(4) {width: 1112px;}
+}
+@media only screen and (min-width: 992px) and (max-width:1239px) {
+  #content_area > table:nth-child(4) {width: 876px;}
+}
+#content_area > table:nth-child(4) {
+  background: #fcfcfc;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;}
+@media only screen and (max-width: 991px) {
+  #content_area > table:nth-child(4) {width: 100%;margin-left: 0; margin-top:10px;}
+}
+@media only screen and (min-width: 1240px) {
+  .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important!}}
+@media only screen and (min-width: 992px) and (max-width:1239px) {
+  .v-product-grid .v-product {width: 30% !important;padding: 15px 25px !important;margin-left: 25px !important;}}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .v-product-grid .v-product {width: 30% !important;padding: 15px 20px 15px 5px !important;margin-left: 0px !important;margin-right: 20px !important;min-height: 660px;}}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .v-product-grid .v-product {width: 31% !important;padding: 15px 10px !important;margin-left: 0px !important;margin-right: 5px !important;min-height: 660px;}}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .v-product-grid .v-product {width: 48% !important;padding: 15px 10px !important;margin-left: 0px !important;margin-right: 5px !important;min-height: 360px;}}
+@media only screen and (max-width: 480px) {
+  .v-product-grid .v-product {width: 100% !important;padding: 15px 10px !important;margin-left: 0px !important;margin-right: 5px !important;min-height: 360px;}}
+table.v65-productDisplay .productnamecolor {font: 600 14px 'Roboto', Arial, Sans-Serif !important;}
+
+/***************PRODUCT GRID*****************/
+
+img.v-product__free-shipping {
+  display: none;
+}
+
+img.v-product__add-to-cart {
+  margin-top: 10px;
+}
+
+font.pricecolor.colors_productprice div.product_productprice b font.text.colors_text span.PageText_L335n,
+font.pricecolor.colors_productprice div.product_productprice b {
+  color: #203392 !important;
+  font-size: 15px !important;
+  font-weight: bold !important;  
 }

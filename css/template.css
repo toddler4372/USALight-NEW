@@ -276,8 +276,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /******** FOOTER **********/
 .footer {
-  border-top: 1px solid #e3e3e3;
-  margin-top: 30px; 
+  /*border-top: 1px solid #e3e3e3;*/
+  margin-top: 0px; 
   padding: 0 15px 0 15px;}
   .footer .column {
     margin: 0;
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       text-transform: uppercase;
       font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      .footer .column {margin: 30px 15px 30px 0;}
+      .footer .column {margin: 30px 0px 30px 0;}
     }
     @media only screen and (min-width: 992px) {
       .footer {margin-left: 10px;} 
@@ -304,6 +304,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     @media only screen and (max-width: 991px) {
       .footer {margin-left: 0px;} 
     }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      footer.footer div.row div.col-sm-2.hidden-xs {width: 25%;}
+      footer.footer div.row div..col-sm-3.col-sm-offset-1 {width: 100%;}
+    }
+
 
 .footer .panel {
   border-left: 0;
@@ -444,30 +449,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .elist .elist__submit .icon:hover {
     color: #e74f5d;
   }
-
-.copyright {
-  padding: 20px;
-  text-align: center; }
-  @media only screen and (min-width: 768px) {
-    .copyright {
-      text-align: center; } }
-  .copyright__item {
-    margin: 5px 7px; }
-    @media only screen and (min-width: 768px) {
-      .copyright__item {
-        margin: 0 15px 0 0; } }
-  .copyright__text {
-    display: block;
-    padding: 5px 0; }
-    @media only screen and (min-width: 768px) {
-      .copyright__text {
+.copyright {padding-top: 20px;text-align: center;font-size: 13px;color: #aaa;}
+@media only screen and (min-width: 768px) {
+    .copyright__item {margin: 0 15px 0 0;} 
+    .copyright__text {
         display: inline-block;
         vertical-align: middle;
         *vertical-align: auto;
         *zoom: 1;
         *display: inline;
-        padding: 0; } }
-
+        padding: 0;} 
+  }
+.copyright__text {
+  display: block;
+  padding: 5px 0; 
+}
 .social {
   padding: 15px 0 15px;
   text-align: center; }
@@ -499,9 +495,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 0 5px; }
     @media only screen and (min-width: 768px) {
       .social a {
-        margin: 0 3px 0 0; } }
-
-
+        margin: 0 3px 0 0; } 
+    }
 .btn {
   text-transform: uppercase; }
   .btn.btn-primary, #content_area .deal-buy-now a {
@@ -672,9 +667,19 @@ li#ups {
     }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .elist {margin-left: -30%;}
-    .elist form {width: 116%;}
+    .elist form {width: 150%;}
   }
   @media only screen and (max-width: 768px) {
-  #credit-cards {margin: 0 auto;display: block;}
+  #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;}
+}
+  @media only screen and (min-width: 992px) and (max-width: 1239px) {
+  #credit-cards {width:239px;height:43px;}
+}
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+  #credit-cards {width:263px;height:48px;}
 }
 
+/*-------------------LOGIN PAGE-----------------------*/
+
+span.PageText_L18n {line-height: 3em;}
+span.PageText_L257n {line-height: 3em;}

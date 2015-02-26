@@ -2465,7 +2465,7 @@ img.respBanner {
   display: none;
 }
 nav {
-  margin: 10px 0;
+  /*margin: 10px 0;*/
 }
 nav a {
   display: inline-block;
@@ -4839,11 +4839,11 @@ aside .respContent {
   #content {
     position: relative;
     clear: both;
-    padding: 10px 10px 0;
+    padding: 20px 0px 0px 0px;
     z-index: 100;
     background: #fff;
-    border-bottom: 1px solid #ccc;
-    /*-webkit-box-shadow: -1px 0 1em rgba(0,0,0,0.3);
+    /*border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: -1px 0 1em rgba(0,0,0,0.3);
     box-shadow: -1px 0 1em rgba(0,0,0,0.3);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -9941,4 +9941,9 @@ aside .banner {
     height: 46px;
     width: 100%;
     background: #11298a;}
+}
+
+ul {
+list-style-type: none;
+padding-left: 0;
 }
