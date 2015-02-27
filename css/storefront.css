@@ -50,9 +50,13 @@ select#SortBy option {width:200px;}
 html.no-js body.cbp-spmenu-push div.container-main div.navbar.navbar-default header.header div#main-body.col-xs-12 div.col-xs-10 main#content_area.container table tbody tr td form#MainForm.search_results_section table tbody tr td table tbody tr td nobr font b font b input {min-width: 40px;}
 html.no-js body.cbp-spmenu-push div.container-main div.navbar.navbar-default header.header div#main-body.col-xs-12 div.col-xs-10 main#content_area.container div form#vCSS_mainform table#v65-product-parent tbody tr td table.colors_pricebox tbody tr td table tbody tr td table tbody tr td#v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input.v65-productdetail-cartqty {min-width: 40px;}
 #v65-productdetail-action-wrapper.v65-productdetail-options {float: right;margin-top: -90px;width: 212px;}
-#v65-productdetail-action-wrapper > table:nth-child(1) > tbody > tr > td:nth-child(1) {float: left;padding-right: 10px;}
+#v65-productdetail-action-wrapper > table:nth-child(1) > tbody > tr > td:nth-child(1) {float: left;padding-right: 0px;margin-left: -65px;}
 #v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input.vCSS_input_addtocart {float: right !important;}
 #v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input#v65-product-wishlist-button {float: right !important;}
+/*  IE 10 & 11 ONLY  */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+#v65-productdetail-action-wrapper.v65-productdetail-options table tbody tr td input#v65-product-wishlist-button {margin-right: 3px;}
+}
 input.vCSS_input_addtocart {margin: 3px auto !important;}
 .pricecolor.colors_productprice div.product_productprice b span {font-weight: bold !important;color: #2b3491;}
 .pricecolor.colors_productprice div.product_productprice b font span {font-weight: bold !important;color: Black;}
@@ -1001,6 +1005,7 @@ table[width="96%"] {
   text-align: right; }
 
 /* "My Saved Billing Addresses" */
+@media only screen and (min-width: 992px) {
 #content_area #v65-onepage-saved-billing-table font[style*="font-weight: bold;"] {
   display: inline-block;
   font-size: 12px;
@@ -1010,6 +1015,12 @@ table[width="96%"] {
   text-align: right;
   vertical-align: top;
   width: 91px; }
+#v65-onepage-ContentTable tbody tr td table#v65-onepage-Detail.co-mainform tbody tr.v65-onepage-SavedLocations td {padding-left:4px !important;}
+html.no-js body.cbp-spmenu-push.vp-top-bar-padding div.container-main div.navbar.navbar-default header.header div.mboxDefault div#main-body.col-xs-12 div.col-xs-10 main#content_area.container form#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td table {margin-left: auto !important;margin-right: auto !important;}
+}
+@media only screen and (max-width: 991px) {
+#v65-onepage-ContentTable tbody tr td table#v65-onepage-Detail.co-mainform tbody tr.v65-onepage-SavedLocations td {padding:0px !important;}
+}
 
 /* "My Saved Billing Addresses" select */
 #content_area select[onchange*="Choose_My_Saved_Billing"] {
@@ -1252,7 +1263,7 @@ td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
 .vnav__link--active {background: none !important;}
 form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vertical-align: top;padding-top: 0px;}
 @media only screen and (min-width: 1240px) {
-  #content_area > table:nth-child(4) {width: 1112px;}
+  #content_area > table:nth-child(4) {width: 1113px;}
 }
 @media only screen and (min-width: 992px) and (max-width:1239px) {
   #content_area > table:nth-child(4) {width: 876px;}
@@ -1295,3 +1306,34 @@ font.pricecolor.colors_productprice div.product_productprice b {
   font-size: 15px !important;
   font-weight: bold !important;  
 }
+
+/*  TERMS & CONDITIONS INPUT  */
+@media only screen and (min-width: 1240px) {
+#table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: 65px;}
+.terms {margin-left: 85px;margin-top: -19px;}
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 65px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1239px) {
+#table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: 22px;}
+.terms {margin-left: 40px;margin-top: -19px;}
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 22px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+#table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: 2px;}
+.terms {font-size: 13px;margin-left: 20px;}
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 2px;}
+}
+
+/* Customer Reviews */
+#reviews {
+  height: 35px;
+  width: 252px;
+  background: #bfbfbf;
+  color: #fff;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+/*  Chrome only  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {#reviews { margin-left: -4px; }}
