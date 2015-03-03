@@ -1337,3 +1337,55 @@ font.pricecolor.colors_productprice div.product_productprice b {
 }
 /*  Chrome only  */
 @media screen and (-webkit-min-device-pixel-ratio:0) {#reviews { margin-left: -4px; }}
+/*  PRODUCT LAYOUT  */
+ul.specifications {margin-left:0 !important;}
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox > tbody > tr:nth-child(3) > td[width="100%"], 
+form .colors_descriptionbox {
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* SHIPPING CHOICES VOLUSION OVERRIDE */
+#v65-onepage-CheckoutForm table#v65-onepage-ContentTable tbody tr td table#v65-onepage-Detail.co-mainform tbody tr td table#v65-onepage-ShippingCostParent tbody tr#v65-onepage-shippingCost-row td table#v65-onepage-ShippingCost tbody tr td div div#CalcShippingDivContainer div#CalcShippingDiv input {
+font-size: 12px !important;
+text-align: center;
+background: #f7f7f8;
+}
+/* INNER SUBCATEGORY GRID LED */
+.subcat-wrapper {width: 103%;}
+.subcat-wrapper nav {width: 100%;overflow: hidden;min-height: 170px;margin: 20px 0 0 0;}
+.subcat-wrapper ul {width: 1113px; margin: 0 0 0 -1%;overflow: hidden;}
+.subcat-wrapper nav li {float: left;width: 100%; min-height: 170px; position: relative;margin-bottom: 0;list-style: none;overflow: hidden;}
+.subcat-wrapper nav.nav-block-3 ul a {width: 31.333%;transition: all 0.3s ease-in;float: left;font-weight: bold;font-size: 13px; display: block;margin: 0 0 0 2%;height: auto; padding: 10px; border: 1px solid #e3e3e3;box-sizing: border-box;text-decoration: none;}
+.subcat-wrapper nav.nav-block-3 ul a:hover {background:#f0f0f0;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_1 {background: #f0f0f0 url(../images/subcat-led-a19.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_2 {background: #f0f0f0 url(../images/subcat-led-mr11.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_3 {background: #f0f0f0 url(../images/subcat-led-mr16.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_4 {background: #f0f0f0 url(../images/subcat-led-par16.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_5 {background: #f0f0f0 url(../images/subcat-led-par20.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_6 {background: #f0f0f0 url(../images/subcat-led-r20.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_7 {background: #f0f0f0 url(../images/subcat-led-par30.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_8 {background: #f0f0f0 url(../images/subcat-led-r30.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_9 {background: #f0f0f0 url(../images/subcat-led-par38.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_10 {background: #f0f0f0 url(../images/subcat-led-r40.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_12 {background: #f0f0f0 url(../images/subcat-led-jc.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_13 {background: #f0f0f0 url(../images/subcat-led-dec.png) 100px 0 no-repeat;}
+[id^="LED_"] {background-position: 90% 50% !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_11 {background: #f0f0f0 url(../images/subcat-led-tub.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav li .nav-left {display: block; position: absolute;bottom: 10px;left: 10px;width: 130px;}
+.subcat-wrapper nav li span {float: left;font-size: 18px; margin-bottom: 15px;padding: 10px 0 0 10px;color: #002366;width: 160px;}
+@media only screen and (min-width: 992px) and (max-width: 1239px) {
+  .subcat-wrapper ul {width: 876px;}
+}
+@media only screen and (max-width: 991px) {
+  .subcat-wrapper nav.nav-block-3 ul a {width: 97%;margin-bottom: 15px;}
+  .subcat-wrapper ul {width: 100%;margin: 0 0 0 -2%;}
+  .subcat-wrapper ul a {margin-bottom: 15px;width: 97%;}
+  .subcat-wrapper {margin-top: -15px;}
+}
+
+
+
