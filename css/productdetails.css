@@ -1,0 +1,785 @@
+/**************************
+*       BREADCRUMBS       *
+**************************/
+
+td.vCSS_breadcrumb_td a, /*Targets text*/
+td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
+	color: #2b3491;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/**************************
+*      PRODUCT TITLE      *
+**************************/
+
+font.productnamecolorLARGE.colors_productname {
+	color: #545454;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	word-break: break-all;
+	text-transform: uppercase;
+	font-family: "Playfair Display", sans-serif;
+}
+
+/***********************************
+*      GENERAL PRICEBOX STYLES     *
+***********************************/
+
+/* Container for both .colors_priceboxes */
+#v65-product-parent > tbody > tr:first-child + tr > td[align="right"] {
+/*	max-width: 450px; */
+	padding-left: 5px;
+	margin-bottom: 4%;
+	width: 100%;  
+}
+
+/* Select and input borders */
+.colors_pricebox select td, 
+.colors_pricebox input td {
+	border: 1px solid #999;
+}
+
+/**************************
+*       1st PRICEBOX      *
+**************************/
+
+/* 1st Pricebox Container - Use for padding, borders, & bkg*/
+span + .colors_pricebox {
+	background: #fff; /*Overrides default*/
+	padding: 10px 15px;
+}
+td[background="/v/vspfiles/templates/have_hold_r/images/PBox_Border_Left.gif"] + td{
+	padding:15px;
+}
+/* Description Text */
+.colors_pricebox span[itemprop="description"] {
+	color: #686868;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+/* Product Code */
+span.product_code_title, 
+span.product_code {
+	color: #a8a8a8;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/****************************
+*   1st PRICEBOX - Prices   *
+****************************/
+
+/* List Price*/
+.colors_pricebox .product_listprice,
+.colors_pricebox .product_listprice b {
+	color: #545454;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/* Our Price */
+.colors_pricebox .product_productprice,
+.colors_pricebox .product_productprice b {
+	color: #545454;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/* Sale Price */
+.colors_pricebox .product_saleprice,
+.colors_pricebox .product_saleprice b {
+	color: #aa1f1f;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/* Deal Price */ 
+.colors_pricebox .product_dealprice,
+.colors_pricebox .product_dealprice b {
+	color: #aa1f1f;
+	font-size: 15px;
+	font-weight: normal;	
+}
+
+/* You Save */
+.colors_pricebox .product_yousave {
+	color: #545454;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Set Up Cost */
+.colors_pricebox .product_setupcost {}
+
+/**************************
+*      2nd PRICEBOX       *
+**************************/
+
+/* 2nd Pricebox Container */
+br + .colors_pricebox {	
+	background: #fff; /*Overrides default*/
+	margin-top: 35px; /*Make same as height of heading*/
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 5%;      
+}
+
+/* Heading */
+br + .colors_pricebox > tbody > tr > td > table > tbody > tr:first-child > td:first-child:before {
+	background: #fff;
+	bottom: 100%;
+	color: #545454;
+	content: "Choose your options:"; /*Text to be displayed*/
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e0e0e0;
+	left: 0;
+	line-height: 35px; /*Adjust height*/
+	position: absolute;
+	text-indent: 15px;
+	width: 100%;
+}
+
+/* Hides original heading image */
+.colors_pricebox img[src$="Options_Text_Choose.gif"] {display: none;}
+
+/* Large label */
+table#options_table font.colors_productname b {
+	color: #545454;
+	display: block;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Label text color */
+br + .colors_pricebox table td {
+	color: #686868;
+}
+
+/*************************************
+*   2nd PRICEBOX - Label alignment   *
+*************************************/
+
+/* Contains everything but Qty and buttons */
+#options_table {
+	font-size: 12px;
+    margin-left: 0;
+}
+
+/* Add spacing between table rows */
+#options_table td {
+	padding: 2px 0;
+}
+
+/* Targets Qty */
+#options_table script + br + table > tbody > tr:first-child > td:first-child {
+	padding: 2px 0 0 48px;
+	display: block;
+}
+
+/* Targets Qty input */
+br + .colors_pricebox script + br + table input.v65-productdetail-cartqty {
+	margin: 0 auto;
+}
+
+/* Superfluous break tag */
+br + .colors_pricebox script + br {display: none;}
+
+/*****************************
+*   2nd PRICEBOX - Buttons   *
+*****************************/
+
+/* Lines up buttons in colors pricebox #2 */
+br + .colors_pricebox td[width="1"] + td[valign="top"] br + table {width: 100%;}
+
+/* Selects td containing "Add to Cart" and "Add to Wish List" */
+br + .colors_pricebox td[width="1"] + td[valign="top"] br + table > tbody > tr:first-child > td {
+    display: block;
+	padding: 10px 0 0; /*Adds spacing between buttons and qty*/
+}
+
+/* Gives padding to Qty td */
+br + .colors_pricebox td[width="1"] + td[valign="top"] br + table > tbody > tr:first-child > td:first-child {
+	padding-left: 0;
+}
+
+/* "Add to Cart" button */
+input.vCSS_input_addtocart {
+    display: block;
+    margin: 3px auto;;
+}
+
+/* "Add to Wish List" input */
+input#v65-product-wishlist-button {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* "Add to Registry" img */
+img.vCSS_img_add_to_wishlist {
+	display: block;
+	margin: 0 auto;
+}
+
+/* On second .colors_pricebox allow a margin-bottom */
+br + .colors_pricebox img.vCSS_img_add_to_wishlist {margin-bottom: 10px;}
+
+/*****************************
+*     ALL IN ONE PRICEBOX    *
+*****************************/
+
+/* td containing prices, desc., prod. code, free shipping */
+td[background$="PBox_Border_Left.gif"] + td > table > tbody > tr > td:first-child {
+	display: block;
+	padding: 0 15px;
+}
+
+/* Allows buttons to span width of .colors_pricebox */
+td#v65-productdetail-action-wrapper table,
+td#v65-productdetail-action-wrapper tbody,
+td#v65-productdetail-action-wrapper tr,
+td#v65-productdetail-action-wrapper td {
+	/*display: block;*/
+}
+
+/* td containing Qty and Add to buttons */
+td#v65-productdetail-action-wrapper {
+	float:right;
+	/*display: block;
+	text-align: center;*/
+}
+
+/*****************************
+*    DESCRIPTION BOX TABS    *
+*****************************/
+
+/* Tabs default/unselected */
+span#Header_ProductDetail_ProductDetails_span,
+span#Header_ProductDetail_TechSpecs_span,
+span#Header_ProductDetail_ExtInfo_span,
+td#Header_ProductDetail_ProductDetails.vCSS_tab_unselected span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_TechSpecs.vCSS_tab_unselected span#Header_ProductDetail_TechSpecs_span,
+td#Header_ProductDetail_ExtInfo.vCSS_tab_unselected span#Header_ProductDetail_ExtInfo_span {
+	background: #fff;
+	color: #545454;
+	border: 1px solid #e0e0e0;
+	border-bottom: 0;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400 !important;
+	line-height: 30px; /*Control height here*/
+	padding: 0 15px;
+}
+
+/* Tabs selected / unselected:hover */
+td#Header_ProductDetail_ProductDetails span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_ProductDetails.vCSS_tab_selected span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_TechSpecs.vCSS_tab_selected span#Header_ProductDetail_TechSpecs_span,
+td#Header_ProductDetail_ExtInfo.vCSS_tab_selected span#Header_ProductDetail_ExtInfo_span {
+	background: #fff;
+	color: #545454;
+	font-weight: bold !important;
+} 
+
+/*Fix spacing*/
+tr td[background$="expand_tab_left.gif"] img {display: none;}
+tr td[background$="expand_tab_right.gif"] img {width: 7px;}
+
+/* USE IF SPACE TO LEFT OF FIRST TAB */
+/*tr td[background$="expand_tab_left.gif"]:first-child img {display: block; width: 5px;}*/
+
+/*****************************
+*       DESCRIPTION BOX      *
+*****************************/
+
+/* Description container and text */
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox > tbody > tr:nth-child(3) > td[width="100%"], 
+form .colors_descriptionbox {
+	background: #fff;
+	border-top: 1px solid #e0e0e0;
+	padding: 10px 15px;
+	border-right: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+/* Text color */
+form .colors_descriptionbox td {
+	color: #545454;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.4;
+	padding: 5px;
+}
+
+form .colors_descriptionbox td[width="1"] {
+	padding: 0;
+}
+
+/* Features container */
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox > tbody > tr:nth-child(3) > td[width="100%"] {
+	display: block;
+	margin-top: 10px;
+}
+
+/* Hides all unused table rows not correlated with the features section text */
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox > tbody > tr:not(:nth-child(3)) {
+	display: none;
+}
+
+/***************************************
+*    RELATED / ACCESSORIES - Heading   *
+***************************************/
+
+/* Background */
+.v65-product-related-header-cell .colors_backgroundlight, /*Related heading*/
+.colors_lines_light .colors_backgroundlight /*Accessories heading*/ {
+	background: #fff;
+	display: block;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 10px;
+}
+
+/* Text */
+.colors_lines_light font.productnamecolorSMALL.colors_productname b {
+	color: #545454;
+	text-transform: uppercase;
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 35px; /*Control height here*/
+	text-indent: 2px;
+}
+
+/*******************************
+*     RELATED / ACCESSORIES    *
+*******************************/
+
+/* Row container */
+td.v65-product-related-details-cell, /*Products related*/
+td.colors_background_main /*Accessories*/ {
+	background: none;
+	border: none;
+	text-align: center;
+	padding: 5px 15px; /*Use to align product text with heading text*/
+}
+
+/* Product title */
+.colors_lines_light a.productnamecolorsmall.colors_productname {
+	color: #545454;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* Our Price */
+.colors_lines_light .product_productprice, 
+.colors_lines_light .product_productprice b,
+.colors_lines_light .product_productprice .smalltext {
+	color: #545454;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Sale Price */
+.colors_lines_light .product_saleprice,
+.colors_lines_light .product_saleprice b {
+	color: #aa1f1f;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Setup Cost */
+.colors_lines_light .product_setupcost,
+.colors_lines_light .product_setupcost b {}
+
+/* Center product title and price */
+/*td.v65-productDisplay-cell.v65-productName,
+td.v65-productDisplay-cell.v65-productAvailability {
+	text-align: center;
+}*/
+
+@media only screen and (max-width: 767px) {
+	/* Responsive images */
+	#related_products_content .v65-productPhoto img {
+		display: block;
+		width: 100% \9;
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Product title */
+	.colors_lines_light a.productnamecolorsmall.colors_productname {
+		font-size: 11px;
+		padding: 0;
+	}
+}
+
+/**************************
+*    REVIEWS - Heading    *
+**************************/
+
+/* Defaults to make room for heading */
+#v65-product-reviews {
+	margin-top: 25px; /*Adds spacing between Related and Reviews*/
+	padding-top: 35px; /*Make the same height as heading*/
+	position: relative;
+}
+
+/* Heading */
+#v65-product-reviews .v65-product-reviews-cell:before {
+	background: none;
+	color: #545454;
+	content: "Customer Reviews";
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	left: 0;
+	line-height: 35px;
+	position: absolute;
+	text-indent: 2px;
+	text-transform: uppercase;
+	top: 0;
+	width: 100%;
+	color: #545454;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 10px;
+}
+
+/*************************
+*         REVIEWS        *
+*************************/
+
+/* "Be the first to write a review »" text */
+a[href*="write+a+review"],
+a[href*="ReviewNew.asp"] {
+	color: #999;
+}
+
+a[href*="write+a+review"]:hover,
+a[href*="ReviewNew.asp"]:hover {
+	text-decoration: underline;
+}
+
+table#v65-product-reviews td.v65-product-reviews-cell {
+	display: block;
+	margin: 50px 0 10px; /* Pushes Avg. reviews stars down so they are not covered up */
+}
+
+/* Star rating image */
+div[itemprop="aggregateRating"] img.vCSS_img_star_avg_rating {
+	float: none;
+	margin-right: 5px;
+	vertical-align: sub;
+}
+
+/* "Average Customer Review" text */
+#v65-product-reviews table > tbody > tr > td:first-child b {
+	color: #545454;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* "5 of 5" text */
+#v65-product-reviews table > tbody > tr > td:first-child > span {
+	color: #545454;
+	font-size: 12px !important;
+	font-weight: normal !important;
+	white-space: nowrap;
+}
+
+/* "Total Reviews" text */
+#v65-product-reviews table > tbody > tr > td > b {
+	color: #545454;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* "Write A Review" text */
+#v65-product-reviews table > tbody > tr > td > nobr a {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* 0 of 0 people found the following review helpful */
+br + table[width="100%"] td[width="1%"] + td[width="100%"] {
+	color: #545454;
+	font-size: 12px !important;
+	font-weight: normal;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+/* Comment Box Container */
+table#product_reviews_description_box {
+	background: #fff;
+	border: none;
+	padding: 10px 15px;
+}
+
+/* Review Title */
+table#product_reviews_description_box td[width="1px"] + td[width="100%"] > table > tbody > tr:first-child b {
+	color: #545454;
+	display: block;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+/* Date */
+table#product_reviews_description_box td[width="1px"] + td[width="100%"] > table > tbody > tr:first-child i {
+	color: #545454;
+	display: block;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Review Name and Location */
+table#product_reviews_description_box td[width="1px"] + td[width="100%"] > table > tbody > tr:first-child + tr i {
+	color: #545454;
+	display: block;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	padding-bottom: 3px;
+}
+
+/* Actual review's text / "Was this Review Helpful?" */
+table#product_reviews_description_box td[width="1px"] + td[width="100%"] {
+	color: #545454;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+/*********************************
+*    RECENT HISTORY - Heading    *
+*********************************/
+
+/* Heading container */
+#v65-product-history-header {
+	height: 45px; /*Make same as line-height of heading text below*/
+	margin-bottom: 10px;
+	position: relative;
+}
+
+/* Heading text */
+#v65-product-history-header td:first-child:before {
+	background: #8C8C8C;
+	color: #fff;
+	content: "Recent Items"; /*Text to be displayed*/
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	left: 0;
+	line-height: 45px; /*Adjust height*/
+	position: absolute;
+	text-indent: 15px;
+	top: 0;
+	width: 100%;	
+}
+
+/* Turn history off button - use for positioning */
+#TurnHistoryOnOffContainer {
+	margin-right: 10px;
+	margin-top: 2px;
+}
+
+/*****************************
+*       RECENT HISTORY       *
+*****************************/
+
+/* Hide original history image */
+img.vCSS_img_heading_history {display: none;}
+
+/* Product image max-width - edit to your desired width */
+.historyitem_image img {
+	max-width: 100%;
+} 
+
+/* Product title */
+.historyitem_productname a {
+	color: #4d4d4d;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 3px;
+	word-break: break-all;
+}
+
+/* Product price */
+.historyitem_productprice b font.pricecolor.colors_productprice {
+	color: #aa1f1f;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+/* * * * * * FIXES * * * * * */
+
+img[src*="OBox_Border_"],
+img[src*="PBox_Border_"],
+img[src*="Line_Group_"],
+img[src*="DBox_Border_"] {display: none;}
+
+td.vCSS_breadcrumb_td > b {text-indent: -4px;}
+
+td[background] {background: none !important;}
+
+#ProductDetail_ProductDetails_div div[style="height: 15px;"] {display: none;}
+
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox {
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+/* Centers Multi-child Add to Cart Table */
+#content_area table[bgcolor="#CCCCCC"] {margin: 0 auto;}
+/* Aligns "Add to Cart" button with checkboxes on Multi-child Add to Cart */
+.Multi-Child_Background input.vCSS_input_addtocart {margin: 0; display: block;}
+
+/* Removes spacing before breadcrumbs */
+td.vCSS_breadcrumb_td b {display: block; margin-bottom:10px;}
+
+form#vCSS_mainform > img, 
+form#vCSS_mainform > br,
+td.vCSS_breadcrumb_td > img + br,
+td.vCSS_breadcrumb_td > b + br,
+td.vCSS_breadcrumb_td > b + br + img {
+	display: none;
+}
+
+#v65-product-history-details {
+  table-layout: fixed;
+}
+
+#altviews[style="visibility:hidden"] {display: none;}
+
+/* Options table */
+#options_table tr > td:first-child br {display: none;}
+
+/* Related products/accessories fixes */
+.colors_lines_light {background: none;}
+table.colors_backgroundlight {display: block; margin-bottom: -1px;}
+table.colors_lines_light td.colors_backgroundlight {padding: 0;}
+
+/* History */
+table.colors_backgroundlight_dark {background: none;}
+#TurnHistoryOnOffContainer {position: relative; z-index: 2;}
+table#v65-product-history-body {
+	background: none; /*Software override*/
+	border: none; /*Software override*/
+}
+
+/* Override product photo float */
+#product_photo {float: none;}
+#v65-product-parent > tbody > tr:first-child + tr > td[align="center"] {min-width: 280px;}
+
+/* Reviews */
+/*div[itemprop=aggregateRating] {padding-bottom: 10px;}
+div[itemprop="aggregateRating"] > table {display: block;}*/
+#content_area > div > br + table[width="100%"] td[width="1%"],
+#content_area > div > br + table[width="100%"] + table[width="100%"] td[width="1%"] {display: none;}
+#v65-product-reviews table > tbody > tr > td:first-child {width: auto !important; max-width: 230px !important; padding-right: 5px;}
+/*#v65-product-reviews table > tbody > tr > td {vertical-align: middle !important;}*/
+#v65-product-reviews table > tbody > tr > td:first-child > span {position: static !important;}
+#v65-product-reviews table > tbody > tr > td:first-child > span > span {position: inherit !important; left: auto !important;}
+#vCSS_mainform + br {display: none;}
+
+/* "Average customer review" whole container spacing*/
+table#v65-product-reviews td.v65-product-reviews-cell,
+table#v65-product-reviews td.v65-product-reviews-cell td {padding: 0;}
+table#v65-product-reviews td.v65-product-reviews-cell > br {display: none;}
+
+table{
+	border-spacing: inherit;
+	
+}
+table td{
+	padding:inherit; 
+}
+/*------- centers email me when in stock -------*/
+
+#v65-product-parent tbody tr td table.colors_pricebox input + br + div{
+	text-align: center !important;
+	margin-bottom: 20px;
+}
+
+/*------- tablet styles -------*/
+
+	@media only screen and (max-width: 767px) {
+		#v65-product-parent > tbody > tr + tr > td{
+			display: block;
+			clear: both
+		}
+
+		#vZoomArea {
+			display: none;
+		}
+
+		#v65-product-parent > tbody > tr:first-child + tr > td[align="right"]{
+			padding-left: 0;
+		}
+	}
+
+
+/*------- mobile styles -------*/
+
+	@media only screen and (max-width: 480px) {
+		span#Header_ProductDetail_ProductDetails_span,
+		span#Header_ProductDetail_TechSpecs_span,
+		span#Header_ProductDetail_ExtInfo_span,
+		td#Header_ProductDetail_ProductDetails.vCSS_tab_unselected span#Header_ProductDetail_ProductDetails_span,
+		td#Header_ProductDetail_TechSpecs.vCSS_tab_unselected span#Header_ProductDetail_TechSpecs_span,
+		td#Header_ProductDetail_ExtInfo.vCSS_tab_unselected span#Header_ProductDetail_ExtInfo_span{
+			font-size: 11px;
+			padding:0 5px;
+		}
+		form .colors_descriptionbox,form .colors_descriptionbox table {
+			width: 100%;
+			table-layout: fixed;
+			/*max-width: 480px;*/
+		}
+		form .colors_descriptionbox td{
+			font-size: 11px;
+		}
+		.v65-productDisplay,
+		#v65-product-parent > tbody > tr:first-child + tr > td[align="right"],
+		.v65-productDisplay {
+			table-layout: fixed;
+
+		}
+		#product_photo{
+			width: 100%;
+		}
+	}
+/*
+#product_photo {display: none;}*/
+#product_photo_zoom_url {
+	display: inline-block;
+	margin-bottom: 15px;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+
+/* share buttons */
+#btn_vsharethis a {
+	padding: 4px;
+}
+
+
+

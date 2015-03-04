@@ -1,0 +1,140 @@
+/****************************
+*         CONTAINER         *
+****************************/
+/* Use for width and positioning*/
+.soft_add_wrapper {
+  font-family: inherit;
+  padding: 0;
+  position: absolute;
+  width: 265px;
+  top: 15% !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  margin: auto !important;
+  z-index: 1100; }
+
+/* Use for background, box-shadow, border-radius */
+.soft_add_content_shadow {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+/* Use for ie8 */
+.ie8 .soft_add_wrapper {
+  border: 1px solid #ccc; }
+
+.soft_add_content_area .cart_table {
+  width: auto !important;
+}
+.soft_add_content_area {
+  border-bottom: 1px solid #ddd !important;
+}
+.soft_add_wrapp .cart_table td {
+  max-width: 65px;
+  padding-left: 0;
+}
+
+/****************************
+*      PRODUCT DETAILS      *
+****************************/
+/* Product details container */
+.soft_add_content_area {
+  background: none;
+  max-height: none;
+  padding: 10px;
+  width: auto; }
+
+/* Row border */
+.soft_add_wrapper ul.anchored-cart li {
+  border-bottom: 1px solid #eee;
+  overflow: hidden; }
+
+/* Recently added */
+.soft_add_wrapper ul.anchored-cart li.recently-added {
+  background-color: #f5f5f5; }
+
+/* Product name */
+.soft_add_wrapper ul.anchored-cart li .product-name a {
+  color: #4C4C4C;
+  font-size: 12px;
+  font-weight: normal; }
+
+/* Quantity */
+.soft_add_wrapper ul.anchored-cart .product-qty,
+.soft_add_wrapper ul.anchored-cart .product-qty .quantity_text,
+.soft_add_wrapper ul.anchored-cart li .product-options a {
+  color: #4C4C4C;
+  display: block;
+  font-size: 12px; }
+
+/* Product price */
+.soft_add_wrapper ul.anchored-cart li .product-price {
+  color: #4C4C4C;
+  font-size: 12px; }
+
+/*****************************
+*          SUBTOTAL          *
+*****************************/
+/* Container */
+.soft_add_wrapper .soft_add_sub_total {
+  background: none;
+  height: 24px;
+  padding: 4px 20px 0; }
+
+/* "Subtotal" text */
+.soft_add_wrapper .sub_total {
+  color: #d50004 !important;
+  font-size: 12px; }
+
+/* Price */
+.soft_add_wrapper span.sub_total_amount {
+  color: #d50004 !important;
+  font-size: 20px; }
+
+/******************************
+*       CHECKOUT BUTTON       *
+******************************/
+/* Buttons and container */
+.soft_add_wrapper .soft_add_action_area {
+  background: none;
+  border-top: none;
+  height: auto;
+  overflow: hidden;
+  padding: 15px 0;
+  position: relative; }
+
+/* Checkout button */
+.soft_add_wrapper .check_out {
+  color: #fff;
+  font-size: 15px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  text-indent: 0;
+  /* Solid image? Delete here to "Color" */
+  float: none;
+  display: block;
+  margin: 0 auto;
+  position: static;
+  height: 32px;
+  width: 110px;
+  background: #d00005 !important; }
+
+.soft_add_wrapper .check_out:hover {
+  text-decoration: none;
+  opacity: .8; }
+
+  /* SOFT ADD CLOSE BUTTON */
+.close_btn, .close_btn:link, .close_btn:visited, .close_btn:focus, .close_btn:hover, close_btn:active {
+  width: 25px;
+  height: 24px;
+  background: url(../images/softadd/close.png) no-repeat 0 0;
+  z-index: 200;
+}
+
+@media only screen and (max-width: 992px) {
+  .cartDiv {
+    display: none;
+  }
+}
