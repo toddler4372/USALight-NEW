@@ -1354,25 +1354,25 @@ font-size: 12px !important;
 text-align: center;
 background: #f7f7f8;
 }
-/* INNER SUBCATEGORY GRID LED */
+/* INNER SUBCATEGORY GRID LED BULBS */
 .subcat-wrapper {width: 103%;}
 .subcat-wrapper nav {width: 100%;overflow: hidden;min-height: 170px;margin: 20px 0 0 0;}
 .subcat-wrapper ul {width: 1113px; margin: 0 0 0 -1%;overflow: hidden;}
 .subcat-wrapper nav li {float: left;width: 100%; min-height: 170px; position: relative;margin-bottom: 0;list-style: none;overflow: hidden;}
 .subcat-wrapper nav.nav-block-3 ul a {width: 31.333%;transition: all 0.3s ease-in;float: left;font-weight: bold;font-size: 13px; display: block;margin: 0 0 0 2%;height: auto; padding: 10px; border: 1px solid #e3e3e3;box-sizing: border-box;text-decoration: none;}
 .subcat-wrapper nav.nav-block-3 ul a:hover {background:#f0f0f0;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_1 {background: #f0f0f0 url(../images/subcat-led-a19.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_2 {background: #f0f0f0 url(../images/subcat-led-mr11.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_3 {background: #f0f0f0 url(../images/subcat-led-mr16.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_4 {background: #f0f0f0 url(../images/subcat-led-par16.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_5 {background: #f0f0f0 url(../images/subcat-led-par20.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_6 {background: #f0f0f0 url(../images/subcat-led-r20.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_7 {background: #f0f0f0 url(../images/subcat-led-par30.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_8 {background: #f0f0f0 url(../images/subcat-led-r30.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_9 {background: #f0f0f0 url(../images/subcat-led-par38.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_10 {background: #f0f0f0 url(../images/subcat-led-r40.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_12 {background: #f0f0f0 url(../images/subcat-led-jc.png) 100px 0 no-repeat;}
-.subcat-wrapper nav.nav-block-3 ul a li#LED_13 {background: #f0f0f0 url(../images/subcat-led-dec.png) 100px 0 no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_1 {background: #f0f0f0 url(../images/subcat-led-a19.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_2 {background: #f0f0f0 url(../images/subcat-led-mr11.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_3 {background: #f0f0f0 url(../images/subcat-led-mr16.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_4 {background: #f0f0f0 url(../images/subcat-led-par16.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_5 {background: #f0f0f0 url(../images/subcat-led-par20.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_6 {background: #f0f0f0 url(../images/subcat-led-r20.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_7 {background: #f0f0f0 url(../images/subcat-led-par30.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_8 {background: #f0f0f0 url(../images/subcat-led-r30.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_9 {background: #f0f0f0 url(../images/subcat-led-par38.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_10 {background: #f0f0f0 url(../images/subcat-led-r40.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_12 {background: #f0f0f0 url(../images/subcat-led-jc.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_13 {background: #f0f0f0 url(../images/subcat-led-dec.png) no-repeat;}
 [id^="LED_"] {background-position: 90% 50% !important;}
 .subcat-wrapper nav.nav-block-3 ul a li#LED_11 {background: #f0f0f0 url(../images/subcat-led-tub.png) 100% 80% no-repeat !important;}
 .subcat-wrapper nav li .nav-left {display: block; position: absolute;bottom: 10px;left: 10px;width: 130px;}
@@ -1386,6 +1386,62 @@ background: #f7f7f8;
   .subcat-wrapper ul a {margin-bottom: 15px;width: 97%;}
   .subcat-wrapper {margin-top: -15px;}
 }
-
+/* INNER SUBCATEGORY GRID LED RECESSED */
+.subcat-wrapper nav.nav-block-3 ul a li#LED_REC_1 {background: #f0f0f0 url(../images/subcat-led-rec-4.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_REC_2 {background: #f0f0f0 url(../images/subcat-led-rec-5.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_REC_3 {background: #f0f0f0 url(../images/subcat-led-rec-6.png) no-repeat;}
+/* INNER CATEGORY GRID LED LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_1 {background: #f0f0f0 url(../images/subcat-led-par30.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_2 {background: #f0f0f0 url(../images/subcat-led-lan-lan.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_3 {background: #f0f0f0 url(../images/subcat-led-rec-4.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_4 {background: #f0f0f0 url(../images/subcat-led-lan-dri.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_5 {background: #f0f0f0 url(../images/subcat-led-lan-com.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LED_LAN_6 {background: #f0f0f0 url(../images/subcat-led-lan-cab.png) no-repeat;}
+/* INNER CATEGORY GRID LANDSCAPE LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#LAN_LAN_1 {background: #f0f0f0 url(../images/subcat-lan-lan-fix.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LAN_LAN_2 {background: #f0f0f0 url(../images/subcat-lan-lan-tra.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LAN_LAN_3 {background: #f0f0f0 url(../images/subcat-lan-lan-acc.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LAN_LAN_4 {background: #f0f0f0 url(../images/subcat-lan-lan-pro.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#LAN_LAN_5 {background: #f0f0f0 url(../images/subcat-lan-lan-cle.png) no-repeat;}
+[id^="LAN_"] {background-position: 90% 50% !important;}
+/* INNER CATEGORY GRID RECESSED LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_1 {background: #f0f0f0 url(../images/subcat-rec-lan-2.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_2 {background: #f0f0f0 url(../images/subcat-rec-lan-3.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_3 {background: #f0f0f0 url(../images/subcat-rec-lan-4.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_4 {background: #f0f0f0 url(../images/subcat-rec-lan-5.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_5 {background: #f0f0f0 url(../images/subcat-rec-lan-6.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_6 {background: #f0f0f0 url(../images/subcat-rec-lan-ene.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_LAN_7 {background: #f0f0f0 url(../images/subcat-rec-lan-par.png) no-repeat;}
+[id^="REC_"] {background-position: 90% 50% !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_4_12V {background: #f0f0f0 url(../images/subcat-rec-4-12v.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_5_FLU {background: #f0f0f0 url(../images/subcat-rec-5-flu.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_6_SHA {background: #f0f0f0 url(../images/subcat-rec-6-sha.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_6_SLO {background: #f0f0f0 url(../images/subcat-rec-6-slo.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#REC_6_RET {background: #f0f0f0 url(../images/subcat-rec-6-ret.png) no-repeat;}
+/* INNER CATEGORY GRID BALLASTS LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_1 {background: #f0f0f0 url(../images/subcat-bal-flu.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_2 {background: #f0f0f0 url(../images/subcat-bal-met.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_3 {background: #f0f0f0 url(../images/subcat-bal-hig.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_4 {background: #f0f0f0 url(../images/subcat-bal-hps.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_5 {background: #f0f0f0 url(../images/subcat-bal-mhc.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_6 {background: #f0f0f0 url(../images/subcat-bal-cap.png) no-repeat;}
+[id^="BAL_"] {background-position: 90% 50% !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_FLU_1 {background: #f0f0f0 url(../images/subcat-bal-flu-t5.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_FLU_2 {background: #f0f0f0 url(../images/subcat-bal-flu-t12.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_FLU_3 {background: #f0f0f0 url(../images/subcat-bal-flu-cfl.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BAL_FLU_4 {background: #f0f0f0 url(../images/subcat-bal-flu-cir.png) no-repeat;}
+/* INNER CATEGORY GRID LIGHT BULBS LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_1 {background: #f0f0f0 url(../images/subcat-bul-hal.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_2 {background: #f0f0f0 url(../images/subcat-bul-cfl.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_3 {background: #f0f0f0 url(../images/subcat-bul-pl.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_4 {background: #f0f0f0 url(../images/subcat-bul-mh.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_5 {background: #f0f0f0 url(../images/subcat-bul-hps.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_6 {background: #f0f0f0 url(../images/subcat-bul-12v.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_7 {background: #f0f0f0 url(../images/subcat-bul-tub.png) 100% 80% no-repeat !important;}
+[id^="BUL_"] {background-position: 90% 50% !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_1 {background: #f0f0f0 url(../images/subcat-bul-hal-par.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_2 {background: #f0f0f0 url(../images/subcat-bul-hal-mr.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_3 {background: #f0f0f0 url(../images/subcat-bul-hal-jc.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_4 {background: #f0f0f0 url(../images/subcat-bul-hal-de.png) 100% 80% no-repeat !important;}
 
 
