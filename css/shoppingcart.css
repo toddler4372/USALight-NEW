@@ -522,12 +522,12 @@ html.no-js body.cbp-spmenu-push div.container-main div.navbar.navbar-default hea
       background-color: #eeeeee !important;
       padding-left: 10px;
     }
-    main#content_area.container table tbody tr td table#v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra center input  {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
-    main#content_area.container table tbody tr td table#v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td center input {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
+    #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra center input  {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
+    #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td center input {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
   
   }
 
-/*  HIDE EDIT ITEMS IN CART BUTTON - VOLUSION FORMATTING ISSUES  */
+/*  HIDE EDIT ITEMS IN CART BUTTON - FIX FOR VOLUSION FORMATTING ISSUES  */
 #v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 a img {
   display: none !important;
 }
