@@ -276,8 +276,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /******** FOOTER **********/
 .footer {
-  /*border-top: 1px solid #e3e3e3;*/
-  margin-top: 0px; 
+  border-top: 1px solid #e3e3e3;
+  margin-top: 20px; 
   padding: 0 15px 0 15px;}
   .footer .column {
     margin: 0;
@@ -631,7 +631,7 @@ li#ups {
     div#phone-number {
       position: absolute;
       top: 50px;
-      right: 13px;
+      right: 0px;
       font-family: 'Roboto', Arial, Sans-serif;
       font-size: 26px;
       font-weight: bold;
@@ -639,28 +639,18 @@ li#ups {
     }
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 991px) {
+  @media only screen and (min-width: 740px) and (max-width: 991px) {
     div#phone-number {
       position: absolute;
       top: 103px;
-      right: 55%;
+      right: 61%;
       color: #fff;
       z-index: 9999;
       font-size: 20px;
     }
   }
 
-  @media only screen and (min-width: 500px) and (max-width: 600px) {
-      div#phone-number {
-        position: absolute;
-        top: 102px;
-        right: 15px;
-        color: #fff;
-        font-size: 20px;
-      }
-    }
-
-  @media only screen and (max-width: 499px) {
+  @media only screen and (max-width: 739px) {
       div#phone-number {
         display:none;
       }

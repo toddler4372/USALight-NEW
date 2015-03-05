@@ -1313,17 +1313,84 @@ font.pricecolor.colors_productprice div.product_productprice b {
 .terms {margin-left: 85px;margin-top: -19px;}
 #v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 65px;}
 }
+/*  CHROME ONLY  */
+@media only screen and (min-width: 1240px) and (-webkit-min-device-pixel-ratio:0) {
+#table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: -20px;}
+.terms {margin-left: 0px;margin-top: -19px;}
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: -20px;}
+}
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
 #table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: 22px;}
 .terms {margin-left: 40px;margin-top: -19px;}
 #v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 22px;}
+}
+/*  CHROME ONLY  */
+@media only screen and (min-width: 768px) and (max-width: 1239px) and (-webkit-min-device-pixel-ratio:0) {
+#table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: -20px;}
+.terms {margin-left: 0px;margin-top: -19px;}
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: -20px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 #table_checkout_cart0 > tbody > tr.v65-onepage-custom-details-row > td > table > tbody > tr > td:nth-child(2) > input[type="checkbox"] {margin-left: 2px;}
 .terms {font-size: 13px;margin-left: 20px;}
 #v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td div#div_articleid_112 table tbody tr td input {margin-left: 2px;}
 }
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer {margin-top: 1560px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio:0) {
+  .footer {margin-top: 20px;}
+}
+/*  CHECKOUT HEADING AND OTHER CART VOLUSION OVERRIDES */
+h2#v65-onepage-header {
+  font-size: 2.2em;
+  color: #333;
+}
+span.PageText_L6n {
+  line-height: 28px;
+}
+span#BillingState_Text {
+  line-height: 28px;
+}
+select#v65-onepage-shipto-dropdown-cell {
+  margin-top: 0 !important;
+}
+#v65-onepage-payment-details-parent-row td table#savedPayment tbody tr td.v65-payment-details-value-cell div#PaymentDIV select#PaymentMethodTypeDisplay {
+  margin-top: 0 !important;
+}
+.gmail_note {
+  width: 428px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e0e0e0;
+  height: 65px;
+  margin-top: 20px;
+  background: none;
+}
+.gmail_note p {
+  color: #06e;
+  font-size: 14px;
+  float: right;
+  text-align: center;
+}
+/* ORDER HISTORY */
+span.PageText_L355n {
+  font-size: 2.2em;
+  line-height: 40px;
+}
+span.PageText_L719n {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  line-height: 60px;
+  float: left;
+}
+input[src$="/btn_go.gif"] {
+  margin-left: 5px !important;
+  margin-top: 3px !important;
+}
+span.PageText_L311n {
+  line-height: 100px;
+}
 /* Customer Reviews */
 #reviews {
   height: 35px;
@@ -1386,6 +1453,14 @@ background: #f7f7f8;
   .subcat-wrapper ul a {margin-bottom: 15px;width: 97%;}
   .subcat-wrapper {margin-top: -15px;}
 }
+.container_product_heading p {
+  margin: 0;
+  padding: 5px 5px 15px 5px;
+}
+.container_product_heading h1 {
+  margin: 0;
+  padding: 5px;
+}
 /* INNER SUBCATEGORY GRID LED RECESSED */
 .subcat-wrapper nav.nav-block-3 ul a li#LED_REC_1 {background: #f0f0f0 url(../images/subcat-led-rec-4.png) no-repeat;}
 .subcat-wrapper nav.nav-block-3 ul a li#LED_REC_2 {background: #f0f0f0 url(../images/subcat-led-rec-5.png) no-repeat;}
@@ -1443,5 +1518,72 @@ background: #f7f7f8;
 .subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_2 {background: #f0f0f0 url(../images/subcat-bul-hal-mr.png) 100% 80% no-repeat !important;}
 .subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_3 {background: #f0f0f0 url(../images/subcat-bul-hal-jc.png) 100% 80% no-repeat !important;}
 .subcat-wrapper nav.nav-block-3 ul a li#BUL_HAL_4 {background: #f0f0f0 url(../images/subcat-bul-hal-de.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_1 {background: #f0f0f0 url(../images/subcat-bul-cfl-sta.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_2 {background: #f0f0f0 url(../images/subcat-bul-cfl-spi.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_3 {background: #f0f0f0 url(../images/subcat-bul-cfl-dec.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_4 {background: #f0f0f0 url(../images/subcat-bul-cfl-par.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_5 {background: #f0f0f0 url(../images/subcat-bul-cfl-2pn.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#BUL_CFL_6 {background: #f0f0f0 url(../images/subcat-bul-cfl-4pn.png) no-repeat;}
+/* INNER CATEGORY GRID TRACK LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_1 {background: #f0f0f0 url(../images/subcat-trk-low.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_2 {background: #f0f0f0 url(../images/subcat-trk-120.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_3 {background: #f0f0f0 url(../images/subcat-trk-acc.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_4 {background: #f0f0f0 url(../images/subcat-trk-grp.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_5 {background: #f0f0f0 url(../images/subcat-trk-ts.png) 100% 80% no-repeat !important;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRK_6 {background: #f0f0f0 url(../images/subcat-trk-ww.png) no-repeat;}
+[id^="TRK_"] {background-position: 90% 50% !important;}
+/* INNER CATEGORY GRID TRACK LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#TRF_1 {background: #f0f0f0 url(../images/subcat-trf-ele.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRF_2 {background: #f0f0f0 url(../images/subcat-trf-com.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRF_3 {background: #f0f0f0 url(../images/subcat-trf-led.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#TRF_4 {background: #f0f0f0 url(../images/subcat-trf-acc.png) no-repeat;}
+[id^="TRF_"] {background-position: 90% 50% !important;}
+/* INNER CATEGORY GRID CABINET LANDING */
+.subcat-wrapper nav.nav-block-3 ul a li#CAB_1 {background: #f0f0f0 url(../images/subcat-cab-flu.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#CAB_2 {background: #f0f0f0 url(../images/subcat-cab-low.png) no-repeat;}
+.subcat-wrapper nav.nav-block-3 ul a li#CAB_3 {background: #f0f0f0 url(../images/subcat-cab-led.png) no-repeat;}
+[id^="CAB_"] {background-position: 90% 50% !important;}
 
-
+/*  CUSTOMER SERVICE PAGE  */
+.customer-service {
+  margin: 0 10px 0 10px;
+}
+.customer-service h2 {
+  padding-top: 20px;
+}
+.customer-service h2.top {
+  padding-top: 0px;
+}
+.customer-service button {
+  font-family: Roboto, Arial, Sans-serif;
+  font-size: 13px;
+  line-height: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 8px 1em;
+  min-height: 0;
+  height: 33px !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #161b7a;
+  background: -webkit-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -moz-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -o-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: -ms-linear-gradient(top, #11298a 0%, #011e62 100%);
+  background: linear-gradient(to bottom, #11298a 0%, #011e62 100%);
+  color: #eee;
+  font-weight: bold;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+}
+.customer-service ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.support_left {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 5px 0;
+}
+.support_right {
+  text-align: left;
+}

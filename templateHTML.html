@@ -10,142 +10,197 @@
         <meta name="description" content="">
         <meta id="v65-layout-mode" data-cart="storedot" data-checkout="storedot" data-use-simplified-checkout="true">
         <meta id="v65-logo-dimensions" data-height="80" data-width="221">
-        <link href='//fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="v/vspfiles/templates/253/css/main.css">
-        <link href="v/vspfiles/templates/253/css/imports.css" rel="stylesheet">
-        <link href="v/vspfiles/templates/253/css/push-menu/component.css" rel="stylesheet">
-        <div id="if_homepage"><link href="v/vspfiles/templates/253/css/homepage.css" rel="stylesheet"></div>
-
-        <script src="v/vspfiles/templates/253/js/design-toolkit_min.js"></script>
+        <meta name="msvalidate.01" content="EDFCFE23C00ECD0855E4C268DE4A718E" />
+        <meta name="google-site-verification" content="d7ra0aSwITbTgVvrfz9FfXTLq1Fqrh3zNtDsv3TA3Uw" />
+        <link href="/v/vspfiles/templates/USALight2015/css/ig_welcome_mat.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/main.css">
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/test.css"> 
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/softaddtocart.css">
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/shoppingcart.css">
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/one-page-checkout.css">
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/css/onepagecheckout.css">
+        <link href="v/vspfiles/templates/USALight2015/css/imports.css" rel="stylesheet">
+        <link href="v/vspfiles/templates/USALight2015/css/push-menu/component.css" rel="stylesheet">
+        <link media="screen" rel="stylesheet" href="/v/vspfiles/templates/USALight2015/colorbox/example1/colorbox.css" />
+        <div id="if_homepage"><link href="v/vspfiles/templates/USALight2015/css/homepage.css" rel="stylesheet"></div>
+        <script src="v/vspfiles/templates/USALight2015/js/design-toolkit_min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/v/vspfiles/templates/USALight2015/colorbox/jquery.colorbox.js"></script>
+        <script src="/v/vspfiles/templates/USALightv1.1/js/ig_welcome_mat.js"></script>
+        <script type="text/javascript" src="https://checkout.iglobalstores.com/js/igc.cs.main.js"></script>
+        <script type="text/javascript" src="https://checkout.iglobalstores.com/js/igc.cs.usalight.js"></script>
         <script>DTK.loadCSS("253");</script>
 
+        <script>
+        $(document).ready(function(){
+            //Examples of how to assign the ColorBox event to elements
+                        $("#pic").colorbox({rel:'pic'});
+                        $("a[rel='nofollow']").colorbox();
+            $("a[rel='example1']").colorbox();
+            $("a[rel='example2']").colorbox({transition:"fade"});
+            $("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
+            $("a[rel='example4']").colorbox({slideshow:true});
+            $(".example5").colorbox();
+            $(".example6").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+                        $(".ups-colorbox").colorbox({iframe:true, innerWidth:560, innerHeight:315});
+            $(".example7").colorbox({width:"80%", height:"80%", iframe:true});
+            $(".example8").colorbox({width:"50%", inline:true, href:"#inline_example1"});
+            $(".example9").colorbox({
+                onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+                onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+                onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+                onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+                onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+            });
+            
+            //Example of preserving a JavaScript event for inline calls.
+            $("#click").click(function(){ 
+                $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                return false;
+            });
+        });
+    </script>
+
         <!--[if lt IE 9]>
-        <script src="v/vspfiles/templates/253/js/html5shiv.js"></script>
+        <script src="v/vspfiles/templates/USALight2015/js/html5shiv.js"></script>
         <![endif]-->
 
+
     </head>
-    <!-- #################### FREE TEMPLATE INFO Ethereal-JC-09202014 #################### -->
     <body class="cbp-spmenu-push">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="push-menu">
-            <div class="search-mobile">
+            <!--<div class="search-mobile">
                 <form class="form-inline" action="/SearchResults.asp" method="get" name="SearchBoxForm" role="search">
                   <div class="form-group">
                     <input type="text" name="Search" class="search-mobile__input" placeholder="Search...">
                     <button type="submit" name="Submit" class="btn btn-xs btn-primary search-mobile__submit">Go!</button>
                   </div>
                 </form>
-            </div>
+            </div>-->
             <h3><div id="Menu1_Title" class="menu_title">Menu Title</div></h3>
             <div id="display_menu_1" class="menu"></div>
         </nav>
 
 
-        <div class="container">
+        <div class="container-main">
             <div class="navbar navbar-default" role="navigation">
+
                 <header class="header">
-                    <div class="row">
-                        <div class="col-xs-2 col-md-3">
-                            <div class="header__left header__element ghost">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header ghost__content">
-                                    <button type="button" id="showLeftPush" class="navbar-toggle" data-toggle="collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="search-popout ghost__content hidden-xs hidden-sm" role="search">
-                                  <a id="search-toggle" type="button" class="search-popout__trigger" data-toggle="popover" data-placement="right" data-html="true" data-content="
-                                    <form class='form-inline' action='/SearchResults.asp' method='get' name='SearchBoxForm' role='search'>
-                                      <div class='form-group'>
-                                        <input type='text' name='Search' class='search-popout__input' placeholder='Search...'>
-                                        <button type='submit' name='Submit' class='btn btn-xs btn-primary search-popout__submit'>Go!</button>
-                                      </div>
-                                    </form>" data-container="body">
-                                    <span class="icon icon-magnifying-glass"><img src="/v/vspfiles/templates/253/images/template/search-bg.png" alt="" width="20" height="20"></span>
-                                  </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-8 col-md-6">
-                            <div class="header__mid header__element ghost">
-                                <div class="logo ghost__content">
-                                    <div id="if_homepage">
-                                        <h1 id="display_homepage_title" class="logo"><a href="/" title=""></a></h1>
-                                    </div><!--if_homepage-->
+                        <div class="mboxDefault">
+                        <!-- Start Header -->
+                        <h1 id="logo" class="logo">
+                        <a href="http://wgzrv.ndxva.servertrust.com" title="USALight.com"><img src="/v/vspfiles/templates/USALight2015/images/logo-usa.png" width="254" height="67" alt="USALight.com" class="homepage-logo"></a>
+                        </h1>
 
-                                    <div id="if_not_homepage">
-                                        <div id="display_homepage_title" class="logo"><a href="/" title=""></a></div>
-                                    </div><!--if_not_homepage-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-2 col-md-3">
-                            <div class="header__right header__element ghost">
-                                <div class="sitetools hidden-xs hidden-sm ghost__content">
-                                    <a href="/myaccount.asp" class="sitetools__item" title="My Account">My Account</a>
-                                    <a href="/wishlist.asp" class="sitetools__item" title="Wish List">
-                                        <span class="icon icon-star-two"><img src="/v/vspfiles/templates/253/images/template/icon-star.jpg" width="10" height="9" alt=""></span> Wish List
-                                    </a>
-                                </div>
-                                <div class="cart-summary ghost__content">
-                                    <a href="/shoppingcart.asp">
-                                        <span class="icon icon-shopping-bag"><img src="/v/vspfiles/templates/253/images/template/icon-cart.jpg" width="13" height="15" alt=""></span>(<span data-v-observable="cart-count"></span>)
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="main-nav">
-                    <div id="display_menu_1" class="menu"></div>
-                </div><!-- /.navbar-collapse -->
-            </div>
-        </div>
+    <div id="toolbar">
+        <ul role="menubar">
+            <li role="menuitem" class="touch">
+                <a href="#nav" data-behat="Menu button">
+                    <button type="button" id="showLeftPush" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span><img class="icon-dashes" src="/v/vspfiles/templates/USALight2015/images/icon-dashes.png" width="12" height="10"> 
+                        <span class="noMobile">Menu</span>                                    
+                    </button>
+                </a>
+            </li>
+            <li class="icon-chat">
+                <div id="accountDropC"><a href="/myaccount.asp" title="My Account">Chat</a></div>
+            </li>
+            <li class="icon-account">
+                <div id="accountDropC"><a href="/myaccount.asp" title="My Account">My Account</a></div>
+            </li>
+            <li class="icon-cart">
+                <a href="/shoppingcart.asp" title="My Cart">My Cart(<span data-v-observable="cart-count"></span>)</a>
+            </li>
+            <li class="icon-help">
+                <a href="/Articles.asp?ID=248" title="My Cart">Help</a>
+            </li>
+        </ul>
+    </div>
 
-        <!-- Add your site or application content here -->
-        <main class="container" id="content_area" role="main">            
-           
-        </main>
+    <div id="phone-number">1-877-235-0020</div>
 
+    <div id="search-wrapper"><form class="search" method="get" action="/searchResults.asp" name="SearchBoxForm" role="search">
+            <input type="search" id="search" name="Search"/ placeholder="Product name or item no.">
+            <button type="submit" name="Submit" class="button">Search</button>
+        </form>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-nav">
+        <div id="display_menu_1" class="menu"></div>
+    </div><!-- /.navbar-collapse -->
+
+    <div class="features">
+        <ul>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner1.jpg" width="240" height="40" alt="Free Shipping over $100"></a></li>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner2.jpg" width="240" height="40" alt="$6.95 Flat Rate Shipping under $100"></a></li>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner3.jpg" width="240" height="40" alt="We'll beat any price"></a></li>
+            <li><a href="/LED-Lighting-Products-s/93939.htm"><img src="/v/vspfiles/templates/USALight2015/images/banner4.jpg" width="240" height="40" alt="We Specialize in LED"></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="col-xs-12" id="main-body" style="background: #ffffff;">
+        <div class="col-xs-2" id="hide-homepage">
+             <div id="refinement-wrapper"><h2>Filter By:</h2>
+                <div id="search_refinement_filters"></div>
+
+    <!--AWARDS AND SITE VERIFICATION-->
+    <div id="awards">
+        <ul class="awards">
+            <li><a href="https://www.google.com/trustedstores/verify?gl=US&hl=en-US&id=191841&sid=191842" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/google-trusted-store.png"></a></li>
+            <li><a href="http://www.stellaservice.com/profile/usalight.com/?utm_source=gts&utm_medium=flyprof&utm_campaign=int" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/stella-service.png" border="0" alt="Excellent Service - Stella Service" /></a></li>           
+            <li><a href="http://challenge.livehelpnow.net/archives/?month=6&year=2014"style="text-decoration:none;" target="_blank" class="badge">
+            <img src="//challenge.livehelpnow.net/wp-content/themes/livehelpnow/images/challenge/2014/2014_LHNAward.png" alt="LiveHelpNow Challenge Winner September 2014" style="width:120px;" /></a></li>
+            <li><script type="text/javascript" src="https://sealserver.trustwave.com/seal.js?code=78a3de8a0ca511e0b34b005056b201e5"></script></li>
+            <li><script type="text/javascript" language="javascript">var ANS_customer_id="08ee8a0f-632e-4732-bfeb-7ac69258f65c";</script> <script type="text/javascript" language="javascript" src="https://verify.authorize.net/anetseal/seal.js" ></script></li>
+            <li><a href="http://tracedseals.starfieldtech.com/siteseal/certsealnew?cdSealType=Seal1&sealId=55e4ye7y7mb732f08fe37f916ae42406hmy7mb7355e4ye743617c3cbc878e810&referer=http://www.usalight.com"><img src="/v/vspfiles/templates/USALight2015/images/go-daddy.jpg" height="31" width="132"></a></li>
+            <li id="ups"><a href="//www.youtube.com/embed/0IsL5AMqLMY" class="ups-colorbox"><img src="/v/vspfiles/templates/USALight2015/images/ups.jpg" border="0" title="USALight.com ships via UPS" alt="USALight.com ships via UPS" /></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xs-10">
+        <main class="container" id="content_area" role="main"></main>
+    </div>
         <div class="container clearfix">
+          <div class="col-md-12">
             <footer class="footer">
                 <div class="row">
                     <div class="col-sm-2 hidden-xs">
                         <ul class="column column-1" data-v-edit-region="Link List 1">
-                            <li class="column__title">About Us</li>
-                            <li><a href="/aboutus.asp" title="About Config_CompanyNameLegal">Company Info</a></li>
-                            <li><a href="mailto:Config_EmailAddress_From?Subject=Contact%20Us" title="Contact Config_CompanyNameLegal">Contact Us</a></li>
+                            <li class="column__title">Customer Service</li>
+                            <li><a href="/help.asp">Help</a></li>
+                            <li><a href="/Articles.asp?ID=249">Shipping &amp; Deliveries</a></li>
+                            <li><a href="/Articles.asp?ID=249">Returns &amp; Exchanges</a></li>  
                         </ul>
                     </div>
                     <div class="col-sm-2 hidden-xs">
                         <ul class="column column-2" data-v-edit-region="Link List 2">
-                            <li class="column__title">My Account</li>
-                            <li><a href="/shoppingcart.asp" title="View Cart">View Cart</a></li>
-                            <li><a href="/login.asp" title="Sign In">Sign In</a></li>
-                            <li><a href="/orders.asp" title="Order Status">Order Status</a></li>
+                            <li class="column__title">Sitemaps</li>
+                            <li><a href="/pindex.asp">Product Index</a></li>
+                            <li><a href="/cindex.asp">Category Index</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-2 hidden-xs">
                         <ul class="column column-3" data-v-edit-region="Link List 3">
-                            <li class="column__title">Products</li>
-                            <li><a href="/cindex.asp" title="Category Index">Category Index</a></li>
-                            <li><a href="/productslist.asp" title="Product Index">Product Index</a></li>
+                            <li class="column__title">My Account</li>
+                            <li><a href="/login.asp">Login/Register</a></li>
+                            <li><a href="/shoppingcart.asp">Shopping Cart</a></li>
+                            <li><a href="/orders.asp">Order Status</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-2 hidden-xs">
                         <ul class="column column-4" data-v-edit-region="Link List 4">
-                            <li class="column__title">Helpful Info</li>
-                            <li><a href="/help.asp" title="Help Desk">Help Desk</a></li>
-                            <li><a href="/terms_privacy.asp" title="Privacy Policy">Privacy Policy</a></li>
-                            <li><a href="/terms.asp" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                            <li class="column__title">Company Info</li>
+                            <li><a href="/aboutus.asp">About Us</a></li>
+                            <li><a href="/Articles.asp?ID=248">Contact Us</a></li>
+                            <li><a href="/terms_privacy.asp">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 col-sm-offset-1">
@@ -153,29 +208,10 @@
                             <div class="elist__title">Join Our Mailing List</div>
                             <form name="MailingList" method="post" action="/mailinglist_subscribe.asp">
                                 <input type="text" class="form-control elist__input" name="emailaddress" value="" placeholder="Email Address" />
-                                <button type="submit" name="Submit" class="elist__submit" value="Subscribe">
-                                    <span class="icon icon-caret-right"></span>
-                                </button>
+                                <input type="submit" name="Submit" class="elist__submit" value="Subscribe"></input>
                             </form>
+                            <img src="/v/vspfiles/templates/USALight2015/images/credit-cards.jpg" id="credit-cards">
                         </div> <!-- .elist -->
-                        <div class="social">
-                            <span class="social__title">Connect with Us!</span>
-                            <a href="https://www.facebook.com/Volusion" target="_blank">
-                                <span class="icon">
-                                    <img src="/v/vspfiles/templates/253/images/template/facebook.png" width="21" height="22" alt="Facebook">
-                                </span>
-                            </a>
-                            <a href="https://twitter.com/volusion" target="_blank">
-                                <span class="icon">
-                                    <img src="/v/vspfiles/templates/253/images/template/twitter.png" width="21" height="21" alt="Twitter">
-                                </span>
-                            </a>
-                            <a href="http://www.pinterest.com/volusion/" target="_blank">
-                                <span class="icon">
-                                    <img src="/v/vspfiles/templates/253/images/template/pinterest.png" width="21" height="20" alt="Pinterest">
-                                </span>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="clearfix visible-xs">
@@ -184,15 +220,16 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-1">
-                                        About Us
+                                        Customer Service
                                     </a>
                                 </h4>
                             </div>
                             <div id="link-col-1" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul class="column column-1">
-                                        <li><a href="/aboutus.asp" title="About Config_CompanyNameLegal">Company Info</a></li>
-                                        <li><a href="mailto:Config_EmailAddress_From?Subject=Contact%20Us" title="Contact Config_CompanyNameLegal">Contact Us</a></li>                                        
+                                        <li><a href="/help.asp">Help</a></li>
+                                        <li><a href="/Articles.asp?ID=249">Shipping &amp; Deliveries</a></li>
+                                        <li><a href="/Articles.asp?ID=249">Returns &amp; Exchanges</a></li>                          
                                     </ul>
                                 </div>
                             </div>
@@ -201,16 +238,15 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-2">
-                                        My Account
+                                        Sitemaps
                                     </a>
                                 </h4>
                             </div>
                             <div id="link-col-2" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul class="column column-1">
-                                        <li><a href="/shoppingcart.asp" title="View Cart">View Cart</a></li>
-                                        <li><a href="/login.asp" title="Sign In">Sign In</a></li>
-                                        <li><a href="/orders.asp" title="Order Status">Order Status</a></li>
+                                        <li><a href="/pindex.asp">Product Index</a></li>
+                                        <li><a href="/cindex.asp">Category Index</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -219,15 +255,16 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-3">
-                                        Products
+                                        My Account
                                     </a>
                                 </h4>
                             </div>
                             <div id="link-col-3" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul class="column column-1">
-                                        <li><a href="/cindex.asp" title="Category Index">Category Index</a></li>
-                                        <li><a href="/productslist.asp" title="Product Index">Product Index</a></li>
+                                        <li><a href="/login.asp">Login/Register</a></li>
+                                        <li><a href="/shoppingcart.asp">Shopping Cart</a></li>
+                                        <li><a href="/orders.asp">Order Status</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -236,16 +273,16 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-4">
-                                        Helpful Info
+                                        Company Info
                                     </a>
                                 </h4>
                             </div>
                             <div id="link-col-4" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul class="column column-1">
-                                        <li><a href="/help.asp" title="Help Desk">Help Desk</a></li>
-                                        <li><a href="/terms_privacy.asp" title="Privacy Policy">Privacy Policy</a></li>
-                                        <li><a href="/terms.asp" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                                        <li><a href="/aboutus.asp">About Us</a></li>
+                                        <li><a href="/Articles.asp?ID=248">Contact Us</a></li>
+                                        <li><a href="/terms_privacy.asp">Privacy Policy</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -253,28 +290,23 @@
                     </div>
                 </div>
                 <div class="clearfix copyright">
-                    <a href="javascript:void(0);" onclick="window.open('https://www.volusion.com/ssl.asp?url=www.YourDomain.com', 'VolusionSSL', 'top=10,left=10,menubar=0,resizable=0,scrollbars=0,width=467,height=467')" class="copyright__item">
-                        <img src="v/vspfiles/templates/253/images/template/vsecure.png" alt="" width="100" height="33">
-                    </a>
                     <span class="copyright__text">
-                        <a href="/terms.asp" title="Terms">Copyright &copy; <span class="insertYear">2013</span>&nbsp;Config_CompanyNameLegal. All Rights Reserved.</a>
-
-                        <span id="if_homepage">Built with <a href="http://www.volusion.com" target="_blank">Volusion</a>.</span>
-
-                        <!-- <span id="if_not_homepage">Built with <a href="http://www.volusion.com" target="_blank" rel="nofollow">Volusion</a>.</span> -->
+                        Copyright &copy; <span class="insertYear">2013</span>&nbsp;Config_CompanyNameLegal. All Rights Reserved.
                     </span>
                 </div>
             </footer>
         </div>
+    </div>
+</div>
 
-        <script src="/v/vspfiles/templates/253/js/jquery-1.11.1.min.js"></script>
+        <script src="/v/vspfiles/templates/USALight2015/js/jquery-1.11.1.min.js"></script>
 
         <script type="text/javascript">
             var $jQueryModern = jQuery.noConflict(true);
         </script>
 
-        <script src="v/vspfiles/templates/253/js/bootstrap.min.js"></script>
-        <script src="v/vspfiles/templates/253/js/push-menu/classie.js"></script>
+        <script src="v/vspfiles/templates/USALight2015/js/bootstrap.min.js"></script>
+        <script src="v/vspfiles/templates/USALight2015/js/push-menu/classie.js"></script>
 
         <script>
             $jQueryModern(document).ready(function(){   
@@ -330,6 +362,23 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- Hide Search Refinement on Homepage -->
+     
+        <script type="text/javascript">    
+            $(window).resize(function(){ 
+                (function(){ 
+                if (window.location.href == "http://wgzrv.ndxva.servertrust.com" && document.documentElement.clientWidth > 992) { 
+                document.getElementById("hide-homepage").style.display="none";
+                } else if (window.location.href.indexOf("http://wgzrv.ndxva.servertrust.com/login.asp") > -1) {
+                document.getElementById("hide-homepage").style.display="none";
+                } else if (document.documentElement.clientWidth < 992) {
+                document.getElementById("hide-homepage").style.display="none";
+                } else {
+                document.getElementById("hide-homepage").style.display="block";
+                    }
+                });               
+            });
         </script>
     </body>
 </html>
