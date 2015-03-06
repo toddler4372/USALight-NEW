@@ -25,44 +25,23 @@
         <link href="v/vspfiles/templates/USALight2015/css/imports.css" rel="stylesheet">
         <link href="v/vspfiles/templates/USALight2015/css/push-menu/component.css" rel="stylesheet">
         <link media="screen" rel="stylesheet" href="/v/vspfiles/templates/USALight2015/colorbox/example1/colorbox.css" />
+        <link rel="stylesheet" href="v/vspfiles/templates/USALight2015/easybox/styles/default/easybox.min.css" type="text/css" media="screen" />
         <div id="if_homepage"><link href="v/vspfiles/templates/USALight2015/css/homepage.css" rel="stylesheet"></div>
         <script src="v/vspfiles/templates/USALight2015/js/design-toolkit_min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="/v/vspfiles/templates/USALight2015/colorbox/jquery.colorbox.js"></script>
-        <script src="/v/vspfiles/templates/USALightv1.1/js/ig_welcome_mat.js"></script>
+        <script src="/v/vspfiles/templates/USALight2015/js/ig_welcome_mat.js"></script>
         <script type="text/javascript" src="https://checkout.iglobalstores.com/js/igc.cs.main.js"></script>
         <script type="text/javascript" src="https://checkout.iglobalstores.com/js/igc.cs.usalight.js"></script>
         <script>DTK.loadCSS("253");</script>
+        <!--EASYBOX-->
+        <!-- concatenated -->
+        <script type="text/javascript" src="v/vspfiles/templates/USALight2015/easybox/distrib.min.js"></script>
+        <!-- separate files -->
+        <script type="text/javascript" src="v/vspfiles/templates/USALight2015/easybox/easybox.min.js"></script>
+        <script type="text/javascript" src="v/vspfiles/templates/USALight2015/easybox/handlers.min.js"></script>
+        <script type="text/javascript" src="v/vspfiles/templates/USALight2015/easybox/extras/autoload.min.js"></script>
 
-        <script>
-        $(document).ready(function(){
-            //Examples of how to assign the ColorBox event to elements
-                        $("#pic").colorbox({rel:'pic'});
-                        $("a[rel='nofollow']").colorbox();
-            $("a[rel='example1']").colorbox();
-            $("a[rel='example2']").colorbox({transition:"fade"});
-            $("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
-            $("a[rel='example4']").colorbox({slideshow:true});
-            $(".example5").colorbox();
-            $(".example6").colorbox({iframe:true, innerWidth:425, innerHeight:344});
-                        $(".ups-colorbox").colorbox({iframe:true, innerWidth:560, innerHeight:315});
-            $(".example7").colorbox({width:"80%", height:"80%", iframe:true});
-            $(".example8").colorbox({width:"50%", inline:true, href:"#inline_example1"});
-            $(".example9").colorbox({
-                onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-                onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-                onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-                onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-                onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-            });
-            
-            //Example of preserving a JavaScript event for inline calls.
-            $("#click").click(function(){ 
-                $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-                return false;
-            });
-        });
-    </script>
         <!--[if lt IE 9]>
         <script src="v/vspfiles/templates/USALight2015/js/html5shiv.js"></script>
         <![endif]-->
@@ -151,8 +130,8 @@
     <!--AWARDS AND SITE VERIFICATION-->
     <div id="awards">
         <ul class="awards">
-            <li><a href="https://www.google.com/trustedstores/verify?gl=US&hl=en-US&id=191841&sid=191842" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/google-trusted-store.png"></a></li>
-            <li><a href="http://www.stellaservice.com/profile/usalight.com/?utm_source=gts&utm_medium=flyprof&utm_campaign=int" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/stella-service.png" border="0" alt="Excellent Service - Stella Service" /></a></li>           
+            <li><a href="https://www.google.com/trustedstores/verify?gl=US&hl=en-US&id=191841&sid=191842" target="_blank"><img src="/v/vspfiles/templates/USALight2015/images/google-trusted-store.png"></a></li>
+            <li><a href="http://www.stellaservice.com/profile/usalight.com/?utm_source=gts&utm_medium=flyprof&utm_campaign=int" target="_blank"><img src="/v/vspfiles/templates/USALight2015/images/stella-service.png" border="0" alt="Excellent Service - Stella Service" /></a></li>           
             <li><a href="http://challenge.livehelpnow.net/archives/?month=6&year=2014"style="text-decoration:none;" target="_blank" class="badge">
             <img src="//challenge.livehelpnow.net/wp-content/themes/livehelpnow/images/challenge/2014/2014_LHNAward.png" alt="LiveHelpNow Challenge Winner September 2014" style="width:120px;" /></a></li>
             <li><script type="text/javascript" src="https://sealserver.trustwave.com/seal.js?code=78a3de8a0ca511e0b34b005056b201e5"></script></li>

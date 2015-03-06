@@ -1143,7 +1143,7 @@ table#v65-onepage-registration td {
 /************** SHOPPING CART PAGE *******************/
 
 #content_area #v65-cart-table .v65-item-zebra {
-  background-color: #f7f7f8;
+  /*background-color: #f7f7f8;*/
 }
 
 /*-hides random break */
@@ -1309,13 +1309,14 @@ font.pricecolor.colors_productprice div.product_productprice b {
 
 /*  TERMS & CONDITIONS INPUT  */
 @media only screen and (min-width: 1240px) {
-td:nth-child(2) > input[type="checkbox"] {margin-left: 65px;}
-.terms {margin-left: 85px;margin-top: -19px;}
+td:nth-child(2) > input[type="checkbox"] {margin-left: -19px;}
+.terms {margin-left: 0px;margin-top: -19px;}
 #div_articleid_112 table tbody tr td input {margin-left: 65px;}
 }
+@-moz-document url-prefix() {.terms {margin-left: 80px;margin-top: -19px;}}
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
-td:nth-child(2) > input[type="checkbox"] {margin-left: 22px;}
-.terms {margin-left: 40px;margin-top: -19px;}
+td:nth-child(2) > input[type="checkbox"] {margin-left: -19px;}
+.terms {margin-left: 0px;margin-top: -19px;}
 #div_articleid_112 table tbody tr td input {margin-left: 22px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -1432,14 +1433,19 @@ form .colors_descriptionbox {
 .subcat-wrapper nav.nav-block-3 ul a li#LED_11 {background: #f0f0f0 url(../images/subcat-led-tub.png) 100% 80% no-repeat !important;}
 .subcat-wrapper nav li .nav-left {display: block; position: absolute;bottom: 10px;left: 10px;width: 130px;}
 .subcat-wrapper nav li span {float: left;font-size: 18px; margin-bottom: 15px;padding: 10px 0 0 10px;color: #002366;width: 160px;}
+@media only screen and (min-width: 1240px) {
+  .subcat-wrapper {width: 1113px;margin-left: -19px;margin-top: -20px;}
+}
 @media only screen and (min-width: 992px) and (max-width: 1239px) {
   .subcat-wrapper ul {width: 876px;}
+  .subcat-wrapper {width: 870px;margin-left: -19px;margin-top: -20px;}
 }
 @media only screen and (max-width: 991px) {
   .subcat-wrapper nav.nav-block-3 ul a {width: 97%;margin-bottom: 15px;}
   .subcat-wrapper ul {width: 100%;margin: 0 0 0 -2%;}
   .subcat-wrapper ul a {margin-bottom: 15px;width: 97%;}
   .subcat-wrapper {margin-top: -15px;}
+  .subcat-wrapper nav {margin: 0;}
 }
 .container_product_heading p {
   margin: 0;
@@ -1535,6 +1541,7 @@ form .colors_descriptionbox {
 /*  CUSTOMER SERVICE PAGE  */
 .customer-service {
   margin: 0 10px 0 10px;
+  font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-style: normal;
 }
 .customer-service h2 {
   padding-top: 20px;
@@ -1574,4 +1581,8 @@ form .colors_descriptionbox {
 }
 .support_right {
   text-align: left;
+}
+.terms-logo {
+  float: right;
+  margin-top: -65px;
 }

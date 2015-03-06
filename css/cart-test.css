@@ -803,8 +803,8 @@
 /*----------------VOLUSION NO SELECTORS CART------------------*/
   main#content_area.container table tbody tr td table#v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra center input  {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
   main#content_area.container table tbody tr td table#v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td center input {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
-  #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra div {padding-top: 34px !important;}
-  #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td table tbody tr td div {padding-top: 34px !important;}
+  #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra div {padding-top: 15px !important;}
+  #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td table tbody tr td div {padding-top: 15px !important;}
   #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra table tbody tr td.v65-cart-details-text.v65-cart-details-cell {padding-top: 34px !important;}
   #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td table tbody tr td.v65-cart-details-text.v65-cart-details-cell {padding-top: 34px !important;}
   #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-cart-details-text.v65-cart-details-cell.v65-cart-item-remove-cell.v65-item-zebra a.v65-cart-item-remove-link img.v65-cart-item-remove-image {margin-top: 12px;}
@@ -933,4 +933,15 @@
 .terms {
   margin-left: 20px;
   margin-top: -19px;
+}
+/*  OVERRIDE  */
+#content_area #v65-cart-table .v65-item-zebra {
+  background-color: #fff !important;
+}
+#content_area #table_checkout_cart0 #v65-onepage-editcart {
+  color: #d10006 !important;
+  font-size: 18px !important;
+}
+h2.v65-your-cart-title {
+  font-size: 2.2em !important;
 }
