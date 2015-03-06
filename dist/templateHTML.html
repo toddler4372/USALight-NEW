@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">       
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="description" content="">
+        <meta id="v65-layout-mode" data-cart="storedot" data-checkout="storedot" data-use-simplified-checkout="true">
+        <meta id="v65-logo-dimensions" data-height="80" data-width="221">
+        <meta name="msvalidate.01" content="EDFCFE23C00ECD0855E4C268DE4A718E" />
+        <meta name="google-site-verification" content="d7ra0aSwITbTgVvrfz9FfXTLq1Fqrh3zNtDsv3TA3Uw" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/test.css"> 
+        <script src="v/vspfiles/templates/USALight2015/js/design-toolkit_min.js"></script>
+        <script>DTK.loadCSS("253");</script>
+
+        <script>
+        $(document).ready(function(){
+            //Examples of how to assign the ColorBox event to elements
+                        $("#pic").colorbox({rel:'pic'});
+                        $("a[rel='nofollow']").colorbox();
+            $("a[rel='example1']").colorbox();
+            $("a[rel='example2']").colorbox({transition:"fade"});
+            $("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
+            $("a[rel='example4']").colorbox({slideshow:true});
+            $(".example5").colorbox();
+            $(".example6").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+                        $(".ups-colorbox").colorbox({iframe:true, innerWidth:560, innerHeight:315});
+            $(".example7").colorbox({width:"80%", height:"80%", iframe:true});
+            $(".example8").colorbox({width:"50%", inline:true, href:"#inline_example1"});
+            $(".example9").colorbox({
+                onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+                onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+                onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+                onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+                onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+            });
+            
+            //Example of preserving a JavaScript event for inline calls.
+            $("#click").click(function(){ 
+                $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                return false;
+            });
+        });
+    </script>
+        <!--[if lt IE 9]>
+        <script src="v/vspfiles/templates/USALight2015/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body class="cbp-spmenu-push">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="push-menu">
+            <!--<div class="search-mobile">
+                <form class="form-inline" action="/SearchResults.asp" method="get" name="SearchBoxForm" role="search">
+                  <div class="form-group">
+                    <input type="text" name="Search" class="search-mobile__input" placeholder="Search...">
+                    <button type="submit" name="Submit" class="btn btn-xs btn-primary search-mobile__submit">Go!</button>
+                  </div>
+                </form>
+            </div>-->
+            <h3><div id="Menu1_Title" class="menu_title">Menu Title</div></h3>
+            <div id="display_menu_1" class="menu"></div>
+        </nav>
+
+
+        <div class="container-main">
+            <div class="navbar navbar-default" role="navigation">
+
+                <header class="header">
+                        <div class="mboxDefault">
+                        <!-- Start Header -->
+                        <h1 id="logo" class="logo">
+                        <a href="http://wgzrv.ndxva.servertrust.com" title="USALight.com"><img src="/v/vspfiles/templates/USALight2015/images/logo-usa.png" width="254" height="67" alt="USALight.com" class="homepage-logo"></a>
+                        </h1>
+
+    <div id="toolbar">
+        <ul role="menubar">
+            <li role="menuitem" class="touch">
+                <a href="#nav" data-behat="Menu button">
+                    <button type="button" id="showLeftPush" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span><img class="icon-dashes" src="/v/vspfiles/templates/USALight2015/images/icon-dashes.png" width="12" height="10"> 
+                        <span class="noMobile">Menu</span>                                    
+                    </button>
+                </a>
+            </li>
+            <li class="icon-chat">
+                <div id="accountDropC"><a href="/myaccount.asp" title="My Account">Chat</a></div>
+            </li>
+            <li class="icon-account">
+                <div id="accountDropC"><a href="/myaccount.asp" title="My Account">My Account</a></div>
+            </li>
+            <li class="icon-cart">
+                <a href="/shoppingcart.asp" title="My Cart">My Cart(<span data-v-observable="cart-count"></span>)</a>
+            </li>
+            <li class="icon-help">
+                <a href="/Articles.asp?ID=248" title="My Cart">Help</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="phone-number">1-877-235-0020</div>
+
+    <div id="search-wrapper"><form class="search" method="get" action="/searchResults.asp" name="SearchBoxForm" role="search">
+            <input type="search" id="search" name="Search"/ placeholder="Product name or item no.">
+            <button type="submit" name="Submit" class="button">Search</button>
+        </form>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-nav">
+        <div id="display_menu_1" class="menu"></div>
+    </div><!-- /.navbar-collapse -->
+
+    <div class="features">
+        <ul>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner1.jpg" width="240" height="40" alt="Free Shipping over $100"></a></li>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner2.jpg" width="240" height="40" alt="$6.95 Flat Rate Shipping under $100"></a></li>
+            <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALight2015/images/banner3.jpg" width="240" height="40" alt="We'll beat any price"></a></li>
+            <li><a href="/LED-Lighting-Products-s/93939.htm"><img src="/v/vspfiles/templates/USALight2015/images/banner4.jpg" width="240" height="40" alt="We Specialize in LED"></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="col-xs-12" id="main-body" style="background: #ffffff;">
+        <div class="col-xs-2" id="hide-homepage">
+             <div id="refinement-wrapper"><h2>Filter By:</h2>
+                <div id="search_refinement_filters"></div>
+
+    <!--AWARDS AND SITE VERIFICATION-->
+    <div id="awards">
+        <ul class="awards">
+            <li><a href="https://www.google.com/trustedstores/verify?gl=US&hl=en-US&id=191841&sid=191842" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/google-trusted-store.png"></a></li>
+            <li><a href="http://www.stellaservice.com/profile/usalight.com/?utm_source=gts&utm_medium=flyprof&utm_campaign=int" target="_blank"><img src="/v/vspfiles/templates/USALightv1.1/images/stella-service.png" border="0" alt="Excellent Service - Stella Service" /></a></li>           
+            <li><a href="http://challenge.livehelpnow.net/archives/?month=6&year=2014"style="text-decoration:none;" target="_blank" class="badge">
+            <img src="//challenge.livehelpnow.net/wp-content/themes/livehelpnow/images/challenge/2014/2014_LHNAward.png" alt="LiveHelpNow Challenge Winner September 2014" style="width:120px;" /></a></li>
+            <li><script type="text/javascript" src="https://sealserver.trustwave.com/seal.js?code=78a3de8a0ca511e0b34b005056b201e5"></script></li>
+            <li><script type="text/javascript" language="javascript">var ANS_customer_id="08ee8a0f-632e-4732-bfeb-7ac69258f65c";</script> <script type="text/javascript" language="javascript" src="https://verify.authorize.net/anetseal/seal.js" ></script></li>
+            <li><a href="http://tracedseals.starfieldtech.com/siteseal/certsealnew?cdSealType=Seal1&sealId=55e4ye7y7mb732f08fe37f916ae42406hmy7mb7355e4ye743617c3cbc878e810&referer=http://www.usalight.com"><img src="/v/vspfiles/templates/USALight2015/images/go-daddy.jpg" height="31" width="132"></a></li>
+            <li id="ups"><a href="//www.youtube.com/embed/0IsL5AMqLMY" class="ups-colorbox"><img src="/v/vspfiles/templates/USALight2015/images/ups.jpg" border="0" title="USALight.com ships via UPS" alt="USALight.com ships via UPS" /></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xs-10">
+        <main class="container" id="content_area" role="main"></main>
+    </div>
+        <div class="container clearfix">
+          <div class="col-md-12">
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-sm-2 hidden-xs">
+                        <ul class="column column-1" data-v-edit-region="Link List 1">
+                            <li class="column__title">Customer Service</li>
+                            <li><a href="/help.asp">Help</a></li>
+                            <li><a href="/Articles.asp?ID=249">Shipping &amp; Deliveries</a></li>
+                            <li><a href="/Articles.asp?ID=249">Returns &amp; Exchanges</a></li>  
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul class="column column-2" data-v-edit-region="Link List 2">
+                            <li class="column__title">Sitemaps</li>
+                            <li><a href="/pindex.asp">Product Index</a></li>
+                            <li><a href="/cindex.asp">Category Index</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul class="column column-3" data-v-edit-region="Link List 3">
+                            <li class="column__title">My Account</li>
+                            <li><a href="/login.asp">Login/Register</a></li>
+                            <li><a href="/shoppingcart.asp">Shopping Cart</a></li>
+                            <li><a href="/orders.asp">Order Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul class="column column-4" data-v-edit-region="Link List 4">
+                            <li class="column__title">Company Info</li>
+                            <li><a href="/aboutus.asp">About Us</a></li>
+                            <li><a href="/Articles.asp?ID=248">Contact Us</a></li>
+                            <li><a href="/terms_privacy.asp">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="elist">
+                            <div class="elist__title">Join Our Mailing List</div>
+                            <form name="MailingList" method="post" action="/mailinglist_subscribe.asp">
+                                <input type="text" class="form-control elist__input" name="emailaddress" value="" placeholder="Email Address" />
+                                <input type="submit" name="Submit" class="elist__submit" value="Subscribe"></input>
+                            </form>
+                            <img src="/v/vspfiles/templates/USALight2015/images/credit-cards.jpg" id="credit-cards">
+                        </div> <!-- .elist -->
+                    </div>
+                </div>
+                <div class="clearfix visible-xs">
+                    <div class="panel-group" id="footer-collapse">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-1">
+                                        Customer Service
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="link-col-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="column column-1">
+                                        <li><a href="/help.asp">Help</a></li>
+                                        <li><a href="/Articles.asp?ID=249">Shipping &amp; Deliveries</a></li>
+                                        <li><a href="/Articles.asp?ID=249">Returns &amp; Exchanges</a></li>                          
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-2">
+                                        Sitemaps
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="link-col-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="column column-1">
+                                        <li><a href="/pindex.asp">Product Index</a></li>
+                                        <li><a href="/cindex.asp">Category Index</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-3">
+                                        My Account
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="link-col-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="column column-1">
+                                        <li><a href="/login.asp">Login/Register</a></li>
+                                        <li><a href="/shoppingcart.asp">Shopping Cart</a></li>
+                                        <li><a href="/orders.asp">Order Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#footer-collapse" href="#link-col-4">
+                                        Company Info
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="link-col-4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="column column-1">
+                                        <li><a href="/aboutus.asp">About Us</a></li>
+                                        <li><a href="/Articles.asp?ID=248">Contact Us</a></li>
+                                        <li><a href="/terms_privacy.asp">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix copyright">
+                    <span class="copyright__text">
+                        Copyright &copy; <span class="insertYear">2013</span>&nbsp;Config_CompanyNameLegal. All Rights Reserved.
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+        <script src="/v/vspfiles/templates/USALight2015/js/jquery-1.11.1.min.js"></script>
+
+        <script type="text/javascript">
+            var $jQueryModern = jQuery.noConflict(true);
+        </script>
+
+        <script src="v/vspfiles/templates/USALight2015/js/bootstrap.min.js"></script>
+        <script src="v/vspfiles/templates/USALight2015/js/push-menu/classie.js"></script>
+
+        <script>
+            $jQueryModern(document).ready(function(){   
+
+                /* FOOTER COLLAPSE */
+                $jQueryModern('#footer-collapse').on('shown', function () {
+                   $jQueryModern(".icon-chevron-down").removeClass("icon-chevron-down").addClass("icon-chevron-up");
+                });
+
+                $jQueryModern('#footer-collapse').on('hidden', function () {
+                   $jQueryModern(".icon-chevron-up").removeClass("icon-chevron-up").addClass("icon-chevron-down");
+                });
+
+                /* SEARCH POPOVER */
+                $jQueryModern('[data-toggle="popover"]').popover();
+                $jQueryModern('body').on('click', function (e) {
+                    $jQueryModern('[data-toggle="popover"]').each(function () {
+                        if (!$jQueryModern(this).is(e.target) && $jQueryModern(this).has(e.target).length === 0 && $jQueryModern('.popover').has(e.target).length === 0) {
+                            $jQueryModern(this).popover('hide');
+                        }
+                    });
+                });
+            });
+
+        </script>
+
+        <script>
+            var menuLeft = document.getElementById( 'push-menu' ),
+                showLeftPush = document.getElementById( 'showLeftPush' ),
+                body = document.body;
+         
+
+        showLeftPush.onclick = function() {
+            classie.toggle( this, 'active' );
+            classie.toggle( body, 'cbp-spmenu-push-toright' );
+            classie.toggle( menuLeft, 'cbp-spmenu-open' );
+            disableOther( 'showLeftPush' );
+        };
+         
+        function disableOther( button ) {
+            if( button !== 'showLeftPush' ) {
+                classie.toggle( showLeftPush, 'disabled' );
+            }
+        }
+        </script>
+    
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- Hide Search Refinement on Homepage -->
+     
+        <script type="text/javascript">    
+            $(window).resize(function(){ 
+                (function(){ 
+                if (window.location.href == "http://wgzrv.ndxva.servertrust.com" && document.documentElement.clientWidth > 992) { 
+                document.getElementById("hide-homepage").style.display="none";
+                } else if (window.location.href.indexOf("http://wgzrv.ndxva.servertrust.com/login.asp") > -1) {
+                document.getElementById("hide-homepage").style.display="none";
+                } else if (document.documentElement.clientWidth < 992) {
+                document.getElementById("hide-homepage").style.display="none";
+                } else {
+                document.getElementById("hide-homepage").style.display="block";
+                    }
+                });               
+            });
+        </script>
+    </body>
+</html>

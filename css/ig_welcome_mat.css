@@ -1,0 +1,41 @@
+/* iGlobal Welcome Mat Styles */
+/* Authored by iGlobal Stores (www.iglobalstores.com) */
+
+/* Google Fonts - If you're using your own fonts, you can remove these */
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 400; src: local('PT Sans'), local('PTSans-Regular'), url(//themes.googleusercontent.com/static/fonts/ptsans/v5/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff'); }
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 700; src: local('PT Sans Bold'), local('PTSans-Bold'), url(//themes.googleusercontent.com/static/fonts/ptsans/v5/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff'); }
+
+/* igFlag controls the placement of the country flag on your website */
+#igFlag { width: 30px; }
+#igFlag img { max-width: 25px; margin-bottom: -3px; cursor: pointer; margin-left: 5px; }
+
+/* Begin Modal Styles */
+#igSplashElement { position: fixed; width: 600px; background-color: #fff; -webkit-box-shadow:  0px 0px 60px 0px rgba(0, 0, 0, 0.5); box-shadow:  0px 0px 60px 0px rgba(0, 0, 0, 0.5); font-family: 'PT Sans','Helvetica Neue', Helvetica, Arial, sans-serif; /* Set your preferred font here */ color: #666; }
+.closeButton { position: absolute; top: 3px; right: 3px; }
+.close { cursor: pointer; }
+.igModalHeader { width: 560px; background-color: #fff; text-align: center; color: #999; overflow: auto; padding: 20px; }
+.logoWrapper { float: left; width: 180px; } /* If your logo is wider than 180px, you may wish to widen this and decrease the width of the .messageWrapper */
+.messageWrapper { float: right; width: 380px; margin-right: -20px;}
+.modalLogo { float: left; margin: 10px; width: 170px; }
+.igModalHeader img.headerFlag { max-width: 50px; margin-top: -15px; }
+.headerZero { margin-bottom: 8px;  }
+.headerOne { font-size: 30px; padding-left: 0.5em; color: #0068AC; /* Set the color of your choice here */ text-transform: uppercase; }
+.headerTwo { color: #999; margin-top: 7px; font-size: 12px; }
+.igModalBody { text-align: center; background-color: white; width: 100%; min-height: 320px; }
+.countryDropDownWrapper { width: 250px; min-height: 25px; -webkit-border-radius: 10px; border-radius: 10px; background: url(https://iglobalstores.com/images/downarrow.png) no-repeat 94% center; border: 2px solid #0068AC; /* Set the color of your choice here */ margin: 0 auto; padding: 0; cursor: pointer; }
+#countrySelect { position: relative; height: 35px; padding: 7px 10px; margin: 0px; font-size: 14px; line-height: 14px; color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; background: none !important; border: 0 !important; -webkit-appearance: none; -moz-appearance: window; appearance: none; ms-appearance: none; overflow: hidden; }
+select::-ms-expand { display: none; }
+ul.featureList { padding: 20px; margin: 0; -webkit-padding-start: 0; background-color: #999; color: #e8e8e8; }
+ul.featureList li { list-style-type: none; padding: 10px 20px; font-size: 18px; }
+ul.featureList li strong { color: white; }
+ul.featureList li img { padding-top: 5px; max-width: 80px; margin-bottom: -15px; }
+.igWelcomeCTAButton { background: white; width: 100%; height: 100px;}
+.igWelcomeCTAButton button { width: 225px; height: 50px; -webkit-border-radius: 3px; border-radius: 3px; color: white; margin: 20px auto; border: none; font-size: 20px; font-weight: normal; background-color: #596069; opacity: 1; text-shadow: none; float: none;}
+
+@media screen and (max-width: 600px) { /* Responsive design sets a width of 400px for all devices <= 600px */
+	#igSplashElement { width: 400px; margin-left: -200px !important; }
+	.igModalHeader { width: 360px; }
+	.logoWrapper { float: none; width: auto; }
+	.modalLogo { float: none; margin: 10px auto; }
+	.messageWrapper { clear: both; }
+}

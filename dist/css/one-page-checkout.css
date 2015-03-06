@@ -1,0 +1,664 @@
+
+
+/* breadcrumb and headers */
+#v65-onepage-breadcrumb {
+    display:none;
+}
+#v65-onepage-header {
+  color:#676767;
+  margin-left:8px;
+}
+
+.loginHeaderWrapper {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+#v65-onepage-ContentTable {
+  padding-top:0px;
+  margin-top:0px;
+  float:left;
+  width:45%; 
+}
+
+/* billing (with related shipping items for compactedness) */
+
+#billing-header, #shipping-header, #v65-checkout-payment-header {
+  padding-bottom:8px;
+}
+.v65-onepage-headerShort {
+  width:420px; 
+  overflow:hidden;
+}
+#v65-onepage-Billing input {
+    font-size:12px;
+    padding:6px 4px;
+    background-color: #eee;
+    border:1px solid #CCC;
+  margin-bottom:4px;
+}
+#v65-onepage-Billing select  {
+    font-size:13px;
+    padding:6px 4px;
+    background-color: #eee;
+    border:1px solid #CCC;
+    clear:both;
+  margin-bottom:4px;
+}
+#v65-onepage-BillingParent { 
+  text-align:left;
+  align:left;
+}
+#v65-onepage-billfirstname,
+#v65-onepage-billlastname,
+#v65-onepage-billcompanyname,
+#v65-onepage-billaddr1,
+#v65-onepage-billaddr2,
+#v65-onepage-billcity ,
+#v65-cart-billemail,
+#v65-onepage-shipfirstname, 
+#v65-onepage-shiplastname, 
+#v65-onepage-shipcompanyname, 
+#v65-onepage-shipaddr1,
+#v65-onepage-shipaddr2,
+#v65-onepage-shipcity {
+  width:280px !important;
+}
+#v65-onepage-billpostalcode,
+#v65-onepage-billphone,
+#v65-onepage-billfax {
+  width:165px;
+}
+#BillingCountry,
+#BillingState_dropdown {
+  width:175px;
+}
+#billing-header {
+  border-right:0px !important;
+}
+
+/* registration */
+#v65-onepage-registrationpassword-cell {
+  white-space:nowrap;
+  width:105px;
+}
+#v65-onepage-RegistrationHeader { 
+    /* display:none; */
+}
+
+#v65-onepage-RegistrationEmailReference { 
+  display:none;
+}
+#v65-cart-registration-email-label-cell {
+  width:10%;
+}
+#v65-cart-registration-email-cell ,
+#Email_Copy_For_Reference_Only { 
+  width:150px;
+}
+
+
+/* shipping */
+#v65-onepage-Shipping input, .v65-onepage-shipping-value-cell input {
+    font-size:12px;
+    padding:6px 4px;
+    background-color: #eee;
+    border:1px solid #CCC;
+  margin-bottom:4px;
+}
+#v65-onepage-Shipping select , .v65-onepage-shipping-value-cell select {
+    font-size:13px;
+    padding:6px 4px;
+    background-color: #eee;
+    border:1px solid #CCC;
+  margin-bottom:4px;
+}
+#v65-onepage-saved-shipping-table {
+  background-color:transparent;
+}
+#ship-to-options-table, #ship-to-options-table div {
+  text-align:left;
+}
+#v65-onepage-Shipping div {
+  text-align:left !important;
+}
+#v65-onepage-ShippingCostDetails, #v65-onepage-ShippingCostDetails .carttext {
+  font-size:12px; 
+  color:#666;
+}
+#v65-onepage-ShippingCost td{
+  padding-left:0px;
+  margin-left:0px;
+  text-align:left !important;
+}
+#v65-onepage-shipping-method-label {
+  width:105px;
+  float:left;
+}
+#v65-onepage-copy-to-shipping-row td {
+  height:12px !important;
+  padding:0px;
+  margin:0px;
+  line-height:12px;
+  vertical-align:top;
+    text-align:left;
+  padding-left:8px;
+
+}
+#v65-onepage-CopyBillingToShippingLink {
+  color:#333 !important;
+  font-weight:bold;
+}
+#v65-onepage-Shipping { 
+  width:100% !important;
+}
+
+
+/* payment */
+#savedPayment, #v65-onepage-payment-details-parent-row td , #v65-onepage-payment-details-parent-table {
+  text-align:left !important;
+}
+#savedPayment {
+  /*width:50%; */
+  width:15px;
+}
+.v65-onepage-SavedLocations td {
+  border-width:0px !important;
+}
+.colors_backgroundneutral ,
+#v65-onepage-SavedLocations td,
+#v65-onepage-SavedLocations .colors_backgroundneutral,
+#v65-onepage-saved-shipping-table,
+#v65-onepage-saved-shipping-table tr,
+#v65-onepage-saved-shipping-table td ,
+#v65-onepage-saved-shipping-table .colors_backgroundneutral ,
+.v65-onepage-SavedLocations table {
+  background-color:transparent !important;
+}
+#savedPayment input, 
+#savedPayment select,
+#savedPayment table input, 
+#savedPayment table select ,
+#v65-onepage-registration input,
+#v65-onepage-registration select,
+.v65-onepage-payment-details input,
+.v65-onepage-payment-details select,
+#v65-onepage-shipto-dropdown-cell {
+    font-size:12px;
+    padding:6px 4px;
+    background-color: #eee;
+    border:1px solid #ccc;
+}
+#savedPayment input, 
+#savedPayment select {
+  margin-bottom:4px;
+}
+.v65-payment-details-label-cell {
+  width:105px !important;
+  text-align:left;
+  white-space:normal;
+}
+.v65-payment-details-value-cell {
+  /* width:100%; */
+}
+#v65-onepage-payment-details-parent-row { width:15px; }
+#v65-paymenttype-select-parent,
+#v65-paymenttype-select-parent td ,
+#v65-paymenttype-select-parent .colors_backgroundneutral,
+#v65-paymenttype-select-parent .colors_backgroundneutral font {
+  border:0px solid #fff;
+  background-color: transparent !important;
+  font-weight:normal !important;
+  line-height:12px;
+}
+#v65-paymenttype-select-parent .colors_backgroundneutral  font span {
+  float:left; 
+}
+#v65-onepage-payment-details-parent-row {
+  width:460px;
+}
+.v65-payment-details-label-cell {
+  width:158px;
+}
+*:first-child+html #savedPayment select, #savedPayment input, .v65-payment-details-value-cell {
+  margin-bottom:8px;
+  margin-top:8px;
+}
+
+
+
+/* order summary */
+#table_checkout_cart0 { 
+    background-color: #eee; 
+  margin-bottom:5px; 
+  float:right;
+  margin-left:10px;
+  margin-top:5px; 
+    width:250px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #table_checkout_cart0 {
+  margin-top:20px;
+  }
+}
+#v65-onepage-cartsummary-header {
+  height:40px;
+  vertical-align:middle;
+    float:left;
+    display:block;
+    width:100%;
+  background-color:#676767;
+    color:white;
+}
+#v65-onepage-CartSummary {
+    background-color:#eee;
+}
+#v65-onepage-MyCartImage { 
+    display:none;
+}
+.v65-onepage-summary-gift-row div {
+  text-align:right;
+  font-weight:normal;
+}
+.v65-onepage-summary-gift-line-row {
+  display:none;
+}
+.v65-onepage-ordersummary-itemtotal {
+  white-space:nowrap;
+}
+#v65-onepage-summary-total-line , .v65-onepage-summary-total-line-cell {
+  background-color:transparent;
+  border-bottom:1px solid #ccc;
+  padding:8px;
+}
+#v65-onepage-ShippingCostTotalRow  td{
+  padding-top:8px;
+}
+#TotalsGCAmtUsedTD {
+  font-weight:normal;
+}
+.v65-onepage-summary-total-line-img {
+  display:none !important;
+}
+.v65-onepage-summary-total-line {
+  background-color:#fff;
+}
+#v65-onepage-cartsummary-label {
+  padding-top:11px;
+  padding-left:10px;
+    float:left;
+  font-size:16px;
+  font-weight:bold;
+}
+#v65-onepage-ordersummary-header-row {
+    /* _display:none; */
+}
+#v65-onepage-editcart { 
+    float:right;
+    margin:12px;
+    border:0px;
+    font-size:13px;
+    font-weight:bold;
+    color:white;
+    text-decoration:underline;
+}
+
+#v65-onepage-ShippingCostTotalRow { 
+    margin-top:15px !important;
+    padding-top:15px !important;
+}
+#TotalsTotalTD { 
+    font-size:20px; 
+}
+#v65-onepage-ShippingCostTotals { 
+}
+#TotalsDivContainer { 
+    text-align:right;
+    float:right;
+}
+#v65-onepage-ShippingCostDetails {
+    width:100%;
+    margin-right:20px;
+    padding:15px; 
+    display:table;
+}
+#v65-onepage-ShippingCostHeader {
+    display:none;
+}
+#v65-onepage-ordersummary-items { 
+    width:100% !important; 
+    background-color:#eee;
+}
+.v65-onepage-ordersummary-itemcode { 
+    display:none; 
+}
+.v65-onepage-ordercomments-row {
+  float:left;
+}
+/* misc */
+#v65-onepage-MakeChanges { 
+    display:none; 
+}
+.v65_Divider { 
+    display:none; 
+}
+.v65-onepage-Border  { 
+    border:0px solid transparent !important; 
+}
+#v65-onepage-ordercomments-value {
+  padding-top:8px;
+}
+.v65-onepage-shippingcost-label {
+    font-weight:normal !important;
+}
+#btnSubmitOrder { 
+    float:right; 
+    margin:15px;
+}
+/*  OVERRIDE  */
+#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr#v65-cart-button-submit-row td#v65-cart-button-submit input#btnSubmitOrder {float: none;margin: 0 auto;display: block;margin-top: 0px;margin-bottom: 20px !important;}
+
+@media only screen and (max-width:767px) {
+.conditions {margin-left:0;}
+}
+@media only screen and (min-width:768px) {
+.conditions {margin-left:20px;}
+}
+#v65-onepage-ShippingCostTotals {
+    background-color:#eee;
+}
+.v65-onepage-SavedLocations td {
+  border-width:0px;
+  padding:0px;
+  background:transparent;
+}
+#v65-onepage-ordercomments-input {
+    width:95%;
+    height:80px;
+    padding:5px;
+}
+#v65-onepage-ordercomments-value { 
+  padding:15px;
+}
+#ShipToSelectTable { 
+    clear:both;
+}
+#content_area { 
+  padding-left:0px !important;
+}
+
+#v65-apply-gift-newCell li {
+  list-style:none;
+  padding-left:20px;
+}
+#v65-apply-gift-newCell li a {
+  color:#666 !important;
+}
+#span_GiftCertificates_Editable table {
+  width:100% !important;
+}
+#v65-cart-button-submit {
+  text-align:center !important;
+  width:center;
+  padding:auto;
+}
+.v65-onepage-custom-header-row {
+    display:none;
+}
+#v65-completeOrder {
+    padding:8px;
+    font-size:16px;
+}
+.v65-onepage-custom-details-row td {
+    padding:5px;
+}
+/*  OVERRIDE  */
+.terms {
+  margin-left: 20px;
+  margin-top: -19px;
+}
+#CalcShippingDivContainer {
+  width:300px;
+}
+#SessionShippingAddressDiv, #RecalcShippingDiv {
+  display:none;
+}
+@-moz-document url-prefix() {
+  #v65-onepage-billing td {
+    padding-bottom:15px;
+  }
+}
+#v65-onepage-ShippingCostParent, #ship-to-options-table td, #ShiptoSelectTable td, #v65-onepage-ShippingParent  {
+  margin-left:0px;
+  padding-left:0px;
+  text-align:left;
+}
+*:first-child+html #v65-onepage-ShippingCostParent, #ship-to-options-table td, #ShiptoSelectTable td, #v65-onepage-ShippingParent  {
+  width:4px !important;
+}
+
+
+
+#simpleModalOverlay {
+  position:fixed; 
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+  z-index: 2000;
+}
+
+#simpleModal {
+  position:absolute;
+  text-align: left;
+  z-index: 3000;
+}
+
+#simpleModalContent {
+  border-radius:4px;
+  background:#fff;
+  padding:20px;
+}
+
+#simpleModalClose {
+  position:absolute;
+  display:block;
+  top:7px;
+  right:14px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#simpleModalClose:hover {
+  text-decoration: none !important;
+}
+
+#loginModal {
+  margin: 20px;
+}
+
+#loginModal .loginTitle, #loginModal .forgotPasswordTitle {
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+#loginModal .loginMessage, #loginModal .forgotPasswordMessage {
+  margin-bottom: 30px;
+}
+
+#loginModal input {
+  padding: 7px;
+  border: 1px solid #CECECE;
+  border-radius: 4px;
+  width: 250px;
+}
+
+#loginModal .loginEmail, #loginModal .forgotPasswordEmail {
+  margin-bottom: 10px;
+}
+
+#loginModal .loginForgotPassword {
+  font-size: 10px;
+  float: right;
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#loginModal .loginForgotPassword a {
+  text-decoration: underline;
+}
+
+#loginModal .loginButtons, #loginModal .forgotPasswordButtons {
+  float: right;
+  clear: both;
+}
+
+#loginModal .loginButtons button, #loginModal .forgotPasswordButtons button {
+  margin-left: 10px;
+}
+
+#loginModal .clear {
+  clear: both;
+}
+
+li[class*="v13-notice"] {
+  display: none;
+}
+.v13-notice-container {
+  /*margin: -@grid-unit 0 @grid-unit*2;*/
+
+  padding: 0;
+  clear: both;
+  width: 100%;
+  display: none;
+}
+.v13-notice-container > li[class*="v13-notice"]:first-child {
+  margin-top: -10px;
+}
+.v13-notice-container > li[class*="v13-notice"]:last-child {
+  margin-bottom: 20px;
+}
+.v13-notice-container > li[class*="v13-notice"] {
+  display: block;
+  list-style: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 20px;
+  line-height: 20px;
+}
+.v13-notice-container > li[class*="v13-notice"]:last-child {
+  margin-bottom: 0;
+}
+.v13-notice-container > li[class*="v13-notice"] span.v13-icon-notice {
+  position: absolute;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  background: transparent url('/a/a/v13/i/v13-sprite.png') no-repeat 0 0;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-error {
+  border-color: #e5ad9c;
+  background-color: #ffc0ad;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-error span.v13-icon-notice {
+  background-position: -234px -58px;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-info {
+  border-color: #e0dd87;
+  background-color: #faf796;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-info span.v13-icon-notice {
+  background-position: -209px -58px;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-success {
+  border-color: #b9cc7a;
+  background-color: #d7ed8e;
+}
+.v13-notice-container > li[class*="v13-notice"].v13-notice-success span.v13-icon-notice {
+  background-position: -259px -58px;
+}
+.v13-notice-container > li[class*="v13-notice"] ul {
+  margin: 0;
+  padding: 3px 0 0 10px;
+}
+.v13-notice-container > li[class*="v13-notice"] ul li {
+  list-style: none;
+  margin: 2px;
+}
+.v13-notice-container > li[class*="v13-notice"] p {
+  margin-top: 0px;
+}
+.v13-notice-container > li[class*="v13-notice"] p:last-child {
+  margin-bottom: 0px;
+}
+.v13-notice-container a {
+  color: #666666 !important;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 0 5px;
+}
+.v13-notice-container a.v13-notice-hidelink {
+  cursor: pointer;
+}
+
+.grayButton{
+  border:1px solid #CACACA; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 7px 19px 7px 19px; text-decoration:none; display:inline-block;text-shadow: 0px 0px 0 rgba(0,0,0,0.3);font-weight:bold; color: #5E5E5E;
+  background-color: #F7F7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(#E0E0E0));
+  background-image: -webkit-linear-gradient(top, #F7F7F7, #E0E0E0);
+  background-image: -moz-linear-gradient(top, #F7F7F7, #E0E0E0);
+  background-image: -ms-linear-gradient(top, #F7F7F7, #E0E0E0);
+  background-image: -o-linear-gradient(top, #F7F7F7, #E0E0E0);
+  background-image: linear-gradient(to bottom, #F7F7F7, #E0E0E0);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F7F7F7, endColorstr=#E0E0E0);
+}
+
+.grayButton:hover
+{
+  border:1px solid #BCBCBC;
+  background-color: #EAF0F0; background-image: -webkit-gradient(linear, left top, left bottom, from(#EAF0F0), to(#D4D4D4));
+  background-image: -webkit-linear-gradient(top, #EAF0F0, #D4D4D4);
+  background-image: -moz-linear-gradient(top, #EAF0F0, #D4D4D4);
+  background-image: -ms-linear-gradient(top, #EAF0F0, #D4D4D4);
+  background-image: -o-linear-gradient(top, #EAF0F0, #D4D4D4);
+  background-image: linear-gradient(to bottom, #EAF0F0, #D4D4D4);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#EAF0F0, endColorstr=#D4D4D4);
+  text-decoration: none !important;
+}
+
+.darkGrayButton{
+  border:1px solid #6D6D6C; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size:12px;
+  font-family:arial, helvetica, sans-serif; 
+  padding: 6px 19px 6px 19px; text-decoration:none; display:inline-block;text-shadow: 0px 0px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+  background-color: #7D7D7D; background-image: -webkit-gradient(linear, left top, left bottom, from(#7D7D7D), to(#676767));
+  background-image: -webkit-linear-gradient(top, #7D7D7D, #676767);
+  background-image: -moz-linear-gradient(top, #7D7D7D, #676767);
+  background-image: -ms-linear-gradient(top, #7D7D7D, #676767);
+  background-image: -o-linear-gradient(top, #7D7D7D, #676767);
+  background-image: linear-gradient(to bottom, #7D7D7D, #676767);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7D7D7D, endColorstr=#676767);
+}
+
+.darkGrayButton:hover{
+  border:1px solid #5C5C5B;
+  background-color: #696969; 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#454545));
+  background-image: -webkit-linear-gradient(top, #696969, #454545);
+  background-image: -moz-linear-gradient(top, #696969, #454545);
+  background-image: -ms-linear-gradient(top, #696969, #454545);
+  background-image: -o-linear-gradient(top, #696969, #454545);
+  background-image: linear-gradient(to bottom, #696969, #454545);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#696969, endColorstr=#454545);
+}

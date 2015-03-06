@@ -1,0 +1,177 @@
+/**************************
+*      CENTER TABLE       *
+**************************/
+#content_area form#v65-onepage-CheckoutForm {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+
+/**************************
+*       PAGE HEADING      *
+**************************/
+#content_area h2#v65-onepage-header {
+  text-indent: 0px;
+  color: #000; }
+
+#content_area h2#v65-onepage-header .loginHeaderWrapper {
+  color: black;
+  text-transform: none; }
+
+#content_area h2#v65-onepage-header .loginHeaderWrapper a {
+  color: #d10006 !important; }
+
+/**************************
+*     HEADINGS IMAGES     *
+**************************/
+#content_area #v65-onepage-ContentTable .v65-onepage-headerShort {
+  background: #f7f7f8;
+  width: 100%;
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase; 
+}
+
+/**************************
+*       LOGIN MODAL       *
+**************************/
+
+#simpleModal {
+  width: 290px !important;
+}
+
+#simpleModal #loginModal {
+  margin: 0;
+}
+
+/**************************
+*       LABEL TEXT        *
+**************************/
+#content_area td#v65-onepage-ordercomments-value,
+#content_area table#v65-onepage-ContentTable td {
+  color: black; }
+
+#content_area table#v65-onepage-ContentTable td font {
+  color: #d10006 !important; }
+
+/**************************
+*    INPUTS & SELECTS     *
+**************************/
+#content_area table#v65-onepage-Detail td input[type="password"],
+#content_area table#v65-onepage-Detail td input[type="text"],
+#content_area table#v65-onepage-Detail td select {
+  background: white !important;
+  border: 1px solid #e3e3e3;
+  color: #555555;
+  border-radius: 0;
+  text-align: left;
+  margin-bottom: 10px; }
+
+#content_area table#v65-onepage-Detail td input[type="password"]:focus,
+#content_area table#v65-onepage-Detail td input[type="text"]:focus,
+#content_area table#v65-onepage-Detail td select:focus {
+  border: 1px solid #e3e3e3; }
+
+/**********************************
+*    TABLE CHECKOUT SUM HEADING   *
+**********************************/
+/* Heading background-color */
+#content_area #table_checkout_cart0 #v65-onepage-cartsummary-header {
+  background: #f7f7f8; }
+
+/* Heading text */
+#content_area #table_checkout_cart0 #v65-onepage-cartsummary-label {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal; }
+
+/* "Edit" text styling */
+#content_area #table_checkout_cart0 #v65-onepage-editcart {
+  color: #d10006 !important;
+  font-size: 16px !important;
+  margin-right: 15px !important; }
+
+/*******************************
+*    TABLE CHECKOUT SUM BKG    *
+*******************************/
+/* Order summary background color */
+#content_area #table_checkout_cart0 {
+  background: #f7f7f8 !important;
+  margin-top: 15px !important;
+  width: 50%;
+  /*Resets margin*/ }
+
+/**************************
+*       CART DETAILS      *
+**************************/
+/* All summary text the same? Use this and delete the next three sections */
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-header-row td,
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-items td,
+#content_area #table_checkout_cart0 b.v65-onepage-shippingcost-label,
+#content_area #table_checkout_cart0 b.v65-onepage-shippingcost-amount,
+#content_area #TotalsDivContainer b,
+#content_area #table_checkout_cart0 #v65-onepage-ShippingCostDetails .carttext {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Gift Card Amount */
+#content_area #v65-onepage-ordersummary-items td,
+#content_area #TotalsGCAmtUsedTD {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#content_area #table_checkout_cart0 #v65-onepage-ordersummary-header-row td.v65-onepage-ordersummary-header {
+  text-transform: uppercase;
+  font-weight: normal !important; }
+
+#content_area #v65-onepage-ShippingCostDetails {
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 15px; }
+
+/**************************
+*    BORDER ABOVE TOTAL   *
+**************************/
+#content_area #table_checkout_cart0 #v65-onepage-summary-total-line,
+#content_area #table_checkout_cart0 .v65-onepage-summary-total-line-cell {
+  border-bottom: 1px solid #e0e0e0; }
+
+/**************************
+*      TOTAL TEXT       *
+**************************/
+#content_area #TotalsTotalTD {
+  color: #d10006 !important;
+  display: block;
+  margin-top: 10px;
+  font-weight: normal !important; }
+
+
+/**************************
+*      OTHER TEXT       *
+**************************/
+/* Gift card text */
+#content_area td#v65-apply-gift-newCell a[style="color:#0000CC;font-weight:bold;"] {
+  color: black !important;
+  font-size: 12px;
+  font-weight: normal !important; }
+
+/* Order Comments text */
+#content_area #v65-onepage-ordercomments-row #v65-onepage-ordercomments-value {
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-indent: 0px; }
+
+#content_area #v65-onepage-ordercomments-row #v65-onepage-ordercomments-value textarea {
+  margin-top: 5px; }
+
+/* Textarea border and background */
+#content_area textarea#v65-onepage-ordercomments-input {
+  background: white !important;
+  border: 1px solid #e3e3e3 !important; }
+
+#content_area textarea#v65-onepage-ordercomments-input:focus {
+  border: 1px solid #e3e3e3 !important; }

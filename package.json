@@ -1,0 +1,33 @@
+{
+  "name": "_USALight2015",
+  "version": "1.0.0",
+  "description": "Responsive Site Overhaul",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-processhtml": "^0.3.7",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-uncss": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toddler4372/USALight-NEW.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "responsive",
+    "grunt",
+    "javascript"
+  ],
+  "author": "Todd Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddler4372/USALight-NEW/issues"
+  },
+  "homepage": "https://github.com/toddler4372/USALight-NEW"
+}
