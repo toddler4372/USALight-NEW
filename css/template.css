@@ -655,19 +655,23 @@ li#ups {
         display:none;
       }
     }
+  @media only screen and (min-width: 1240px) {
+    #credit-cards {margin-left: 8px;}
+  }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .elist {margin-left: -30%;}
     .elist form {width: 150%;}
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
   #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;}
-}
+  .elist {width: 106%;}
+  }
   @media only screen and (min-width: 992px) and (max-width: 1239px) {
   #credit-cards {width:239px;height:43px;}
-}
+  }
   @media only screen and (min-width: 769px) and (max-width: 991px) {
-  #credit-cards {width:263px;height:48px;}
-}
+  #credit-cards {width:263px;height:48px;margin-left: 8px;}
+  }
 
 /*-------------------LOGIN PAGE-----------------------*/
 
