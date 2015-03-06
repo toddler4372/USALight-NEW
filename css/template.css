@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       .footer .column {margin: 30px 0px 30px 0;}
     }
     @media only screen and (min-width: 992px) {
-      .footer {margin-left: 10px;} 
+      .footer {margin-left: 0px;} 
     }
     @media only screen and (max-width: 991px) {
       .footer {margin-left: 0px;} 

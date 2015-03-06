@@ -391,7 +391,6 @@
 
 #v65-onepage-BillingParent {
   text-align: left;
-  align: left;
 }
 
 #v65-onepage-billfirstname,
@@ -880,7 +879,7 @@
 
   #content_area #v65-cart-table > tbody tr.v65-cart-total-estimate-row td,
   #content_area #v65-cart-table > tbody tr.v65-cart-tax-row td {
-    text-align: right; } }
+    text-align: right; } 
 
 /* UPDATES TO SHOPPING CART */
   /*-faux labels QTY-*/
@@ -919,6 +918,7 @@
     #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td.v65-item-zebra center input  {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
     #v65-cart-table-container tbody tr td form table#v65-cart-table tbody tr.v65-cart-details-row td center input {margin-top: 24px !important;max-width: 40px;min-width: 40px;text-align: center;}
   
+
   }
 
 /*  HIDE EDIT ITEMS IN CART BUTTON - FIX FOR VOLUSION FORMATTING ISSUES  */

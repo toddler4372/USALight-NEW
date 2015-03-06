@@ -1277,7 +1277,7 @@ form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vert
   #content_area > table:nth-child(4) {width: 100%;margin-left: 0; margin-top:10px;}
 }
 @media only screen and (min-width: 1240px) {
-  .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important!}}
+  .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important}}
 @media only screen and (min-width: 992px) and (max-width:1239px) {
   .v-product-grid .v-product {width: 30% !important;padding: 15px 25px !important;margin-left: 25px !important;}}
 @media only screen and (min-width: 768px) and (max-width:991px) {
@@ -1309,14 +1309,14 @@ font.pricecolor.colors_productprice div.product_productprice b {
 
 /*  TERMS & CONDITIONS INPUT  */
 @media only screen and (min-width: 1240px) {
-td:nth-child(2) > input[type="checkbox"] {margin-left: -19px;}
-.terms {margin-left: 0px;margin-top: -19px;}
+td:nth-child(2) > input[type="checkbox"] {margin-left: 65px;}
+.terms {margin-left: 85px;margin-top: -19px;}
 #div_articleid_112 table tbody tr td input {margin-left: 65px;}
 }
-@-moz-document url-prefix() {.terms {margin-left: 80px;margin-top: -19px;}}
+
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
-td:nth-child(2) > input[type="checkbox"] {margin-left: -19px;}
-.terms {margin-left: 0px;margin-top: -19px;}
+td:nth-child(2) > input[type="checkbox"] {margin-left: 25px;}
+.terms {margin-left: 45px;margin-top: -19px;}
 #div_articleid_112 table tbody tr td input {margin-left: 22px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
