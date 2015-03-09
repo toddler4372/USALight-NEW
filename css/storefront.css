@@ -33,7 +33,7 @@ input[type="radio"], input[type="checkbox"] {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #content_area table[width] select {
   width: 80px;}
   #additionalsearch {display: none;}
@@ -1325,7 +1325,7 @@ td:nth-child(2) > input[type="checkbox"] {margin-left: 2px;}
 #div_articleid_112 table tbody tr td input {margin-left: 2px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer {margin-top: 1560px;}
+  .footer {margin-top: 1650px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio:0) {
   .footer {margin-top: 20px;}
@@ -1376,6 +1376,11 @@ span.PageText_L719n {
 input[src$="/btn_go.gif"] {
   margin-left: 5px !important;
   margin-top: 3px !important;
+}
+@media only screen and (max-width: 767px) {
+  input[src$="/btn_go.gif"] {
+  margin-left: 0px !important;
+  margin-top: 0px !important;}
 }
 span.PageText_L311n {
   line-height: 100px;
@@ -1585,4 +1590,10 @@ form .colors_descriptionbox {
 .terms-logo {
   float: right;
   margin-top: -65px;
+}
+/*  PRODUCT QUANTITY  */
+#content_area table[width$="%"] input.v65-productdetail-cartqty, #MainForm.search_results_section table tbody tr td table tbody tr td nobr font b font b input {
+  min-width: 45px !important;
+  max-width: 48px !important;
+  text-align: center !important;
 }

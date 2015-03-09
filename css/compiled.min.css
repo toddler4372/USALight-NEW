@@ -465,7 +465,6 @@ input[type="search"] {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 21px;
   border: 1px solid transparent;
 }
 
@@ -2291,3 +2290,22 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
+
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+tr.collapse.in {
+  display: table-row; }
+
+tbody.collapse.in {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
