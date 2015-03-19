@@ -277,7 +277,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /******** FOOTER **********/
 .footer {
   border-top: 1px solid #e3e3e3;
-  margin-top: 20px; 
   padding: 0 15px 0 15px;}
   .footer .column {
     margin: 0;
@@ -511,7 +510,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /*--------------------------CUSTOM STYLES-----------------------------*/
 
-.homepage-logo {margin-top: 20px;margin-bottom: 20px;}
+.homepage-logo {margin-top: 10px;margin-bottom: 20px;}
 
 @media only screen and (max-width: 991px) {
   .homepage-logo {margin-bottom: 15px;}
@@ -550,13 +549,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 6px 0 3px 0;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
-    margin-bottom: 10px;
   }
 
 @media only screen and (min-width: 1240px) {
   .features ul li {
     display: inline-block;
-    padding: 0 40px 0 40px;
+    padding: 10px 40px 10px 40px;
   }
 }
 
@@ -630,7 +628,7 @@ li#ups {
   @media only screen and (min-width: 992px) {
     div#phone-number {
       position: absolute;
-      top: 50px;
+      top: 40px;
       right: 0px;
       font-family: 'Roboto', Arial, Sans-serif;
       font-size: 26px;
@@ -659,18 +657,17 @@ li#ups {
     #credit-cards {margin-left: 8px;}
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .elist {margin-left: -30%;}
-    .elist form {width: 150%;}
+    .elist form {width: 100%;}
   }
   @media only screen and (max-width: 767px) {
   #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;}
-  .elist {width: 106%;}
+  .elist {width: 95%;}
   }
   @media only screen and (min-width: 992px) and (max-width: 1239px) {
   #credit-cards {width:239px;height:43px;}
   }
   @media only screen and (min-width: 769px) and (max-width: 991px) {
-  #credit-cards {width:263px;height:48px;margin-left: 8px;}
+  #credit-cards {width:263px;height:48px;margin: 0 auto;display: block;}
   }
 
 /*-------------------LOGIN PAGE-----------------------*/

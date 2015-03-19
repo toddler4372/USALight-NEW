@@ -2,7 +2,6 @@
 #div_articleid_2 img {
   display: block;
   width: 100%;
-  height: auto;
 }
 
 #content_area table {
@@ -188,14 +187,25 @@ color: #e74f5d;
   .usa section h1 {font-size: 1.6em; padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 1px;}
 
   /* products */
-  .usa section.products .product {width: 32.33%;margin-left: 1%;padding: 9px;border-width: 1px;border-style: solid; display: table-cell;}
-  .usa section.products .product h2 {font-size: 1.8em;font-weight: bold;padding: 10px 5px 5px 0px; margin: 0 25px 5px 28px;border-bottom: 1px solid #eee;}
+  .usa section.products .product {width: 32.33%;margin-left: 1%;padding: 13px;padding-bottom: 0;border-width: 1px;border-style: solid; display: table-cell;}
+  .usa section.products .product:hover {background-color: #dce2f8;}
+  .usa section.products .product h2 {font-size: 2em;text-align: center;font-weight: bold;padding:0px;   margin: -30px 25px 20px 28px;}
   .usa section.products .product img  {width: 100%; max-width: 405px;}
   .usa section.products .product ul {overflow: hidden;padding: 0 25px;list-style-type: none; margin: 0 5px;}
   .usa section.products .product ul li {margin: 0;padding: 5px 0 5px 15px;}
   .usa section.products .product ul li:hover {background-color: #eee;}
   .usa section.products .product ul li a {font-size: 18px;font-weight:bold;}
   .usa section.products .product ul li a:hover {text-decoration: none;}
+
+  .merits {
+      background: url(../images/merits.jpg);
+      background-size: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      height: 9em;
+      border-top: 1px solid #e3e3e3;
+  }
   
   /* QUERIES */
 
@@ -225,9 +235,25 @@ color: #e74f5d;
     .usa section.products .product ul {margin: 0;padding: 0 10px 0 0;}
   }
 
+  img.homepage-logo {
+    height: 57px;
+    width: 300px;
+}
+
   /* > 992 & < 1240 */
   @media only screen and (min-width: 992px) and (max-width: 1240px) {
     .usa section.products .product img  {width: 100%; max-width: 405px;max-height: 206px;}
+    .merits {height: 7em;}
+    #div_articleid_2 img {
+      display: block;
+      width: 100%;
+      height: 172px;
+      width: 304px;
+    }
+    .usa section.products .product h2 {
+      font-size: 1.7em;
+      margin: -20px 25px 10px 28px;
+    }
   }
 
   /* > 768 & < 992 */
@@ -257,7 +283,7 @@ color: #e74f5d;
   @media only screen and (min-width: 992px) {
     .search {
       position: absolute;
-      top: 32px;
+      top: 20px;
       left: 50%;
       margin-left: -19%;
       width: 38%;
@@ -295,8 +321,9 @@ color: #e74f5d;
     border-top: 0; }
     .panel-group .panel-footer + .panel-collapse .panel-body {
       border-bottom: 1px solid #dddddd; }
-
-  footer.footer div.row div.col-sm-3.col-sm-offset-1 {width: 25%;margin-bottom: 40px;margin-left: 40px;}
+@media only screen and (max-width: 991px) {
+  footer.footer div.row div.col-sm-3.col-sm-offset-1 {width: 80%;margin: 0 auto;float: none;right: 4%;}
+}
 
   .panel-default {
   border-color: #dddddd; }

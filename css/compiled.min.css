@@ -335,7 +335,6 @@ ul {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media (min-width: 991px) {
@@ -1178,7 +1177,7 @@ body {
   }
 
   footer.footer div.row div.col-sm-3.col-sm-offset-1 {
-    width: 25%;
+    width: 80%;
     margin-bottom: 40px;
     margin-left: 40px;
   }
@@ -1498,7 +1497,8 @@ body {
   }
 
   .row {
-    left: -30px;
+    position: relative;
+    left: 2%;
     width: 1076px;
   }
 
@@ -1515,7 +1515,8 @@ body {
 
   .row {
     width: 100%;
-    left: 0;
+    position: relative;
+    left: 5%;
   }
 
   /*[class^="col"],
@@ -1544,7 +1545,8 @@ body {
   .row {
     float: none;
     width: 100%;
-    left: 0;
+    position: relative;
+    left: 5%;
     padding-bottom: 0;
   }
 
@@ -2125,6 +2127,7 @@ body {
   #content {
     position: relative;
     z-index: 0;
+    margin-top: 10px;
   }
 
   .search {
@@ -2157,7 +2160,7 @@ body {
   #toolbar {
     float: right;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: -10px;
   }
 
