@@ -179,17 +179,16 @@ color: #e74f5d;
     border-spacing: 10px;}
 
   .usa section.products .category-block{cell-spacing: 1%;}
-  .homepage-logo img {display: block; margin-top: 10px;}
   .homepage ul {list-style-type: none;}
 
   /* All sections */
-  .usa section, .usa aside {padding: 0;}
+  .usa section, .usa aside {padding: 0;margin-top: -10px;}
   .usa section h1 {font-size: 1.6em; padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 1px;}
 
   /* products */
   .usa section.products .product {width: 32.33%;margin-left: 1%;padding: 13px;padding-bottom: 0;border-width: 1px;border-style: solid; display: table-cell;}
-  .usa section.products .product:hover {background-color: #dce2f8;}
   .usa section.products .product h2 {font-size: 2em;text-align: center;font-weight: bold;padding:0px;   margin: -30px 25px 20px 28px;}
+  h2:hover a{color: #0c2774;}
   .usa section.products .product img  {width: 100%; max-width: 405px;}
   .usa section.products .product ul {overflow: hidden;padding: 0 25px;list-style-type: none; margin: 0 5px;}
   .usa section.products .product ul li {margin: 0;padding: 5px 0 5px 15px;}
@@ -198,12 +197,12 @@ color: #e74f5d;
   .usa section.products .product ul li a:hover {text-decoration: none;}
 
   .merits {
-      background: url(../images/merits.jpg);
+      background: url(../images/merits.jpg) no-repeat;
       background-size: 100%;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      height: 9em;
+      height: 8em;
       border-top: 1px solid #e3e3e3;
   }
   
@@ -228,7 +227,7 @@ color: #e74f5d;
     .usa section.products .product {width: 100%;margin-left: 0%; margin-bottom: 10px;padding:0; border-width: 0px; display: block;}
     .usa section.products .product h2 {overflow: hidden;padding: 0 10px 5px 0;;margin: 5px 10px 5px 0;font-size: 1.6em;}
     .usa section.products .product img {float: left; margin-right: 20px;}
-    img.homepage-logo {display: block;margin: 0 auto;margin-top: 10px;}
+    img.homepage-logo {display: block;margin: 0 auto;margin-top: 17px;}
     #toolbar {position: absolute; top: 90px;height: 46px; width: 100%;}
     .search {position: absolute; top: 136px; width: 100%;}
     .header {min-height: 125px;}
@@ -243,7 +242,7 @@ color: #e74f5d;
   /* > 992 & < 1240 */
   @media only screen and (min-width: 992px) and (max-width: 1240px) {
     .usa section.products .product img  {width: 100%; max-width: 405px;max-height: 206px;}
-    .merits {height: 7em;}
+    .merits {height: 6.5em;}
     #div_articleid_2 img {
       display: block;
       width: 100%;
@@ -254,6 +253,9 @@ color: #e74f5d;
       font-size: 1.7em;
       margin: -20px 25px 10px 28px;
     }
+    div#hide-homepage img {
+      margin-left: -14px;
+    }
   }
 
   /* > 768 & < 992 */
@@ -261,13 +263,15 @@ color: #e74f5d;
     .usa section.products .product img  {width: 405px; max-height: 280px;}
     .container {padding-left: 0px;}
     .usa section.products .product {border: 1px solid #e3e3e3;padding: 10px;width: 94%;margin-bottom: 15px;}
+    .merits {height: 4em;}
+    .usa section.products .product h2 {text-align: left;}
   }
 
   /* < 768 */
   @media only screen and (max-width: 768px) {
     .usa section.products .product img {max-width: 405px;}
     .usa section.products .product {margin-bottom: 15px;}
-    .usa section.products .product h2 {font-size: 1.8em;}
+    .usa section.products .product h2 {font-size: 1.8em;margin-top: -20px;}
     .usa section.products .product img {max-width: 405px; float: none; display: block; margin: 0 auto; }
     .usa section.products .product ul {overflow: visible; list-style-type: none; padding: 0;}
     .usa section.products .product ul li a {font-size: 18px;}
@@ -278,12 +282,13 @@ color: #e74f5d;
     	padding: 20px;
 		width: 94%;}/*additional style for 6 blocks*/
     .homepage-logo img{display: block; margin: auto;}
+    .merits {display: none;}
   }
 
   @media only screen and (min-width: 992px) {
     .search {
       position: absolute;
-      top: 20px;
+      top: 17px;
       left: 50%;
       margin-left: -19%;
       width: 38%;
@@ -299,10 +304,18 @@ color: #e74f5d;
 
   @media only screen and (max-width: 991px) {
     #refinement-wrapper {display: none;}
-    #search-wrapper {height: 70px;}
+    #search-wrapper {height: 77px;}
   }
 
 	#hide-homepage {display:none;}
+  /*  SIDEBAR MERITS  */
+  div#hide-homepage {
+    background: #fcfcfc;
+  }
+  div#hide-homepage img {
+    display: block;
+    margin: 0 auto;
+  }
 
   /*  FOOTER STYLES  */
 

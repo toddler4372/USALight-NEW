@@ -335,11 +335,13 @@ ul {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 991px) {
   .col-xs-12 {
     padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -353,6 +355,10 @@ ul {
   .col-xs-10 {
     display: block;
     float: none;
+  }
+  .col-xs-12 {
+  padding-left: 0px;
+  padding-right: 0px;
   }
 }
 
@@ -2063,7 +2069,7 @@ body {
   #content {
     position: relative;
     z-index: 1;
-    padding-left: 1rem;
+    padding-left: 1.2rem;
     padding-right: 1rem;
   }
 
@@ -2132,7 +2138,7 @@ body {
 
   .search {
     position: absolute;
-    top: 35px;
+    top: 17px;
     left: 50%;
     margin-left: -19%;
     width: 38%;

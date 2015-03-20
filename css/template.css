@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .elist .elist__submit .icon:hover {
     color: #e74f5d;
   }
-.copyright {padding-top: 20px;text-align: center;font-size: 13px;color: #aaa;}
+.copyright {padding-top: 20px;text-align: center;font-size: 13px;color: #aaa;padding-bottom: 20px;}
 @media only screen and (min-width: 768px) {
     .copyright__item {margin: 0 15px 0 0;} 
     .copyright__text {
@@ -511,9 +511,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /*--------------------------CUSTOM STYLES-----------------------------*/
 
 .homepage-logo {margin-top: 10px;margin-bottom: 20px;}
+img.homepage-logo {display: block; margin-top: 10px;height: 57px;width: 300px;}
 
 @media only screen and (max-width: 991px) {
   .homepage-logo {margin-bottom: 15px;}
+  img.homepage-logo {margin-top: 17px;}
 }
 
 @media only screen and (max-width: 767px) {

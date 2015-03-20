@@ -203,7 +203,7 @@
 
 /* > 992 */
 @media only screen and (min-width: 992px) {
-  #search_refinement_filters {float:left;width:100%;padding: 0px 0 15px 0;border-bottom: 1px solid #eee;margin-bottom: 20px;}
+  #search_refinement_filters {float:left;width:100%;padding: 0;border-bottom: 1px solid #eee;padding-bottom: 20px;}
 }
 
 /* < 992 */
@@ -232,7 +232,7 @@
 }
 
 #main-body {
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 #content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]) {

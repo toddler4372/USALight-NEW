@@ -1263,18 +1263,24 @@ td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
 .vnav__link--active {background: none !important;}
 form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vertical-align: top;padding-top: 0px;}
 @media only screen and (min-width: 1240px) {
-  #content_area > table:nth-child(4) {width: 1113px;}
+  #content_area > table:nth-child(4) {width: 1098px;}
 }
 @media only screen and (min-width: 992px) and (max-width:1239px) {
-  #content_area > table:nth-child(4) {width: 876px;}
+  #content_area > table:nth-child(4) {width: 862px;}
 }
 #content_area > table:nth-child(4) {
   background: #fcfcfc;
   padding: 10px 10px 10px 10px;
   border: 1px solid #ccc;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+  margin-left: 12px;}
 @media only screen and (max-width: 991px) {
-  #content_area > table:nth-child(4) {width: 100%;margin-left: 0; margin-top:10px;}
+  #content_area > table:nth-child(4) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+  }
 }
 @media only screen and (min-width: 1240px) {
   .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important}}
@@ -1324,11 +1330,9 @@ td:nth-child(2) > input[type="checkbox"] {margin-left: 2px;}
 .terms {font-size: 13px;margin-left: 20px;}
 #div_articleid_112 table tbody tr td input {margin-left: 2px;}
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer {margin-top: 1650px;}
-}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio:0) {
-  .footer {margin-top: 20px;}
+  .footer {margin-top: 0px;}
 }
 /*  CHECKOUT HEADING AND OTHER CART VOLUSION OVERRIDES */
 h2#v65-onepage-header {
@@ -1443,7 +1447,7 @@ form .colors_descriptionbox {
 }
 @media only screen and (min-width: 992px) and (max-width: 1239px) {
   .subcat-wrapper ul {width: 876px;}
-  .subcat-wrapper {width: 870px;margin-left: -19px;margin-top: -20px;}
+  .subcat-wrapper {width: 870px;margin-left: -17px;margin-top: -20px;}
 }
 @media only screen and (max-width: 991px) {
   .subcat-wrapper nav.nav-block-3 ul a {width: 97%;margin-bottom: 15px;}
@@ -1596,4 +1600,24 @@ form .colors_descriptionbox {
   min-width: 45px !important;
   max-width: 48px !important;
   text-align: center !important;
+}
+/*  SIDEBAR MERITS  */
+div#hide-homepage {
+  background: #fcfcfc;
+  margin-bottom: 20px;
+}
+div#hide-homepage img {
+  margin-left: 12px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1240px) {
+  div#hide-homepage img {
+      margin-left: -14px;
+    }
+}
+/*  MAIN BODY PADDING  */
+@media only screen and (max-width: 991px) {
+  div#main-body {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
