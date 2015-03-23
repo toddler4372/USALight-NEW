@@ -1601,6 +1601,11 @@ form .colors_descriptionbox {
   max-width: 48px !important;
   text-align: center !important;
 }
+
+font.productnamecolorLARGE.colors_productname {
+  word-break: normal !important;
+}
+
 /*  SIDEBAR MERITS  */
 div#hide-homepage {
   background: #fcfcfc;
@@ -1613,6 +1618,52 @@ div#hide-homepage img {
   div#hide-homepage img {
       margin-left: -14px;
     }
+}
+@media only screen and (min-width: 1240px) {
+  #trusted-store {
+    float: left;
+    height: 100px;
+    width: 150px;
+    margin-left: 40px;
+  }
+  #stella {
+    float: left;
+    height: 100px;
+    width: 170px;
+  }
+  #live-help-now {
+    float: left;
+    height: 100px;
+    width: 170px;
+  }
+  #trustwave {
+    float: left;
+    height: 100px;
+    width: 170px;
+  }
+  #authorize-net {
+    float: left;
+    height: 100px;
+    width: 120px;
+  }
+  #go-daddy {
+    float: left;
+    height: 100px;
+    width: 180px;
+  }
+  #ups {
+    float: left;
+    height: 100px;
+    width: 150px;
+  }
+  div#easyContainer {
+    width: 980px !important;
+  }
+  #mcafee {
+    float: left;
+    height: 100px;
+    width: 170px;
+  }
 }
 /*  MAIN BODY PADDING  */
 @media only screen and (max-width: 991px) {
