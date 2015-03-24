@@ -197,13 +197,10 @@ color: #e74f5d;
   .usa section.products .product ul li a:hover {text-decoration: none;}
 
   .merits {
-      background: url(../images/merits.jpg) no-repeat;
-      background-size: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      height: 8.5em;
-      border-top: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    position: relative;
+    height: 8.5em;
+    border-top: 1px solid #e3e3e3;
   }
   
   /* QUERIES */
@@ -232,6 +229,9 @@ color: #e74f5d;
     .search {position: absolute; top: 136px; width: 100%;}
     .header {min-height: 125px;}
     .usa section.products .product ul {margin: 0;padding: 0 10px 0 0;}
+    .merits {
+      display: none;
+    }
   }
 
   img.homepage-logo {
@@ -242,7 +242,7 @@ color: #e74f5d;
   /* > 992 & < 1240 */
   @media only screen and (min-width: 992px) and (max-width: 1240px) {
     .usa section.products .product img  {width: 100%; max-width: 405px;max-height: 206px;}
-    .merits {height: 6.5em;}
+    .merits {height: 14em;}
     #div_articleid_2 img {
       display: block;
       width: 100%;

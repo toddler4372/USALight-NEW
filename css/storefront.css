@@ -1607,62 +1607,395 @@ font.productnamecolorLARGE.colors_productname {
 }
 
 /*  SIDEBAR MERITS  */
+
 div#hide-homepage {
   background: #fcfcfc;
   margin-bottom: 20px;
 }
 div#hide-homepage img {
-  margin-left: 12px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1240px) {
-  div#hide-homepage img {
-      margin-left: -14px;
-    }
+  float: left;
 }
 @media only screen and (min-width: 1240px) {
-  #trusted-store {
+  #trusted-store-sb {
+    height: 81px;
+    width: 171px;
     float: left;
-    height: 100px;
-    width: 150px;
+    margin-left: 25px;
+    background: url(../images/trusted-store.jpg) 0 0 no-repeat;
+  }
+  #trusted-store-sb:hover {
+    background: url(../images/trusted-store.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #stella-sb {
+    height: 67px;
+    width: 171px;
+    float: left;
+    margin-left: 22px;
+    background: url(../images/stella-service.jpg) 0 0 no-repeat;
+  }
+  #stella-sb:hover {
+    background: url(../images/stella-service.jpg) 0 -67px no-repeat;
+    cursor: pointer;
+  }
+  #live-help-now-sb {
+    height: 81px;
+    width: 171px;
+    float: left;
+    margin-left: 24px;
+    background: url(../images/live-help-now.jpg) 0 0 no-repeat;
+  }
+  #live-help-now-sb:hover {
+    background: url(../images/live-help-now.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #trustwave-sb {
+    height: 76px;
+    width: 171px;
+    float: left;
+    margin-left: 20px;
+    background: url(../images/trustwave.jpg) 0 0 no-repeat;
+  }
+  #trustwave-sb:hover {
+    background: url(../images/trustwave.jpg) 0 -76px no-repeat;
+    cursor: pointer;
+  }
+  #authorize-net-sb {
+    height: 85px;
+    width: 171px;
+    float: left;
+    margin-left: 39px;
+    background: url(../images/authorize-net.jpg) 0 0 no-repeat;
+  }
+  #authorize-net-sb:hover {
+    background: url(../images/authorize-net.jpg) 0 -85px no-repeat;
+    cursor: pointer;
+  }
+  #go-daddy-sb {
+    height: 47px;
+    width: 171px;
+    float: left;
+    margin-left: 10px;
+    background: url(../images/godaddy.jpg) 0 0 no-repeat;
+  }
+  #go-daddy-sb:hover {
+    background: url(../images/godaddy.jpg) 0 -47px no-repeat;
+    cursor: pointer;
+  }
+  #ups-sb {
+    height: 64px;
+    width: 171px;
+    float: left;
     margin-left: 40px;
+    background: url(../images/ups.jpg) 0 0 no-repeat;
+  }
+  #ups-sb:hover {
+    background: url(../images/ups.jpg) 0 -64px no-repeat;
+    cursor: pointer;
+  }
+  #mcafee-sb {
+    height: 83px;
+    width: 171px;
+    float: left;
+    margin-left: 28px;
+    background: url(../images/mcafee.jpg) 0 0 no-repeat;
+  }
+  #mcafee-sb:hover {
+    background: url(../images/mcafee.jpg) 0 -83px no-repeat;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1239px) {
+  #trusted-store-sb {
+    height: 81px;
+    width: 171px;
+    float: left;
+    margin-left: 3px;
+    background: url(../images/trusted-store.jpg) 0 0 no-repeat;
+  }
+  #trusted-store-sb:hover {
+    background: url(../images/trusted-store.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #stella-sb {
+    height: 67px;
+    width: 171px;
+    float: left;
+    margin-left: 0px;
+    background: url(../images/stella-service.jpg) 0 0 no-repeat;
+  }
+  #stella-sb:hover {
+    background: url(../images/stella-service.jpg) 0 -67px no-repeat;
+    cursor: pointer;
+  }
+  #live-help-now-sb {
+    height: 81px;
+    width: 171px;
+    float: left;
+    margin-left: 0px;
+    background: url(../images/live-help-now.jpg) 0 0 no-repeat;
+  }
+  #live-help-now-sb:hover {
+    background: url(../images/live-help-now.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #trustwave-sb {
+    height: 76px;
+    width: 171px;
+    float: left;
+    margin-left: -3px;
+    background: url(../images/trustwave.jpg) 0 0 no-repeat;
+  }
+  #trustwave-sb:hover {
+    background: url(../images/trustwave.jpg) 0 -76px no-repeat;
+    cursor: pointer;
+  }
+  #authorize-net-sb {
+    height: 85px;
+    width: 171px;
+    float: left;
+    margin-left: 15px;
+    background: url(../images/authorize-net.jpg) 0 0 no-repeat;
+  }
+  #authorize-net-sb:hover {
+    background: url(../images/authorize-net.jpg) 0 -85px no-repeat;
+    cursor: pointer;
+  }
+  #go-daddy-sb {
+    height: 47px;
+    width: 171px;
+    float: left;
+    margin-left: -12px;
+    background: url(../images/godaddy.jpg) 0 0 no-repeat;
+  }
+  #go-daddy-sb:hover {
+    background: url(../images/godaddy.jpg) 0 -47px no-repeat;
+    cursor: pointer;
+  }
+  #ups-sb {
+    height: 64px;
+    width: 171px;
+    float: left;
+    margin-left: 15px;
+    background: url(../images/ups.jpg) 0 0 no-repeat;
+  }
+  #ups-sb:hover {
+    background: url(../images/ups.jpg) 0 -64px no-repeat;
+    cursor: pointer;
+  }
+  #mcafee-sb {
+    height: 83px;
+    width: 171px;
+    float: left;
+    margin-left: 4px;
+    background: url(../images/mcafee.jpg) 0 0 no-repeat;
+  }
+  #mcafee-sb:hover {
+    background: url(../images/mcafee.jpg) 0 -83px no-repeat;
+    cursor: pointer;
+  }
+}
+/*  FOOTER MERITS  */
+@media only screen and (min-width: 1240px) {
+  #trusted-store {
+    height: 81px;
+    width: 137px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+    background: url(../images/trusted-store.jpg) 0 0 no-repeat;
+  }
+  #trusted-store:hover {
+    background: url(../images/trusted-store.jpg) 0 -81px no-repeat;
+    cursor: pointer;
   }
   #stella {
+    height: 67px;
+    width: 137px;
     float: left;
-    height: 100px;
-    width: 170px;
+    margin-left: 10px;
+    margin-top: 23px;
+    background: url(../images/stella-service.jpg) 0 0 no-repeat;
+  }
+  #stella:hover {
+    background: url(../images/stella-service.jpg) 0 -67px no-repeat;
+    cursor: pointer;
   }
   #live-help-now {
+    height: 81px;
+    width: 138px;
     float: left;
-    height: 100px;
-    width: 170px;
+    margin-left: 20px;
+    margin-top: 15px;
+    background: url(../images/live-help-now.jpg) 0 0 no-repeat;
+  }
+  #live-help-now:hover {
+    background: url(../images/live-help-now.jpg) 0 -81px no-repeat;
+    cursor: pointer;
   }
   #trustwave {
+    height: 76px;
+    width: 149px;
     float: left;
-    height: 100px;
-    width: 170px;
+    margin-left: 20px;
+    margin-top: 15px;
+    background: url(../images/trustwave.jpg) 0 0 no-repeat;
+  }
+  #trustwave:hover {
+    background: url(../images/trustwave.jpg) 0 -76px no-repeat;
+    cursor: pointer;
   }
   #authorize-net {
+    height: 85px;
+    width: 114px;
     float: left;
-    height: 100px;
-    width: 120px;
+    margin-left: 15px;
+    margin-top: 12px;
+    background: url(../images/authorize-net.jpg) 0 0 no-repeat;
+  }
+  #authorize-net:hover {
+    background: url(../images/authorize-net.jpg) 0 -85px no-repeat;
+    cursor: pointer;
   }
   #go-daddy {
+    height: 47px;
+    width: 171px;
     float: left;
-    height: 100px;
-    width: 180px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url(../images/godaddy.jpg) 0 0 no-repeat;
+  }
+  #go-daddy:hover {
+    background: url(../images/godaddy.jpg) 0 -47px no-repeat;
+    cursor: pointer;
   }
   #ups {
+    height: 64px;
+    width: 115px;
     float: left;
-    height: 100px;
-    width: 150px;
+    margin-left: 20px;
+    margin-top: 22px;
+    background: url(../images/ups.jpg) 0 0 no-repeat;
   }
-  div#easyContainer {
+  #ups:hover {
+    background: url(../images/ups.jpg) 0 -64px no-repeat;
+    cursor: pointer;
+  }
+   div#easyContainer {
     width: 980px !important;
   }
   #mcafee {
+    height: 83px;
+    width: 136px;
     float: left;
-    height: 100px;
-    width: 170px;
+    margin-left: 20px;
+    margin-top: 18px;
+    background: url(../images/mcafee.jpg) 0 0 no-repeat;
+  }
+  #mcafee:hover {
+    background: url(../images/mcafee.jpg) 0 -83px no-repeat;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1239px) {
+    #trusted-store {
+    height: 81px;
+    width: 137px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 10px;
+    background: url(../images/trusted-store.jpg) 0 0 no-repeat;
+  }
+  #trusted-store:hover {
+    background: url(../images/trusted-store.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #stella {
+    height: 67px;
+    width: 137px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 23px;
+    background: url(../images/stella-service.jpg) 0 0 no-repeat;
+  }
+  #stella:hover {
+    background: url(../images/stella-service.jpg) 0 -67px no-repeat;
+    cursor: pointer;
+  }
+  #live-help-now {
+    height: 81px;
+    width: 138px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 15px;
+    background: url(../images/live-help-now.jpg) 0 0 no-repeat;
+  }
+  #live-help-now:hover {
+    background: url(../images/live-help-now.jpg) 0 -81px no-repeat;
+    cursor: pointer;
+  }
+  #trustwave {
+    height: 76px;
+    width: 149px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 15px;
+    background: url(../images/trustwave.jpg) 0 0 no-repeat;
+  }
+  #trustwave:hover {
+    background: url(../images/trustwave.jpg) 0 -76px no-repeat;
+    cursor: pointer;
+  }
+  #authorize-net {
+    height: 85px;
+    width: 114px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 12px;
+    background: url(../images/authorize-net.jpg) 0 0 no-repeat;
+  }
+  #authorize-net:hover {
+    background: url(../images/authorize-net.jpg) 0 -85px no-repeat;
+    cursor: pointer;
+  }
+  #go-daddy {
+    height: 47px;
+    width: 171px;
+    float: left;
+    margin-left: 265px;
+    margin-top: 10px;
+    background: url(../images/godaddy.jpg) 0 0 no-repeat;
+  }
+  #go-daddy:hover {
+    background: url(../images/godaddy.jpg) 0 -47px no-repeat;
+    cursor: pointer;
+  }
+  #ups {
+    height: 64px;
+    width: 115px;
+    float: left;
+    margin-left: 42px;
+    margin-top: 0px;
+    background: url(../images/ups.jpg) 0 0 no-repeat;
+  }
+  #ups:hover {
+    background: url(../images/ups.jpg) 0 -64px no-repeat;
+    cursor: pointer;
+  }
+   div#easyContainer {
+    width: 980px !important;
+  }
+  #mcafee {
+    height: 83px;
+    width: 136px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 0px;
+    background: url(../images/mcafee.jpg) 0 0 no-repeat;
+  }
+  #mcafee:hover {
+    background: url(../images/mcafee.jpg) 0 -83px no-repeat;
+    cursor: pointer;
   }
 }
 /*  MAIN BODY PADDING  */
