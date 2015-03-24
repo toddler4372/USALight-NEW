@@ -29,8 +29,8 @@
   text-transform: uppercase;
 }
 
-  /* > 992 & < 1240 */
-  @media only screen and (min-width: 992px) and (max-width: 1240px) {
+  /* > 992 & < 1375 */
+  @media only screen and (min-width: 992px) and (max-width: 1375px) {
     #main-nav .vnav__link {padding: 0 15px;}
   }
 #main-nav .vnav__link--active {
@@ -81,7 +81,7 @@
 #main-nav .vnav--level1 > .vnav__item a:hover {
   color: #fff;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1375px) {
   #main-nav .vnav--level1 > .vnav__item {
     padding: 10px 15px;
   }

@@ -160,7 +160,7 @@
         <div class="container clearfix">
 
 <div style="height:1px;width:100%;clear:both;"></div>
-<div class="merits">
+<div id="merits">
         <a href="https://www.google.com/trustedstores/verify?gl=US&hl=en-US&id=191841&sid=191842" target="_blank"><div id="trusted-store"></div></a>
         <a href="http://www.stellaservice.com/profile/usalight.com/?utm_source=gts&utm_medium=flyprof&utm_campaign=int" target="_blank"><div id="stella"></div></a>
         <a href="http://challenge.livehelpnow.net/archives/?year=2014" target="_blank"><div id="live-help-now"></div></a>
@@ -376,6 +376,16 @@
                 document.getElementById("hide-homepage").style.display="block";
                     }
                 });               
+            });
+        </script>
+        <script type="text/javascript">    
+            $(document).ready(function() {
+                var currentUrl = $(location).attr('href');
+                if (currentUrl !== 'http://wgzrv.ndxva.servertrust.com') {
+                $('#merits').hide();
+                } else {
+                $('#merits').show();
+                }
             });
         </script>
     </body>
