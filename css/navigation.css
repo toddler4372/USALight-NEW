@@ -123,7 +123,7 @@
   background: #333;
 }
 #push-menu .vnav__item:hover > a {
-  color: #fff;
+  /*color: #fff;*/
 }
 
 #push-menu .vnav__link--active + .vnav__subnav,

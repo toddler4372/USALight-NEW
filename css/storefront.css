@@ -205,7 +205,7 @@ input[src$="/btn_go.gif"] {
   content: 'Billing Information'; }
 
 #content_area #v65-onepage-RegistrationHeader .v65-onepage-headerShort:before {
-  content: 'Registration'; }
+  content: 'Registration (Optional)'; }
 
 #content_area #shipping-header .v65-onepage-headerShort:before {
   content: 'Shipping Information'; }
@@ -1552,6 +1552,12 @@ form .colors_descriptionbox {
   margin: 0 10px 0 10px;
   font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-style: normal;
 }
+@media (min-width: 941px) {
+  .customer-service {width: 100%;}
+}
+@media (max-width: 940px) {
+  .customer-service {width: 450px;}
+}
 .customer-service h2 {
   padding-top: 20px;
 }
@@ -1620,6 +1626,7 @@ div#hide-homepage img {
     margin-top: 10px;
     padding: 5px;
     min-width: 190px;
+      max-width: 190px;
   }
   #trusted-store-sb {
     height: 81px;
@@ -2025,5 +2032,151 @@ div#hide-homepage img {
     padding-left: 3%;
     padding-right: 3%;
   }
+  div#easyContainer {
+    width: 500px !important;
+  }
   #merits {display: none;}
+  #lhnChatButton {display: none;}
+}
+
+#merits {display: none;}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  #easyCenter {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 500px;
+    margin-left: -250px;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    }
+  div#support_container {
+    width: 450px;
+  }
+}
+
+/*  SOFT ADD CART POPUP - CHROME  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .soft_add_wrapper .continue_shopping {
+    display: block;
+  }
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out {height: 0px;visibility: hidden;}
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
+    visibility: visible;
+    content: 'check out';
+    background-color: #d00005;
+    padding: 2px 10px 1px 10px;
+    float: left;
+    margin-left: -53%;
+    font-size: 14px;
+  }
+  .continue_shopping {
+    height: 40px !important; 
+    width: 150px !important; 
+    display: block; 
+    float: left; 
+    text-indent: 0 !important; 
+    margin-left: 0 !important; 
+    background: none !important; 
+  }
+  a.continue_shopping {
+    visibility: hidden;
+  }
+  a.continue_shopping:after {
+    visibility: visible;
+    content: 'keep shopping';
+    background-color: #b0b0b0;
+    padding: 9px 10px;
+    float: right;
+    margin-right: -95px;
+    margin-top: -35px;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* Safari only override */
+    ::i-block-chrome, a.continue_shopping:after {
+    background-color: #b0b0b0;
+    color: #fff;
+    content: "keep shopping";
+    float: left;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: -95px;
+    margin-top: 0px;
+    padding: 9px 10px;
+    text-transform: uppercase;
+    visibility: visible;
+  }
+}
+/*  SOFT ADD CART POPUP - Firefox  */
+@-moz-document url-prefix() {
+  .soft_add_wrapper .continue_shopping {
+    display: block;
+  }
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out {height: 0px;visibility: hidden;}
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
+    visibility: visible;
+    content: 'check out';
+    background-color: #d00005;
+    padding: 2px 10px 1px 10px;
+    float: left;
+    margin-left: -53%;
+    font-size: 14px;
+  }
+  .continue_shopping {
+    height: 40px !important; 
+    width: 150px !important; 
+    display: block; 
+    float: left; 
+    text-indent: 0 !important; 
+    margin-left: 0 !important; 
+    background: none !important; 
+  }
+  a.continue_shopping {
+    visibility: hidden;
+  }
+  a.continue_shopping:after {
+    background-color: #b0b0b0;
+    color: #fff;
+    content: "keep shopping";
+    float: left;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: -95px;
+    margin-top: 0px;
+    padding: 9px 10px;
+    text-transform: uppercase;
+    visibility: visible;
+  }
+}
+
+div#chat-text {
+  font-weight: bold;
+  position: relative;
+  float: right;
+  margin-top: -29px;
+  margin-right: 10px;
+  pointer-events: none;
+  background: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+  div#chat-text {
+  display: none;
+  }
+}
+
+div#lhnChatButton {
+  width: 70px !important;
 }

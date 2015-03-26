@@ -614,10 +614,7 @@ li#ups {
     padding-left: 1.5em;
   }
   li.icon-chat{
-    background-image: url(../images/icon-chat.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 1em;
-    padding-left: 1.8em;
+    background-image: none;
   }
 }
 
@@ -633,7 +630,7 @@ li#ups {
       top: 40px;
       right: 0px;
       font-family: 'Roboto', Arial, Sans-serif;
-      font-size: 26px;
+      font-size: 30px;
       font-weight: bold;
       color: #d00005;
     }

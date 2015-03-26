@@ -147,7 +147,7 @@ color: #e74f5d;
   .usa section.products .product ul li {
     background-image: url(../images/bullet-arrow.png);
     background-repeat: no-repeat;
-    background-position: 0px 9px; 
+    background-position: 0px 6px; 
     padding-left: 15px;}
 
   .usa section.products .product ul li a {
@@ -193,21 +193,25 @@ color: #e74f5d;
   .usa section.products .product ul {overflow: hidden;padding: 0 25px;list-style-type: none; margin: 0 5px;}
   .usa section.products .product ul li {margin: 0;padding: 5px 0 5px 15px;}
   .usa section.products .product ul li:hover {background-color: #eee;}
-  .usa section.products .product ul li a {font-size: 18px;font-weight:bold;}
+  .usa section.products .product ul li a {font-size: 15px;font-weight:bold;}
   .usa section.products .product ul li a:hover {text-decoration: none;}
-
+  
+  /*  FOOTER MERITS  */
   #merits {
+    display: block;
     background: #fcfcfc;
     position: relative;
     height: 8.5em;
     border-top: 1px solid #e3e3e3;
   }
-  
+
+  .homepage-ul {display: none;}
+
   /* QUERIES */
 
   /* Tablet */
   @media only screen and (min-width: 0px) and (max-width:991px) {
-
+  .homepage-ul {display: block;}
   .usa section.products .category-block {
     display: -webkit-box;      
     display: -moz-box;         
@@ -378,6 +382,29 @@ color: #e74f5d;
   tbody.collapse.in {
     display: table-row-group; }
 
+/*  CHAT BUTTON  */
+
+div#chat-text {
+  font-weight: bold;
+  position: relative;
+  float: right;
+  margin-top: -29px;
+  margin-right: 10px;
+  pointer-events: none;
+  background: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+  div#chat-text {
+  display: none;
+  }
+}
+
+div#lhnChatButton {
+  width: 70px !important;
+}
+
+#preChatTitle {background: none !important;}
 
 
 

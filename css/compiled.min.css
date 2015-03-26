@@ -1616,6 +1616,13 @@ a [class^="icon-"] {
   margin-right: 5px;
   float: left;
 }
+@-moz-document url-prefix() {
+  a [class^="icon-"] {
+      float: left;
+      margin-right: 5px;
+      margin-top: 5px;
+  }
+}
 
 @media only screen and (max-width: 599px) {
   a [class^="icon-"] {
@@ -2172,6 +2179,7 @@ body {
 
   #toolbar li {
     margin: 0;
+    font-size: 13px !important;
   }
 
   #toolbar a {
