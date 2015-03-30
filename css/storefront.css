@@ -90,7 +90,8 @@ tr#BillingState_Row + tr input[name="BillingPostalCode"] {
   #content_area table[width="100%"] input[value=""],
   #content_area table[width="100%"] input[value=""] {
     display: block; 
-  } 
+  }
+  #v65-productdetail-action-wrapper.v65-productdetail-options {display: block;margin: 20px auto 0;width: 212px;float: none;}
 }
 
 

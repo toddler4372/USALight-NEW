@@ -2155,7 +2155,7 @@ body {
   .search input,
   .search input[type=search] {
     display: block;
-    width: 298px;
+    width: 2300px;
     padding: 10px;
     border: 0;
     height: 33px;
@@ -2191,7 +2191,7 @@ body {
 @media only screen and (min-width: 1375px) {
   .search input,
   .search input[type=search] {
-    width: 404px;
+    width: 407px;
   }
 }
 
