@@ -2116,6 +2116,7 @@ div#hide-homepage img {
     display: block;
   }
   body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out {height: 0px;visibility: hidden;}
+
   body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
     visibility: visible;
     content: 'check out';
@@ -2265,10 +2266,14 @@ div#lhnChatButton {
   }
 }
 
+div#div_articleid_64 {
+  margin-left: 12px;
+}
+
 /*  IPAD CONTINUE SHOPPING BUTTON - LANDSCAPE  */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
-    visibility: visible;
+    visibility: hidden;
     content: 'check out';
     background-color: #d00005;
     padding: 1px 10px 2px 10px;
@@ -2284,10 +2289,20 @@ div#lhnChatButton {
     font-family: "Roboto",Arial,sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 3px;
+    margin-right: -105px;
     margin-top: -35px;
     padding: 9px 10px;
     text-transform: uppercase;
     visibility: visible;
+  }
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out {
+    visibility: visible;
+    height: 35px;
+    content: 'check out';
+    background-color: #d00005;
+    padding: 1px 10px 2px 10px;
+    float: left;
+    margin-left: 5%;
+    font-size: 14px;
   }
 }
