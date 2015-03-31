@@ -32,6 +32,37 @@ input[type="radio"], input[type="checkbox"] {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
 }
+/*  FIREFOX INPUTS  */
+@-moz-document url-prefix() {
+#content_area table[width$="%"] input#ShipState,
+#content_area table[width] textarea[cols="45"],
+#content_area table[width] input[value=""],
+#content_area table[width] input[type="password"],
+#content_area table[width] select,
+#content_area table[width$="%"] input[value=""],
+#content_area table[width$="%"] input.v65-productdetail-cartqty,
+#content_area table[width$="%"] input[id^="Quantity"],
+#content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]){
+  min-width: 200px;
+  height: auto;
+  padding: 7px 5px 8px;
+  margin: 3px 0;
+  min-height: 35px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4f4f4f;
+  text-align: left;
+  background-color: white;
+  background-image: none;
+  border-radius: 0;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
+  }
+}
 
 @media only screen and (max-width: 767px) {
   #content_area table[width] select {
@@ -346,14 +377,25 @@ a[href*="help_answer.asp"] {
   width: 100%; }
 
 #content_area form[name*="form2"] {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-left: 20px; }
+
+#content_area > form {padding-left: 20px;}
+
+form#vCSS_mainform {margin-left: 20px;}
 
 @media only screen and (max-width: 767px) {
   #content_area form[name*="form2"] table[width="500"] td {
     width: 100%;
     display: block; } }
 
+table.colors_backgroundneutral img {
+  padding-bottom: 5px;
+}
 
+td.icon {
+  width: 60px;
+}
 
 /********* STOREFRONT-WISHLIST **********/
 @media only screen and (max-width: 767px) {
@@ -1264,17 +1306,17 @@ td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
 .vnav__link--active {background: none !important;}
 form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vertical-align: top;padding-top: 0px;}
 @media only screen and (min-width: 1375px) {
-  #content_area > table:nth-child(4) {width: 1098px;}
-}
-@media only screen and (min-width: 992px) and (max-width:1374px) {
-  #content_area > table:nth-child(4) {width: 862px;}
+  #content_area > table:nth-child(4) {width: 1110px;}
 }
 #content_area > table:nth-child(4) {
   background: #fcfcfc;
   padding: 10px 10px 10px 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
-  margin-left: 12px;}
+  margin-left: 0px;}
+@media only screen and (min-width: 992px) and (max-width:1374px) {
+  #content_area > table:nth-child(4) {width: 841px;margin-left: 12px;}
+}
 @media only screen and (max-width: 991px) {
   #content_area > table:nth-child(4) {
       width: 100%;
@@ -1283,6 +1325,10 @@ form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vert
       margin-top: 10px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width:1374px) { 
+  #MainForm > table:nth-child(3) > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(1) > table {margin-left: 10px;}
+}
+
 @media only screen and (min-width: 1375px) {
   .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important}}
 @media only screen and (min-width: 992px) and (max-width:1374px) {
@@ -1447,8 +1493,9 @@ form .colors_descriptionbox {
   .subcat-wrapper {width: 1113px;margin-left: -19px;margin-top: -20px;}
 }
 @media only screen and (min-width: 992px) and (max-width: 1374px) {
+  .subcat-wrapper nav.nav-block-3 ul a {width: 31.333%;transition: all 0.3s ease-in;float: left;font-weight: bold;font-size: 13px; display: block;margin: 0 0 0 1%;height: auto; padding: 10px; border: 1px solid #e3e3e3;box-sizing: border-box;text-decoration: none;}
   .subcat-wrapper ul {width: 876px;}
-  .subcat-wrapper {width: 870px;margin-left: -17px;margin-top: -20px;}
+  .subcat-wrapper {width: 870px;margin-left: -7px;margin-top: -20px;}
 }
 @media only screen and (max-width: 991px) {
   .subcat-wrapper nav.nav-block-3 ul a {width: 97%;margin-bottom: 15px;}
@@ -1688,7 +1735,9 @@ div#hide-homepage img {
     height: 47px;
     width: 171px;
     float: left;
-    margin-left: 10px;
+    margin-left: 42px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: url(../images/godaddy.jpg) 0 0 no-repeat;
   }
   #go-daddy-sb:hover {
@@ -1724,7 +1773,7 @@ div#hide-homepage img {
     padding: 5px;
     min-width: 151px;
     max-width: 151px;
-    margin-left: -3px;
+    margin-left: 9px;
   }
   #trusted-store-sb {
     height: 81px;
@@ -1785,7 +1834,9 @@ div#hide-homepage img {
     height: 47px;
     width: 171px;
     float: left;
-    margin-left: -12px;
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: url(../images/godaddy.jpg) 0 0 no-repeat;
   }
   #go-daddy-sb:hover {
@@ -1877,7 +1928,7 @@ div#hide-homepage img {
     height: 85px;
     width: 114px;
     float: left;
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: 12px;
     background: url(../images/authorize-net.jpg) 0 0 no-repeat;
   }
@@ -1887,9 +1938,9 @@ div#hide-homepage img {
   }
   #go-daddy {
     height: 47px;
-    width: 171px;
+    width: 112px;
     float: left;
-    margin-left: 20px;
+    margin-left: 35px;
     margin-top: 30px;
     background: url(../images/godaddy.jpg) 0 0 no-repeat;
   }
@@ -1901,7 +1952,7 @@ div#hide-homepage img {
     height: 64px;
     width: 115px;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 22px;
     background: url(../images/ups.jpg) 0 0 no-repeat;
   }
@@ -1916,7 +1967,7 @@ div#hide-homepage img {
     height: 83px;
     width: 136px;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 18px;
     background: url(../images/mcafee.jpg) 0 0 no-repeat;
   }
@@ -1954,7 +2005,7 @@ div#hide-homepage img {
     height: 81px;
     width: 138px;
     float: left;
-    margin-left: 60px;
+    margin-left: 50px;
     margin-top: 15px;
     background: url(../images/live-help-now.jpg) 0 0 no-repeat;
   }
@@ -1990,7 +2041,7 @@ div#hide-homepage img {
     height: 47px;
     width: 171px;
     float: left;
-    margin-left: 265px;
+    margin-left: 285px;
     margin-top: 10px;
     background: url(../images/godaddy.jpg) 0 0 no-repeat;
   }
@@ -2002,7 +2053,7 @@ div#hide-homepage img {
     height: 64px;
     width: 115px;
     float: left;
-    margin-left: 42px;
+    margin-left: 12px;
     margin-top: 0px;
     background: url(../images/ups.jpg) 0 0 no-repeat;
   }
@@ -2100,7 +2151,22 @@ div#hide-homepage img {
     font-weight: bold;
     font-size: 14px;
   }
-
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    a.continue_shopping:after {
+    visibility: visible;
+    content: 'keep shopping';
+    background-color: #b0b0b0;
+    padding: 9px 10px;
+    float: right;
+    margin-right: -95px;
+    margin-top: -35px;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
   /* Safari only override */
     ::i-block-chrome, a.continue_shopping:after {
     background-color: #b0b0b0;
@@ -2161,6 +2227,17 @@ div#hide-homepage img {
     visibility: visible;
   }
 }
+@-moz-document url-prefix() {
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
+    visibility: visible;
+    content: 'check out';
+    background-color: #d00005;
+    padding: 1px 10px 3px 10px;
+    float: left;
+    margin-left: -53%;
+    font-size: 14px;
+  }
+}
 
 div#chat-text {
   font-weight: bold;
@@ -2180,4 +2257,37 @@ div#chat-text {
 
 div#lhnChatButton {
   width: 70px !important;
+}
+@media only screen and (min-width: 992px) and (max-width: 1374px) {
+  div#merits-sidebar {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/*  IPAD CONTINUE SHOPPING BUTTON - LANDSCAPE  */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
+    visibility: visible;
+    content: 'check out';
+    background-color: #d00005;
+    padding: 1px 10px 2px 10px;
+    float: left;
+    margin-left: -53%;
+    font-size: 14px;
+  }
+  a.continue_shopping:after {
+    background-color: #b0b0b0;
+    color: #fff;
+    content: "keep shopping";
+    float: right;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: -35px;
+    padding: 9px 10px;
+    text-transform: uppercase;
+    visibility: visible;
+  }
 }

@@ -28,6 +28,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1374px) {
+  #refinement-wrapper h2 {
+    margin-top: 10px !important;
+    text-transform: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .search-popout__input:focus, .social a:hover, .header a:hover, .footer a:hover {
   -webkit-transition: all 200ms ease;
@@ -636,6 +647,10 @@ li#ups {
     }
   }
 
+  @media (min-width: 1024px) and (max-width: 1374px) {
+  div#phone-number {right: 10px;}
+  }
+
   @media only screen and (min-width: 740px) and (max-width: 991px) {
     div#phone-number {
       position: absolute;
@@ -673,4 +688,11 @@ li#ups {
 
 span.PageText_L18n {line-height: 3em;}
 span.PageText_L257n {line-height: 3em;}
+
+/*---------------PHONE NUMBERS IOS---------------------*/
+a[href^=tel]{ color:#d00005; text-decoration:none;}
+
+@media only screen and (max-width: 991px) {
+  a[href^=tel]{ color:#fff; text-decoration:none;}
+}
 

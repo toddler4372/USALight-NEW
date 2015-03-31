@@ -203,7 +203,7 @@
 
 /* > 992 */
 @media only screen and (min-width: 992px) {
-  #search_refinement_filters {float:left;width:100%;padding: 0;border-bottom: 1px solid #eee;padding-bottom: 20px;}
+  #search_refinement_filters {float:left;width:100%;padding: 0;padding-bottom: 20px;}
 }
 
 /* < 992 */

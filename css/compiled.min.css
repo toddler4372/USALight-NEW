@@ -310,6 +310,15 @@ ul {
     width: 1350px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1374px) {
+   .usa section.products .category-block {
+     padding-left: 10px;
+     padding-right: 10px;
+    }
+   .container-main {
+    width: 1024px;
+    }
+  }
 
 .row {
   margin-left: -15px;
@@ -349,6 +358,16 @@ ul {
 .col-xs-10,
 .col-xs-12 {
   float: left;
+}
+
+@media (min-width: 1024px) and (max-width: 1374px) {
+.col-xs-2,
+.col-xs-10,
+.col-xs-12 {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2155,7 +2174,7 @@ body {
   .search input,
   .search input[type=search] {
     display: block;
-    width: 2300px;
+    width: 300px;
     padding: 10px;
     border: 0;
     height: 33px;
@@ -2194,6 +2213,15 @@ body {
     width: 407px;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1374px) {
+  header {
+    padding-left: 10px;
+    }
+  #toolbar {right: 6px;}
+  #toolbar a {padding: 14px 4px 8px 5px;}
+  div#phone-number {right: 10px;}
+  }
 
 /* Slider */
 

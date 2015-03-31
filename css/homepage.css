@@ -176,7 +176,15 @@ color: #e74f5d;
     display: table;
     table-layout: fixed;
     width: 106%;
-    border-spacing: 10px;}
+    border-spacing: 10px;
+  }
+  @media (min-width: 1024px) and (max-width: 1374px) {
+  .usa section.products .category-block {
+    width: 1044px;
+    border-spacing: 10px;
+    margin-left: -10px;
+    }
+  }
 
   .usa section.products .category-block{cell-spacing: 1%;}
   .homepage ul {list-style-type: none;}
