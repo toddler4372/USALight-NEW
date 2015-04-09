@@ -243,7 +243,7 @@ input[src$="/btn_go.gif"] {
   content: 'Shipping Information'; }
 
 #content_area #shipping-header .v65-onepage-headerShort:before {
-  content: 'Shipping Information'; }
+  content: 'Shipping Information (we cannot ship to P.O. Boxes)'; }
 
 #content_area #v65-checkout-payment-header .v65-onepage-headerShort:before {
   content: 'Payment'; }
@@ -1600,11 +1600,12 @@ form .colors_descriptionbox {
   margin: 0 10px 0 10px;
   font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-style: normal;
 }
-@media (min-width: 941px) {
+@media (min-width: 601px) {
   .customer-service {width: 100%;}
 }
-@media (max-width: 940px) {
-  .customer-service {width: 450px;}
+@media (max-width: 600px) {
+  .customer-service {width: 90%;}
+  textarea {width: 300px;}
 }
 .customer-service h2 {
   padding-top: 20px;
@@ -2093,6 +2094,12 @@ div#hide-homepage img {
 
 #merits {display: none;}
 
+@media only screen and (max-width: 600px) {
+div#ups-video {
+  display: none;
+  }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #easyCenter {
     position: absolute;
@@ -2105,9 +2112,6 @@ div#hide-homepage img {
     background: #fff;
     border-radius: 8px;
     }
-  div#support_container {
-    width: 450px;
-  }
 }
 
 /*  SOFT ADD CART POPUP - CHROME  */
@@ -2270,6 +2274,8 @@ div#div_articleid_64 {
   margin-left: 12px;
 }
 
+#span_paymentfields_credit_card.v65-onepage-payment-details table tbody tr td input {margin-left: 0;}
+
 /*  IPAD CONTINUE SHOPPING BUTTON - LANDSCAPE  */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   body > div.cartDiv > div > div.soft_add_content_shadow > div > div.soft_add_action_area > a.check_out:after {
@@ -2306,3 +2312,14 @@ div#div_articleid_64 {
     font-size: 14px;
   }
 }
+
+.soft_add_content_area {
+  padding-top: 30px !important;
+}
+
+.soft_add_wrapper .soft_add_action_area {
+  padding: 15px 0 0 0 !important;
+}
+
+
+

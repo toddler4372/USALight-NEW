@@ -235,6 +235,12 @@
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 992px) {
+  #main-body {
+    margin-top: 0px;
+  }
+}
+
 #content_area table[width$="%"] input:not([type="radio"]):not([type="checkbox"]):not([type="image"]) {
   max-width: 40px;
   padding: 5px 10px;

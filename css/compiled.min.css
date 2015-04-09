@@ -2165,16 +2165,16 @@ body {
   .search {
     position: absolute;
     top: 17px;
-    left: 50%;
+    left: 54%;
     margin-left: -19%;
-    width: 38%;
+    width: 30%;
     background: #8299df;
   }
 
   .search input,
   .search input[type=search] {
     display: block;
-    width: 300px;
+    width: 202px;
     padding: 10px;
     border: 0;
     height: 33px;
@@ -2210,7 +2210,7 @@ body {
 @media only screen and (min-width: 1375px) {
   .search input,
   .search input[type=search] {
-    width: 407px;
+    width: 299px;
   }
 }
 
@@ -2354,3 +2354,6 @@ tbody.collapse.in {
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
+
+
+
