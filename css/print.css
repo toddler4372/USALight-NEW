@@ -1,0 +1,11 @@
+* { 
+    text-shadow: none !important;
+    color: #000 !important; 
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  div#igFlag {
+  display: none;
+  }
+  h2 {color: black;}
+
