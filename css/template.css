@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #refinement-wrapper h2 {
     margin-top: 10px !important;
     text-transform: none;
@@ -308,13 +308,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     @media only screen and (min-width: 768px) {
       .footer .column {margin: 30px 0px 30px 0;}
     }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1024px) {
       .footer {margin-left: 0px;} 
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1023px) {
       .footer {margin-left: 0px;} 
     }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       footer.footer div.row div.col-sm-2.hidden-xs {width: 25%;}
       footer.footer div.row div..col-sm-3.col-sm-offset-1 {width: 100%;}
     }
@@ -485,7 +485,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 6px; }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1024px) {
       .social__title {
         display: inline-block;
         vertical-align: middle;
@@ -524,7 +524,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .homepage-logo {margin-top: 10px;margin-bottom: 20px;}
 img.homepage-logo {display: block; margin-top: 10px;height: 57px;width: 300px;}
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .homepage-logo {margin-bottom: 15px;}
   img.homepage-logo {margin-top: 17px;}
 }
@@ -571,14 +571,14 @@ img.homepage-logo {display: block; margin-top: 10px;height: 57px;width: 300px;}
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   .features ul li {
     display: inline-block;
     padding: 0;
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .features ul {
     display: none;
   }
@@ -611,7 +611,7 @@ li#ups {
 
 #logo {margin: 0;padding: 0;}
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   li.icon-account{
     background-image: url(../images/icon-account.jpg);
     background-repeat: no-repeat;
@@ -662,7 +662,7 @@ div#phone-number {
     font-weight: bold;
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1024px) {
     div#phone-number {
       position: absolute;
       top: 40px;
@@ -678,7 +678,7 @@ div#phone-number {
   div#phone-number {right: 10px;}
   }
 
-  @media only screen and (min-width: 740px) and (max-width: 991px) {
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
     div#phone-number {
       position: absolute;
       top: 103px;
@@ -702,17 +702,17 @@ div#phone-number {
   @media only screen and (min-width: 1375px) {
     #credit-cards {margin-left: 8px;}
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .elist form {width: 100%;}
   }
   @media only screen and (max-width: 767px) {
   #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;}
   .elist {width: 95%;}
   }
-  @media only screen and (min-width: 992px) and (max-width: 1374px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #credit-cards {width:239px;height:43px;}
   }
-  @media only screen and (min-width: 769px) and (max-width: 991px) {
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
   #credit-cards {width:263px;height:48px;margin: 0 auto;display: block;}
   }
 
@@ -724,7 +724,7 @@ span.PageText_L257n {line-height: 3em;}
 /*---------------PHONE NUMBERS IOS---------------------*/
 a[href^=tel]{ color:#d00005; text-decoration:none;}
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   a[href^=tel]{ color:#fff; text-decoration:none;}
 }
 

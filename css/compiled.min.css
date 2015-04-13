@@ -299,7 +299,7 @@ ul {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container-main {
     width: 1066px;
   }
@@ -318,7 +318,7 @@ ul {
    .container-main {
     width: 1024px;
     }
-  }
+}
 
 .row {
   margin-left: -15px;
@@ -347,7 +347,7 @@ ul {
   padding-right: 15px;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 1023px) {
   .col-xs-12 {
     padding-left: 0px;
     padding-right: 0px;
@@ -370,7 +370,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .col-xs-10 {
     display: block;
     float: none;
@@ -386,7 +386,7 @@ ul {
   border: 1px solid #ccc;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .col-xs-2 {
     display: none;
   }
@@ -396,7 +396,7 @@ ul {
   width: 83.33333%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .col-xs-10 {
     width: 100%;
     padding-left: 0;
@@ -427,7 +427,7 @@ ul {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .col-md-12 {
     float: left;
   }
@@ -502,7 +502,7 @@ input[type="search"] {
   clear: both;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar {
     border-radius: 0;
   }
@@ -527,7 +527,7 @@ input[type="search"] {
   clear: both;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-collapse {
     width: 100%;
     border-top: 0;
@@ -560,7 +560,7 @@ input[type="search"] {
   outline: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-toggle {
     display: none;
   }
@@ -898,9 +898,9 @@ ul {
   padding-left: 1.2em;
 }
 
-ul li {
+/*ul li {
   margin-bottom: 0.25em;
-}
+}*/
 
 ul {
   list-style-type: disc;
@@ -924,13 +924,13 @@ body {
   width: 1375px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #wrapper {
     width: 978px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   #wrapper {
     overflow: hidden;
   }
@@ -1001,7 +1001,7 @@ input[type=search]:focus {
   border-radius: 0;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   input[type=text],
   input[type=search] {
     width: 60%;
@@ -1028,7 +1028,7 @@ input[type="submit"] {
   font-size: 1em;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   button,
   input[type="submit"] {
     height: 45.5px;
@@ -1112,7 +1112,7 @@ body {
   border-color: #161b7a;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   body {
     font-size: 14px;
     background: #f5f5f5;
@@ -1188,7 +1188,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #wrapper {
     position: relative;
     width: 100%;
@@ -1208,7 +1208,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   #content {
     position: relative;
     z-index: 0;
@@ -1453,10 +1453,6 @@ ul {
   padding-left: 1.2em;
 }
 
-ul li {
-  margin-bottom: 0.25em;
-}
-
 ul {
   list-style-type: disc;
 }
@@ -1516,7 +1512,7 @@ body {
   margin-left: 15px;
 }*/
 
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #wrapper {
     width: 978px;
   }
@@ -1533,7 +1529,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   #wrapper {
     overflow: hidden;
   }
@@ -1676,7 +1672,7 @@ nav {
 
 /* Navigation */
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .primary ul ul transition all .2s ease {
     z-index: 2;
     border-left: 1px solid #ccc;
@@ -1736,7 +1732,7 @@ input:-moz-placeholder {
   border-radius: 0;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   input[type=text],
   input[type=search] {
     width: 60%;
@@ -1763,7 +1759,7 @@ input[type="submit"] {
   font-size: 1em;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   button,
   input[type="submit"] {
     height: 45.5px;
@@ -1881,7 +1877,7 @@ body {
   border-color: #161b7a;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .touch {
     display: auto !important;
   }
@@ -2082,7 +2078,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   .noMobile {
     display: auto !important;
   }
@@ -2147,7 +2143,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .touch {
     display: none !important;
   }
@@ -2307,7 +2303,7 @@ input[type=search] {
 
 /*  ADDED STYLES  */
 
-@media only screen and (min-width: 768px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width:1023px) {
   #toolbar {
     position: absolute;
     top: 90px;

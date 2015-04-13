@@ -92,7 +92,7 @@ input.vCSS_input_addtocart {margin: 3px auto !important;}
 .pricecolor.colors_productprice div.product_productprice b span {font-weight: bold !important;color: #2b3491;}
 .pricecolor.colors_productprice div.product_productprice b font span {font-weight: bold !important;color: Black;}
 
-@media only screen and (min-width: 992px) {#v65-productdetail-action-wrapper.v65-productdetail-options {float: right;margin-top: -88px;width: 212px;}}
+@media only screen and (min-width: 1024px) {#v65-productdetail-action-wrapper.v65-productdetail-options {float: right;margin-top: -88px;width: 212px;}}
 
 
 #content_area table[width$="%"] input[id^="Quantity"] {
@@ -1048,7 +1048,7 @@ table[width="96%"] {
   text-align: right; }
 
 /* "My Saved Billing Addresses" */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
 #content_area #v65-onepage-saved-billing-table font[style*="font-weight: bold;"] {
   display: inline-block;
   font-size: 12px;
@@ -1061,7 +1061,7 @@ table[width="96%"] {
 #v65-onepage-ContentTable tbody tr td table#v65-onepage-Detail.co-mainform tbody tr.v65-onepage-SavedLocations td {padding-left:4px !important;}
 html.no-js body.cbp-spmenu-push.vp-top-bar-padding div.container-main div.navbar.navbar-default header.header div.mboxDefault div#main-body.col-xs-12 div.col-xs-10 main#content_area.container form#v65-onepage-CheckoutForm table#table_checkout_cart0 tbody tr.v65-onepage-custom-details-row td table {margin-left: auto !important;margin-right: auto !important;}
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
 #v65-onepage-ContentTable tbody tr td table#v65-onepage-Detail.co-mainform tbody tr.v65-onepage-SavedLocations td {padding:0px !important;}
 }
 
@@ -1314,10 +1314,10 @@ form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vert
   border: 1px solid #ccc;
   margin-bottom: 10px;
   margin-left: 0px;}
-@media only screen and (min-width: 992px) and (max-width:1374px) {
+@media only screen and (min-width: 1024px) and (max-width:1374px) {
   #content_area > table:nth-child(4) {width: 841px;margin-left: 12px;}
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   #content_area > table:nth-child(4) {
       width: 100%;
       margin-left: auto;
@@ -1325,15 +1325,15 @@ form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vert
       margin-top: 10px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width:1374px) { 
+@media only screen and (min-width: 1024px) and (max-width:1374px) { 
   #MainForm > table:nth-child(3) > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(1) > table {margin-left: 10px;}
 }
 
 @media only screen and (min-width: 1375px) {
   .v-product-grid .v-product {width: 31% !important;padding: 15px 25px !important;margin-left: 22px !important;margin-right: 0 !important}}
-@media only screen and (min-width: 992px) and (max-width:1374px) {
+@media only screen and (min-width: 1024px) and (max-width:1374px) {
   .v-product-grid .v-product {width: 30% !important;padding: 15px 25px !important;margin-left: 25px !important;}}
-@media only screen and (min-width: 768px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width:1023px) {
   .v-product-grid .v-product {width: 30% !important;padding: 15px 20px 15px 5px !important;margin-left: 0px !important;margin-right: 20px !important;min-height: 660px;}}
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   .v-product-grid .v-product {width: 31% !important;padding: 15px 10px !important;margin-left: 0px !important;margin-right: 5px !important;min-height: 660px;}}
@@ -1372,13 +1372,13 @@ td:nth-child(2) > input[type="checkbox"] {margin-left: 25px;}
 .terms {margin-left: 45px;margin-top: -19px;}
 #div_articleid_112 table tbody tr td input {margin-left: 22px;}
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 td:nth-child(2) > input[type="checkbox"] {margin-left: 2px;}
 .terms {font-size: 13px;margin-left: 20px;}
 #div_articleid_112 table tbody tr td input {margin-left: 2px;}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio:0) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio:0) {
   .footer {margin-top: 0px;}
 }
 /*  CHECKOUT HEADING AND OTHER CART VOLUSION OVERRIDES */
@@ -1492,12 +1492,12 @@ form .colors_descriptionbox {
 @media only screen and (min-width: 1375px) {
   .subcat-wrapper {width: 1113px;margin-left: -19px;margin-top: -20px;}
 }
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   .subcat-wrapper nav.nav-block-3 ul a {width: 31.333%;transition: all 0.3s ease-in;float: left;font-weight: bold;font-size: 13px; display: block;margin: 0 0 0 1%;height: auto; padding: 10px; border: 1px solid #e3e3e3;box-sizing: border-box;text-decoration: none;}
   .subcat-wrapper ul {width: 876px;}
   .subcat-wrapper {width: 870px;margin-left: -7px;margin-top: -20px;}
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .subcat-wrapper nav.nav-block-3 ul a {width: 97%;margin-bottom: 15px;}
   .subcat-wrapper ul {width: 100%;margin: 0 0 0 -2%;}
   .subcat-wrapper ul a {margin-bottom: 15px;width: 97%;}
@@ -1768,7 +1768,7 @@ div#hide-homepage img {
     cursor: pointer;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #search_refinement_filters select {
     margin-top: 10px;
     padding: 5px;
@@ -1977,7 +1977,7 @@ div#hide-homepage img {
     cursor: pointer;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
     #trusted-store {
     height: 81px;
     width: 137px;
@@ -2080,7 +2080,7 @@ div#hide-homepage img {
   #merits {height: 14em;}
 }
 /*  MAIN BODY PADDING  */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   div#main-body {
     padding-left: 3%;
     padding-right: 3%;
@@ -2254,7 +2254,7 @@ div#chat-text {
   background: none !important;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   div#chat-text {
   display: none;
   }
@@ -2263,7 +2263,7 @@ div#chat-text {
 div#lhnChatButton {
   width: 70px !important;
 }
-@media only screen and (min-width: 992px) and (max-width: 1374px) {
+@media only screen and (min-width: 1024px) and (max-width: 1374px) {
   div#merits-sidebar {
     margin-left: 10px;
     margin-right: 10px;
