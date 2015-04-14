@@ -1303,7 +1303,7 @@ td.vCSS_breadcrumb_td b /*Targets greater-than symbol*/ {
 }
 
 /*************GRID STYLES**************/
-.vnav__link--active {background: none !important;}
+.vnav__link--active {background: none;}
 form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {vertical-align: top;padding-top: 0px;}
 @media only screen and (min-width: 1375px) {
   #content_area > table:nth-child(4) {width: 1110px;}
@@ -2319,6 +2319,86 @@ div#div_articleid_64 {
 
 .soft_add_wrapper .soft_add_action_area {
   padding: 15px 0 0 0 !important;
+}
+
+@media (max-width: 1023px) {
+  .usa section.products .four-col {display: none;}
+  section.marketing {display: none;}
+  section.sub-products {display: none;}
+  .features {display: none;}
+  img.homepage-logo {
+    height: 57px;
+    width: 300px;
+    margin-bottom: 17px;
+  }
+  #push-menu .vnav__link--active {
+    color: #fff;
+    background: #333;
+  }
+  #push-menu .vnav__subnav .vnav__link {
+    background: #333;
+  }
+  #push-menu .vnav__subnav .vnav__link:hover {
+    background: #11298a;
+    color: #fff;
+  }
+
+}
+
+#display_menu_1 .vnav__link--active {
+  background: none;
+  color: #11298a;
+}
+
+/* Sticky NAV for mobile */
+.sticky {
+    position: fixed !important;
+    width: 100%;
+    height: 50px !important;
+    left: 0;
+    top: 0 !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+.sticky-phone {
+    position: fixed !important;
+    height: 50px !important;
+    top: 13px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+.sticky-phone-icon {
+    position: fixed !important;
+    height: 50px !important;
+    top: 13px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 739px) and (min-width: 600px) {
+  div#phone-number {
+    right: 58%;
+    top: 107px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 739px) and (min-width: 600px) {
+  .sticky-phone {
+    position: fixed !important;
+    height: 50px !important;
+    top: 15px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+  }
 }
 
 

@@ -39,6 +39,32 @@
         <!--[if lt IE 9]>
         <script src="v/vspfiles/templates/USALightv2/js/html5shiv.js"></script>
         <![endif]-->
+
+        <!-- Sticky NAV on mobile -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var stickyNavTop = $('#mobile-toolbar').offset().top;
+                var stickyNav = function(){
+                var scrollTop = $(window).scrollTop();
+                      
+                if (scrollTop > stickyNavTop && $(window).width() < 1024) { 
+                    $('#mobile-toolbar').addClass('sticky');
+                    $('#phone-number').addClass('sticky-phone');
+                    $('#icon-phone').addClass('sticky-phone-icon');
+                } else {
+                    $('#mobile-toolbar').removeClass('sticky');
+                    $('#phone-number').removeClass('sticky-phone');
+                    $('#icon-phone').removeClass('sticky-phone-icon'); 
+                }
+            };
+                 
+            stickyNav();
+                 
+            $(window).scroll(function() {
+                stickyNav();
+                });
+            }); 
+        </script>
     </head>
     <body class="cbp-spmenu-push">
         <!--[if lt IE 7]>
@@ -58,7 +84,7 @@
         </nav>
 
 
-        <div class="container-main">
+        <div class="container-main"><div class="container-inner">
             <div class="navbar navbar-default" role="navigation">
 
                 <header class="header">
@@ -68,7 +94,7 @@
                         <a href="http://www.usalight.com" title="USALight.com"><img src="/v/vspfiles/templates/USALightv2/images/USA-Logo-2015.svg" alt="USALight.com" class="homepage-logo"></a>
                         </h1>
                         </div>
-
+<div id="mobile-toolbar">
     <div id="toolbar">
         <ul role="menubar">
             <li role="menuitem" class="touch">
@@ -99,24 +125,25 @@
     <div id="phone-number"><a href="tel:18772350020">1-877-235-0020</a></div>
 
     <div id="search-wrapper"><form class="search" method="get" action="/searchResults.asp" name="SearchBoxForm" role="search">
-            <input type="search" id="search" name="Search" placeholder="Product name or part number">
+            <input type="search" id="search" name="Search" placeholder="Product name or item no.">
             <button type="submit" name="Submit" class="button">Search</button>
         </form>
     </div>
+</div>
 </header>
 
     <div class="collapse navbar-collapse" id="main-nav">
         <div id="display_menu_1" class="menu"></div>
     </div><!-- /.navbar-collapse -->
 
-    <!--<div class="features">
+    <div class="features">
         <ul>
             <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALightv2/images/banner1.jpg" width="240" height="40" alt="Free Shipping over $100"></a></li>
             <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALightv2/images/banner2.jpg" width="240" height="40" alt="$6.95 Flat Rate Shipping under $100"></a></li>
             <li><a href="/Articles.asp?ID=249"><img src="/v/vspfiles/templates/USALightv2/images/banner3.jpg" width="240" height="40" alt="We'll beat any price"></a></li>
             <li><a href="/LED-Lighting-Products-s/93939.htm"><img src="/v/vspfiles/templates/USALightv2/images/banner4.jpg" width="240" height="40" alt="We Specialize in LED"></a></li>
         </ul>
-    </div>-->
+    </div>
     </div>
 
 
@@ -301,7 +328,7 @@
         </div>
         </div>
         </div>
-
+    </div>
 
 
         <script src="/v/vspfiles/templates/USALightv2/js/jquery-1.11.1.min.js"></script>

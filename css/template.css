@@ -583,7 +583,7 @@ img.homepage-logo {display: block; margin-top: 10px;height: 57px;width: 300px;}
     display: none;
   }
   .homepage-logo {margin-top: 0px;display: block;margin: 0 auto;margin-top: 10px;}
-  #search-wrapper {height: 70px;}
+  #search-wrapper {height: 55px;}
 }
 
 .awards {
@@ -726,6 +726,10 @@ a[href^=tel]{ color:#d00005; text-decoration:none;}
 
 @media only screen and (max-width: 1023px) {
   a[href^=tel]{ color:#fff; text-decoration:none;}
+}
+
+.cbp-spmenu h3 {
+  padding: 23px 12px !important;
 }
 
 

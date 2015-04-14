@@ -237,8 +237,8 @@ color: #e74f5d;
     .usa section.products .product h2 {overflow: hidden;padding: 0 10px 5px 0;;margin: 5px 10px 5px 0;font-size: 1.6em;}
     .usa section.products .product img {float: left; margin-right: 20px;}
     img.homepage-logo {display: block;margin: 0 auto;margin-top: 17px;}
-    #toolbar {position: absolute; top: 90px;height: 46px; width: 100%;}
-    .search {position: absolute; top: 136px; width: 100%;}
+    #toolbar {position: relative;top: 0px;height: 50px; width: 100%;}
+    .search {position: relative; top: 0px; width: 100%;}
     .header {min-height: 125px;}
     .usa section.products .product ul {margin: 0;padding: 0 10px 0 0;}
     #merits {
@@ -313,7 +313,7 @@ color: #e74f5d;
 
   @media only screen and (max-width: 1023px) {
     #refinement-wrapper {display: none;}
-    #search-wrapper {height: 77px;}
+    #search-wrapper {height: 40px;}
   }
 
 	#hide-homepage {display:none;}
@@ -842,7 +842,73 @@ div#lhnChatButton {
   .usa section.products .four-col {display: none;}
   section.marketing {display: none;}
   section.sub-products {display: none;}
+  .features {display: none;}
+  img.homepage-logo {
+    height: 57px;
+    width: 300px;
+    margin-bottom: 17px;
+  }
+  #push-menu .vnav__link--active {
+    color: #fff;
+    background: #333;
+  }
+  #push-menu .vnav__subnav .vnav__link {
+    background: #333;
+  }
 }
+
+/* Sticky NAV for mobile */
+.sticky {
+    position: fixed !important;
+    width: 100%;
+    height: 50px !important;
+    left: 0;
+    top: 0 !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+.sticky-phone {
+    position: fixed !important;
+    height: 50px !important;
+    top: 13px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+.sticky-phone-icon {
+    position: fixed !important;
+    height: 50px !important;
+    top: 13px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 739px) and (min-width: 600px) {
+  div#phone-number {
+    right: 58%;
+    top: 107px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 739px) and (min-width: 600px) {
+  .sticky-phone {
+    position: fixed !important;
+    height: 50px !important;
+    top: 15px !important;
+    z-index: 100;
+    border-top: 0;
+    z-index: 1000;
+  }
+}
+
+
 
 
 
