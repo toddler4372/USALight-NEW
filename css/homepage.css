@@ -435,6 +435,8 @@ div#lhnChatButton {
     width: 108%;
     margin-left: -1.0%;
     border-spacing: 18px;
+    float: left;
+    margin-top: -1.4%;
     }
   .usa section.products .four-col h2 {
     font-size: 1.7em;
@@ -500,6 +502,12 @@ div#lhnChatButton {
     max-width: 636px;
     padding-bottom: 20px;
   }
+  img.col-1 {
+    float: left;
+    max-width: 636px !important;
+    padding-bottom: 20px;
+    margin-left: -1px;
+  }
   img.col-2 {
     float: left;
     width: 49%;
@@ -527,7 +535,7 @@ div#lhnChatButton {
   .usa .service:first-child {
     margin-top: -2px;
   }
-  .usa .service {
+  .usa .service, .usa .service-3 {
     width: 100%;
     height: 89px;
     margin-top: 10px;
@@ -544,26 +552,34 @@ div#lhnChatButton {
     transition: color 750ms ease;
     cursor: pointer;
   }
-  .dcg header .service img {
-    float: right;
-    margin-right: 15px;
-    overflow: hidden;
-  }
   section.marketing {
     width: 1400px;
+    margin-top: 12px;
   }
   #services-ups {
     float: right;
-    margin: 12px 25px 0 0;
+    margin: 10px 25px 0 0;
     width: 59px !important;
     height: 70px !important;
+  }
+  #services-intl {
+    float: right;
+    margin: 18px 22px 0 0;
+    width: 130px !important;
+    height: 52px !important;
+  }
+  #services-crash {
+    float: right;
+    margin: 12px 15px 0 0;
+    width: 100px !important;
+    height: 59px !important;
   }
   div.services-block > div:nth-child(1) > a > div > h3 {
     text-transform: none;
     font-size: 1.3em;
     color: #27306b;
     font-weight: bold;
-    padding: 25px 20px 0px 20px;
+    padding: 23px 20px 0px 20px;
     margin-bottom: 0;
   }
   div.services-block > div:nth-child(1) > a > div > h4 {
@@ -578,7 +594,7 @@ div#lhnChatButton {
     font-size: 1.3em;
     color: #27306b;
     font-weight: bold;
-    padding: 25px 20px 0px 20px;
+    padding: 23px 20px 0px 20px;
     margin-bottom: 0;
   }
   div.services-block > div:nth-child(2) > a > div > h4 {
@@ -593,7 +609,7 @@ div#lhnChatButton {
     font-size: 1.3em;
     color: #27306b;
     font-weight: bold;
-    padding: 25px 20px 0px 20px;
+    padding: 23px 20px 0px 20px;
     margin-bottom: 0;
   }
   div.services-block > div:nth-child(3) > a > div > h4 {
@@ -616,7 +632,9 @@ div#lhnChatButton {
     width: 108%;
     margin-left: -1.7%;
     border-spacing: 18px;
-    }
+    float: left;
+    margin-top: -1.4%;
+  }
   .usa section.products .four-col h2 {
     font-size: 1.5em;
     color: #484848;
@@ -681,25 +699,151 @@ div#lhnChatButton {
     max-width: 492px;
     padding-bottom: 20px;
   }
+  img.col-1 {
+    float: left;
+    max-width: 492px !important;
+    padding-bottom: 20px;
+    margin-left: -1px;
+  }
   img.col-2 {
     float: left;
-    width: 49%;
     max-width: 490px !important;
     padding-bottom: 20px;
     margin-left: 18px;
   }
   .two-row {
     width: 1300px;
+    height: 150px;
   }
   section.sub-products {
     margin: 0;
     margin-left: 12px;
   }
+  .jumbotron {
+    max-width: 600px;
+    height: 100%;
+    margin: 16px 16px 16px 11px;
+    float: left;
+  }
+  .services-block {
+    float: left;
+    width: 384px;
+    margin-top: 3px;
+  }
+  .usa .service:first-child {
+    margin-top: -2px;
+  }
+  .usa .service {
+    width: 100%;
+    height: 64px;
+    margin-top: 10px;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background-color: #f6f6f6;
+  }
+  .usa .service-3 {
+    width: 100%;
+    height: 65px;
+    margin-top: 10px;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background-color: #f6f6f6;
+  }
+  .usa .service a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: color 750ms ease;
+    transition: color 750ms ease;
+    cursor: pointer;
+  }
+  section.marketing {
+    width: 1200px;
+  }
+  #services-ups {
+    float: right;
+    margin: 10px 25px 0 0;
+    width: auto !important;
+    height: 44px !important;
+  }
+  #services-intl {
+    float: right;
+    margin: 13px 10px 0 0;
+    width: auto !important;
+    height: 37px !important;
+  }
+  #services-crash {
+    float: right;
+    margin: 7px 8px 0 0;
+    width: auto !important;
+    height: 45px !important;
+  }
+  div.services-block > div:nth-child(1) > a > div > h3 {
+    text-transform: none;
+    font-size: 1.1em;
+    color: #27306b;
+    font-weight: bold;
+    padding: 13px 20px 0px 20px;
+    margin-bottom: 0;
+  }
+  div.services-block > div:nth-child(1) > a > div > h4 {
+    text-transform: none;
+    font-size: .9em;
+    color: #27306b;
+    font-weight: normal;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  div.services-block > div:nth-child(2) > a > div > h3 {
+    text-transform: none;
+    font-size: 1.1em;
+    color: #27306b;
+    font-weight: bold;
+    padding: 13px 20px 0px 20px;
+    margin-bottom: 0;
+  }
+  div.services-block > div:nth-child(2) > a > div > h4 {
+    text-transform: none;
+    font-size: .9em;
+    color: #27306b;
+    font-weight: normal;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  div.services-block > div:nth-child(3) > a > div > h3 {
+    text-transform: none;
+    font-size: 1.1em;
+    color: #27306b;
+    font-weight: bold;
+    padding: 13px 20px 0px 20px;
+    margin-bottom: 0;
+  }
+  div.services-block > div:nth-child(3) > a > div > h4 {
+    text-transform: none;
+    font-size: .9em;
+    color: #27306b;
+    font-weight: normal;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+/* IE10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .usa section.products .four-col {
+    float: none !important;
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 1023px) {
   .usa section.products .four-col {display: none;}
-  }
+  section.marketing {display: none;}
+  section.sub-products {display: none;}
+}
+
 
 
 
