@@ -908,6 +908,17 @@ div#lhnChatButton {
   }
 }
 
+/*  Jumbotron Slideshow  */
+
+.fadein { position:relative; height:307px; width:816px; }
+.fadein img { position:absolute; top:-1px; }
+
+.jumbotron, .faderandom { position:relative; height:307px; width:816px;left:0px;  top: 1px;  }
+.jumbotron > *, .faderandom > * { position:absolute; top:-1px; display:block; }
+
+.multipleslides { position:relative; height:307px; width:816px; float:left; }
+.multipleslides > * { position:absolute; top:-1px; display:block; }
+
 
 
 
