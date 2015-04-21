@@ -40,6 +40,14 @@
         <script src="v/vspfiles/templates/USALightv2/js/html5shiv.js"></script>
         <![endif]-->
 
+        <!-- Jumbotron Slideshow -->
+        <script>
+          $(function(){
+              $('.jumbotron > :gt(0)').hide();
+              setInterval(function(){$('.jumbotron > :first-child').fadeOut(2000).next().fadeIn(2000).end().appendTo('.jumbotron');}, 7000);
+            });
+        </script>
+
         <!-- Sticky NAV on mobile -->
         <script type="text/javascript">
             $(document).ready(function() {
@@ -429,13 +437,7 @@
             });
         </script>
 
-        <!-- Jumbotron Slideshow -->
-        <script>
-          $(function(){
-              $('.jumbotron > :gt(0)').hide();
-              setInterval(function(){$('.jumbotron > :first-child').fadeOut(2000).next().fadeIn(2000).end().appendTo('.jumbotron');}, 7000);
-            });
-        </script>
+        
 
         <!-- Google Code for Remarketing Tag -->
         <!--

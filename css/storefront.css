@@ -242,8 +242,33 @@ input[src$="/btn_go.gif"] {
 #content_area #shipping-header .v65-onepage-headerShort:before {
   content: 'Shipping Information'; }
 
-#content_area #shipping-header .v65-onepage-headerShort:before {
-  content: 'Shipping Information (we cannot ship to P.O. Boxes)'; }
+#content_area table#v65-onepage-ContentTable td font {color:#222 !important;}
+
+/*#content_area #shipping-header .v65-onepage-headerShort:after {
+  content: ' (We cannot ship to P.O. Boxes)';
+  color: #d10006;
+  font-weight:bold;
+  text-transform:none; }*/
+
+input#v65-SameAsBilling:after {
+  content: 'NOTE: We cannot ship to P.O. Boxes';
+  float: left;
+  margin-left: 190px;
+  width: 250px;
+  margin-top: 1px;
+  color: #d10008;
+  font-weight: bold;
+}
+
+a#v65-onepage-editcart:after {
+  content: ' Items in Cart';
+}
+
+/*span.PageText_L4n:after {
+  content: ' \A (No P.O. Boxes)';
+  white-space: pre;
+  color: red;
+}*/
 
 #content_area #v65-checkout-payment-header .v65-onepage-headerShort:before {
   content: 'Payment'; }
