@@ -515,6 +515,11 @@ div#lhnChatButton {
     padding-bottom: 20px;
     margin-left: 18px;
   }
+  .one-row {
+    width: 1288px;
+    margin-left: -1px;
+    padding-bottom: 20px;
+  }
   .two-row {
     width: 1300px;
   }
@@ -710,6 +715,11 @@ div#lhnChatButton {
     max-width: 490px !important;
     padding-bottom: 20px;
     margin-left: 18px;
+  }
+  .one-row {
+    width: 1000px;
+    margin-left: -1px;
+    padding-bottom: 20px;
   }
   .two-row {
     width: 1300px;

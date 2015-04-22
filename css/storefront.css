@@ -2426,5 +2426,30 @@ div#div_articleid_64 {
   }
 }
 
+/* PRODUCT FEATURES TABLE */
+
+.feature {
+  font-weight:bold;
+}
+.features_table {
+  margin-top: 10px;
+  border: 1px solid #f0f0f0;
+}
+.features_table td{
+  padding:3px;
+}
+
+.features_table th {
+  padding: 3px;
+}
+
+.colors_descriptionbox {
+  background-color: #FFFFFF;
+}
+
+#ProductDetail_ProductDetails_div {
+  font-size:13px;
+}
+
 
 
