@@ -706,8 +706,8 @@ div#phone-number {
     .elist form {width: 100%;}
   }
   @media only screen and (max-width: 767px) {
-  #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;}
-  .elist {width: 95%;}
+  #credit-cards {margin: 0 auto;display: block;padding-bottom: 15px;max-width: 250px;}
+  .elist {width: 100%;}
   }
   @media only screen and (min-width: 1024px) and (max-width: 1374px) {
   #credit-cards {width:239px;height:43px;}
