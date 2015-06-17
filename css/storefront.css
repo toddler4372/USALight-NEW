@@ -1906,7 +1906,7 @@ div#hide-homepage img {
     height: 81px;
     width: 137px;
     float: left;
-    margin-left: 60px;
+    margin-left: 130px;
     margin-top: 10px;
     background: url(../images/trusted-store.jpg) 0 0 no-repeat;
   }
@@ -2007,7 +2007,7 @@ div#hide-homepage img {
     height: 81px;
     width: 137px;
     float: left;
-    margin-left: 80px;
+    margin-left: 20px;
     margin-top: 10px;
     background: url(../images/trusted-store.jpg) 0 0 no-repeat;
   }
@@ -2031,7 +2031,7 @@ div#hide-homepage img {
     height: 81px;
     width: 138px;
     float: left;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 15px;
     background: url(../images/live-help-now.jpg) 0 0 no-repeat;
   }
@@ -2043,7 +2043,7 @@ div#hide-homepage img {
     height: 76px;
     width: 149px;
     float: left;
-    margin-left: 60px;
+    margin-left: 10px;
     margin-top: 15px;
     background: url(../images/trustwave.jpg) 0 0 no-repeat;
   }
@@ -2055,7 +2055,7 @@ div#hide-homepage img {
     height: 85px;
     width: 114px;
     float: left;
-    margin-left: 60px;
+    margin-left: 10px;
     margin-top: 12px;
     background: url(../images/authorize-net.jpg) 0 0 no-repeat;
   }
@@ -2065,10 +2065,10 @@ div#hide-homepage img {
   }
   #go-daddy {
     height: 47px;
-    width: 171px;
+    width: 112px;
     float: left;
-    margin-left: 285px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 28px;
     background: url(../images/godaddy.jpg) 0 0 no-repeat;
   }
   #go-daddy:hover {
@@ -2079,8 +2079,8 @@ div#hide-homepage img {
     height: 64px;
     width: 115px;
     float: left;
-    margin-left: 12px;
-    margin-top: 0px;
+    margin-left: 10px;
+    margin-top: 20px;
     background: url(../images/ups.jpg) 0 0 no-repeat;
   }
   #ups:hover {
@@ -2094,8 +2094,8 @@ div#hide-homepage img {
     height: 83px;
     width: 136px;
     float: left; 
-    margin-left: 70px;
-    margin-top: 0px;
+    margin-left: 10px;
+    margin-top: 18px;
     background: url(../images/mcafee.jpg) 0 0 no-repeat;
   }
   #mcafee:hover {
@@ -2451,5 +2451,13 @@ div#div_articleid_64 {
   font-size:13px;
 }
 
+/* Miscellaneous Fixes */
+span.PageText_L509n {
+  padding-left: 20px;
+}
+
+#product_reviews_description_box > tbody > tr:nth-child(2) > td:nth-child(1) {
+  padding-left: 3px;
+}
 
 

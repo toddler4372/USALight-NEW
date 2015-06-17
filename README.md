@@ -1,2 +1,1 @@
-# USALight-NEW
-New responsive site for USALight.com
+![Alt text](https://github.com/toddler4372/USALight-NEW/blob/master/images/usalight.jpg "USALight.com Screenshots")

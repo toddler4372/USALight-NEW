@@ -254,7 +254,6 @@ color: #e74f5d;
   /* > 1024 & < 1375 */
   @media only screen and (min-width: 1024px) and (max-width: 1375px) {
     .usa section.products .product img  {width: 100%; max-width: 405px;max-height: 206px;}
-    #merits {height: 14em;}
     #div_articleid_2 img {
       display: block;
       width: 100%;
@@ -925,6 +924,14 @@ div#lhnChatButton {
 
 .jumbotron, .faderandom { position:relative; height:307px; width:816px;left:0px;  top: 1px;  }
 .jumbotron > *, .faderandom > * { position:absolute; top:-1px; display:block; }
+
+@media (max-width: 1374px) and (min-width: 1024px) {
+  .jumbotron { height:220px; } 
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .jumbotron { height:220px;margin: 16px 16px 0px 11px; } 
+}
 
 .multipleslides { position:relative; height:307px; width:816px; float:left; }
 .multipleslides > * { position:absolute; top:-1px; display:block; }
